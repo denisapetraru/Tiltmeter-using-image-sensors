@@ -1,0 +1,3893 @@
+
+Pendul_OPTIC.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000014  00800100  000015de  00001672  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000015de  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000ce6  00800114  00800114  00001686  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  00001686  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  000016b8  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000128  00000000  00000000  000016f8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00001c00  00000000  00000000  00001820  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000dbd  00000000  00000000  00003420  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00001605  00000000  00000000  000041dd  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000410  00000000  00000000  000057e4  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00000aae  00000000  00000000  00005bf4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    00000ed5  00000000  00000000  000066a2  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 000000e8  00000000  00000000  00007577  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+       0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+       2:	00 00       	nop
+       4:	61 c0       	rjmp	.+194    	; 0xc8 <__bad_interrupt>
+       6:	00 00       	nop
+       8:	5f c0       	rjmp	.+190    	; 0xc8 <__bad_interrupt>
+       a:	00 00       	nop
+       c:	5d c0       	rjmp	.+186    	; 0xc8 <__bad_interrupt>
+       e:	00 00       	nop
+      10:	5b c0       	rjmp	.+182    	; 0xc8 <__bad_interrupt>
+      12:	00 00       	nop
+      14:	59 c0       	rjmp	.+178    	; 0xc8 <__bad_interrupt>
+      16:	00 00       	nop
+      18:	57 c0       	rjmp	.+174    	; 0xc8 <__bad_interrupt>
+      1a:	00 00       	nop
+      1c:	55 c0       	rjmp	.+170    	; 0xc8 <__bad_interrupt>
+      1e:	00 00       	nop
+      20:	53 c0       	rjmp	.+166    	; 0xc8 <__bad_interrupt>
+      22:	00 00       	nop
+      24:	51 c0       	rjmp	.+162    	; 0xc8 <__bad_interrupt>
+      26:	00 00       	nop
+      28:	4f c0       	rjmp	.+158    	; 0xc8 <__bad_interrupt>
+      2a:	00 00       	nop
+      2c:	4d c0       	rjmp	.+154    	; 0xc8 <__bad_interrupt>
+      2e:	00 00       	nop
+      30:	4b c0       	rjmp	.+150    	; 0xc8 <__bad_interrupt>
+      32:	00 00       	nop
+      34:	2d c4       	rjmp	.+2138   	; 0x890 <__vector_13>
+      36:	00 00       	nop
+      38:	47 c0       	rjmp	.+142    	; 0xc8 <__bad_interrupt>
+      3a:	00 00       	nop
+      3c:	45 c0       	rjmp	.+138    	; 0xc8 <__bad_interrupt>
+      3e:	00 00       	nop
+      40:	43 c0       	rjmp	.+134    	; 0xc8 <__bad_interrupt>
+      42:	00 00       	nop
+      44:	41 c0       	rjmp	.+130    	; 0xc8 <__bad_interrupt>
+      46:	00 00       	nop
+      48:	73 c4       	rjmp	.+2278   	; 0x930 <__vector_18>
+      4a:	00 00       	nop
+      4c:	3d c0       	rjmp	.+122    	; 0xc8 <__bad_interrupt>
+      4e:	00 00       	nop
+      50:	8f c3       	rjmp	.+1822   	; 0x770 <__vector_20>
+      52:	00 00       	nop
+      54:	39 c0       	rjmp	.+114    	; 0xc8 <__bad_interrupt>
+      56:	00 00       	nop
+      58:	37 c0       	rjmp	.+110    	; 0xc8 <__bad_interrupt>
+      5a:	00 00       	nop
+      5c:	35 c0       	rjmp	.+106    	; 0xc8 <__bad_interrupt>
+      5e:	00 00       	nop
+      60:	33 c0       	rjmp	.+102    	; 0xc8 <__bad_interrupt>
+      62:	00 00       	nop
+      64:	31 c0       	rjmp	.+98     	; 0xc8 <__bad_interrupt>
+      66:	00 00       	nop
+      68:	2f c0       	rjmp	.+94     	; 0xc8 <__bad_interrupt>
+      6a:	00 00       	nop
+      6c:	2d c0       	rjmp	.+90     	; 0xc8 <__bad_interrupt>
+      6e:	00 00       	nop
+      70:	c6 c4       	rjmp	.+2444   	; 0x9fe <__vector_28>
+      72:	00 00       	nop
+      74:	29 c0       	rjmp	.+82     	; 0xc8 <__bad_interrupt>
+      76:	00 00       	nop
+      78:	27 c0       	rjmp	.+78     	; 0xc8 <__bad_interrupt>
+      7a:	00 00       	nop
+      7c:	25 c0       	rjmp	.+74     	; 0xc8 <__bad_interrupt>
+      7e:	00 00       	nop
+      80:	23 c0       	rjmp	.+70     	; 0xc8 <__bad_interrupt>
+      82:	00 00       	nop
+      84:	21 c0       	rjmp	.+66     	; 0xc8 <__bad_interrupt>
+      86:	00 00       	nop
+      88:	1f c0       	rjmp	.+62     	; 0xc8 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+      8c:	11 24       	eor	r1, r1
+      8e:	1f be       	out	0x3f, r1	; 63
+      90:	cf ef       	ldi	r28, 0xFF	; 255
+      92:	d0 e4       	ldi	r29, 0x40	; 64
+      94:	de bf       	out	0x3e, r29	; 62
+      96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+      98:	11 e0       	ldi	r17, 0x01	; 1
+      9a:	a0 e0       	ldi	r26, 0x00	; 0
+      9c:	b1 e0       	ldi	r27, 0x01	; 1
+      9e:	ee ed       	ldi	r30, 0xDE	; 222
+      a0:	f5 e1       	ldi	r31, 0x15	; 21
+      a2:	00 e0       	ldi	r16, 0x00	; 0
+      a4:	0b bf       	out	0x3b, r16	; 59
+      a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+      a8:	07 90       	elpm	r0, Z+
+      aa:	0d 92       	st	X+, r0
+      ac:	a4 31       	cpi	r26, 0x14	; 20
+      ae:	b1 07       	cpc	r27, r17
+      b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+
+000000b2 <__do_clear_bss>:
+      b2:	2d e0       	ldi	r18, 0x0D	; 13
+      b4:	a4 e1       	ldi	r26, 0x14	; 20
+      b6:	b1 e0       	ldi	r27, 0x01	; 1
+      b8:	01 c0       	rjmp	.+2      	; 0xbc <.do_clear_bss_start>
+
+000000ba <.do_clear_bss_loop>:
+      ba:	1d 92       	st	X+, r1
+
+000000bc <.do_clear_bss_start>:
+      bc:	aa 3f       	cpi	r26, 0xFA	; 250
+      be:	b2 07       	cpc	r27, r18
+      c0:	e1 f7       	brne	.-8      	; 0xba <.do_clear_bss_loop>
+      c2:	3e d3       	rcall	.+1660   	; 0x740 <main>
+      c4:	0c 94 ed 0a 	jmp	0x15da	; 0x15da <_exit>
+
+000000c8 <__bad_interrupt>:
+      c8:	9b cf       	rjmp	.-202    	; 0x0 <__vectors>
+
+000000ca <Send_Value>:
+//unsigned long int valoare valoarea de trimis pe UDR0
+//out void      cmd=|___|oEcrLf  
+//terminal apare x=921.230E  ASCII string  10+crlf
+
+void Send_Value (unsigned char cmd, unsigned long int valoare)
+{
+      ca:	cf 92       	push	r12
+      cc:	df 92       	push	r13
+      ce:	ef 92       	push	r14
+      d0:	ff 92       	push	r15
+      d2:	0f 93       	push	r16
+      d4:	1f 93       	push	r17
+      d6:	cf 93       	push	r28
+      d8:	df 93       	push	r29
+      da:	00 d0       	rcall	.+0      	; 0xdc <Send_Value+0x12>
+      dc:	00 d0       	rcall	.+0      	; 0xde <Send_Value+0x14>
+      de:	00 d0       	rcall	.+0      	; 0xe0 <Send_Value+0x16>
+      e0:	cd b7       	in	r28, 0x3d	; 61
+      e2:	de b7       	in	r29, 0x3e	; 62
+	volatile unsigned char Local_vr = 0, Local_vr1 = 0, *point_display;
+      e4:	19 82       	std	Y+1, r1	; 0x01
+      e6:	1a 82       	std	Y+2, r1	; 0x02
+	volatile unsigned long int Diplay_Val=valoare;
+      e8:	4b 83       	std	Y+3, r20	; 0x03
+      ea:	5c 83       	std	Y+4, r21	; 0x04
+      ec:	6d 83       	std	Y+5, r22	; 0x05
+      ee:	7e 83       	std	Y+6, r23	; 0x06
+	
+		for (Local_vr=0;Local_vr <12; Local_vr++)  display_Chars_12[Local_vr] =48;
+      f0:	19 82       	std	Y+1, r1	; 0x01
+      f2:	09 c0       	rjmp	.+18     	; 0x106 <Send_Value+0x3c>
+      f4:	e9 81       	ldd	r30, Y+1	; 0x01
+      f6:	f0 e0       	ldi	r31, 0x00	; 0
+      f8:	e0 50       	subi	r30, 0x00	; 0
+      fa:	ff 4f       	sbci	r31, 0xFF	; 255
+      fc:	90 e3       	ldi	r25, 0x30	; 48
+      fe:	90 83       	st	Z, r25
+     100:	99 81       	ldd	r25, Y+1	; 0x01
+     102:	9f 5f       	subi	r25, 0xFF	; 255
+     104:	99 83       	std	Y+1, r25	; 0x01
+     106:	99 81       	ldd	r25, Y+1	; 0x01
+     108:	9c 30       	cpi	r25, 0x0C	; 12
+     10a:	a0 f3       	brcs	.-24     	; 0xf4 <Send_Value+0x2a>
+		
+	
+	if ((cmd =='x') ||(cmd =='y'))
+     10c:	98 e8       	ldi	r25, 0x88	; 136
+     10e:	98 0f       	add	r25, r24
+     110:	92 30       	cpi	r25, 0x02	; 2
+     112:	08 f0       	brcs	.+2      	; 0x116 <Send_Value+0x4c>
+     114:	8d c0       	rjmp	.+282    	; 0x230 <Send_Value+0x166>
+	{		
+		display_Chars_12[0] =cmd;
+     116:	e0 e0       	ldi	r30, 0x00	; 0
+     118:	f1 e0       	ldi	r31, 0x01	; 1
+     11a:	80 83       	st	Z, r24
+		display_Chars_12[1] ='=';
+     11c:	9d e3       	ldi	r25, 0x3D	; 61
+     11e:	91 83       	std	Z+1, r25	; 0x01
+		display_Chars_12[5] =0x2E;  //','
+     120:	9e e2       	ldi	r25, 0x2E	; 46
+     122:	95 83       	std	Z+5, r25	; 0x05
+				
+				if (cmd =='x'){
+     124:	88 37       	cpi	r24, 0x78	; 120
+     126:	61 f4       	brne	.+24     	; 0x140 <Send_Value+0x76>
+					 Diplay_Val = WirePosition.mm_X;
+     128:	e7 e2       	ldi	r30, 0x27	; 39
+     12a:	fd e0       	ldi	r31, 0x0D	; 13
+     12c:	46 81       	ldd	r20, Z+6	; 0x06
+     12e:	57 81       	ldd	r21, Z+7	; 0x07
+     130:	60 e0       	ldi	r22, 0x00	; 0
+     132:	70 e0       	ldi	r23, 0x00	; 0
+     134:	4b 83       	std	Y+3, r20	; 0x03
+     136:	5c 83       	std	Y+4, r21	; 0x04
+     138:	6d 83       	std	Y+5, r22	; 0x05
+     13a:	7e 83       	std	Y+6, r23	; 0x06
+					 Local_vr = (WirePosition.error_Xmm);//error x  error_Xmm
+     13c:	90 85       	ldd	r25, Z+8	; 0x08
+     13e:	99 83       	std	Y+1, r25	; 0x01
+				 }
+				if (cmd =='y'){
+     140:	89 37       	cpi	r24, 0x79	; 121
+     142:	61 f4       	brne	.+24     	; 0x15c <Send_Value+0x92>
+					Diplay_Val = WirePosition.mm_Y;
+     144:	e7 e2       	ldi	r30, 0x27	; 39
+     146:	fd e0       	ldi	r31, 0x0D	; 13
+     148:	81 85       	ldd	r24, Z+9	; 0x09
+     14a:	92 85       	ldd	r25, Z+10	; 0x0a
+     14c:	a0 e0       	ldi	r26, 0x00	; 0
+     14e:	b0 e0       	ldi	r27, 0x00	; 0
+     150:	8b 83       	std	Y+3, r24	; 0x03
+     152:	9c 83       	std	Y+4, r25	; 0x04
+     154:	ad 83       	std	Y+5, r26	; 0x05
+     156:	be 83       	std	Y+6, r27	; 0x06
+					Local_vr = (WirePosition.error_Ymm);
+     158:	83 85       	ldd	r24, Z+11	; 0x0b
+     15a:	89 83       	std	Y+1, r24	; 0x01
+				}
+		point_display =((display_Chars_12) + 8);
+        point_display = itoa(Local_vr, point_display, 16);
+     15c:	89 81       	ldd	r24, Y+1	; 0x01
+    } else if (__radix < 2 || __radix > 36) {
+	*__s = 0;
+	return __s;
+    } else {
+	extern char *__itoa_ncheck (int, char *, unsigned char);
+	return __itoa_ncheck (__val, __s, __radix);
+     15e:	40 e1       	ldi	r20, 0x10	; 16
+     160:	68 e0       	ldi	r22, 0x08	; 8
+     162:	71 e0       	ldi	r23, 0x01	; 1
+     164:	90 e0       	ldi	r25, 0x00	; 0
+     166:	0e 94 ba 0a 	call	0x1574	; 0x1574 <__itoa_ncheck>
+		if ((Local_vr & 0xF0)==0)  display_Chars_12[9] = 48;
+     16a:	89 81       	ldd	r24, Y+1	; 0x01
+     16c:	80 7f       	andi	r24, 0xF0	; 240
+     16e:	19 f4       	brne	.+6      	; 0x176 <Send_Value+0xac>
+     170:	80 e3       	ldi	r24, 0x30	; 48
+     172:	80 93 09 01 	sts	0x0109, r24	; 0x800109 <__DATA_REGION_ORIGIN__+0x9>
+		
+		display_Chars_12[10] =0x0A;
+     176:	e0 e0       	ldi	r30, 0x00	; 0
+     178:	f1 e0       	ldi	r31, 0x01	; 1
+     17a:	8a e0       	ldi	r24, 0x0A	; 10
+     17c:	82 87       	std	Z+10, r24	; 0x0a
+		display_Chars_12[11] =0x0D;		
+     17e:	8d e0       	ldi	r24, 0x0D	; 13
+     180:	83 87       	std	Z+11, r24	; 0x0b
+		
+		
+				//Diplay_Val = valoare;
+				for (Local_vr=7;Local_vr > 1;Local_vr--)
+     182:	87 e0       	ldi	r24, 0x07	; 7
+     184:	89 83       	std	Y+1, r24	; 0x01
+     186:	30 c0       	rjmp	.+96     	; 0x1e8 <Send_Value+0x11e>
+				{
+					if (Diplay_Val !=0)
+     188:	8b 81       	ldd	r24, Y+3	; 0x03
+     18a:	9c 81       	ldd	r25, Y+4	; 0x04
+     18c:	ad 81       	ldd	r26, Y+5	; 0x05
+     18e:	be 81       	ldd	r27, Y+6	; 0x06
+     190:	89 2b       	or	r24, r25
+     192:	8a 2b       	or	r24, r26
+     194:	8b 2b       	or	r24, r27
+     196:	59 f1       	breq	.+86     	; 0x1ee <Send_Value+0x124>
+					{
+						if (Local_vr!=5)//poz lui ','
+     198:	89 81       	ldd	r24, Y+1	; 0x01
+     19a:	85 30       	cpi	r24, 0x05	; 5
+     19c:	11 f1       	breq	.+68     	; 0x1e2 <Send_Value+0x118>
+						{
+							display_Chars_12[Local_vr] = (Diplay_Val%10)+48;
+     19e:	09 81       	ldd	r16, Y+1	; 0x01
+     1a0:	10 e0       	ldi	r17, 0x00	; 0
+     1a2:	6b 81       	ldd	r22, Y+3	; 0x03
+     1a4:	7c 81       	ldd	r23, Y+4	; 0x04
+     1a6:	8d 81       	ldd	r24, Y+5	; 0x05
+     1a8:	9e 81       	ldd	r25, Y+6	; 0x06
+     1aa:	0f 2e       	mov	r0, r31
+     1ac:	fa e0       	ldi	r31, 0x0A	; 10
+     1ae:	cf 2e       	mov	r12, r31
+     1b0:	d1 2c       	mov	r13, r1
+     1b2:	e1 2c       	mov	r14, r1
+     1b4:	f1 2c       	mov	r15, r1
+     1b6:	f0 2d       	mov	r31, r0
+     1b8:	a7 01       	movw	r20, r14
+     1ba:	96 01       	movw	r18, r12
+     1bc:	0e 94 98 0a 	call	0x1530	; 0x1530 <__udivmodsi4>
+     1c0:	f8 01       	movw	r30, r16
+     1c2:	e0 50       	subi	r30, 0x00	; 0
+     1c4:	ff 4f       	sbci	r31, 0xFF	; 255
+     1c6:	60 5d       	subi	r22, 0xD0	; 208
+     1c8:	60 83       	st	Z, r22
+							Diplay_Val = Diplay_Val/10;
+     1ca:	6b 81       	ldd	r22, Y+3	; 0x03
+     1cc:	7c 81       	ldd	r23, Y+4	; 0x04
+     1ce:	8d 81       	ldd	r24, Y+5	; 0x05
+     1d0:	9e 81       	ldd	r25, Y+6	; 0x06
+     1d2:	a7 01       	movw	r20, r14
+     1d4:	96 01       	movw	r18, r12
+     1d6:	0e 94 98 0a 	call	0x1530	; 0x1530 <__udivmodsi4>
+     1da:	2b 83       	std	Y+3, r18	; 0x03
+     1dc:	3c 83       	std	Y+4, r19	; 0x04
+     1de:	4d 83       	std	Y+5, r20	; 0x05
+     1e0:	5e 83       	std	Y+6, r21	; 0x06
+		display_Chars_12[10] =0x0A;
+		display_Chars_12[11] =0x0D;		
+		
+		
+				//Diplay_Val = valoare;
+				for (Local_vr=7;Local_vr > 1;Local_vr--)
+     1e2:	89 81       	ldd	r24, Y+1	; 0x01
+     1e4:	81 50       	subi	r24, 0x01	; 1
+     1e6:	89 83       	std	Y+1, r24	; 0x01
+     1e8:	89 81       	ldd	r24, Y+1	; 0x01
+     1ea:	82 30       	cpi	r24, 0x02	; 2
+     1ec:	68 f6       	brcc	.-102    	; 0x188 <Send_Value+0xbe>
+						}
+					}
+					else break;			
+				}
+
+				for (Local_vr1=0;Local_vr1 <12; Local_vr1++)
+     1ee:	1a 82       	std	Y+2, r1	; 0x02
+     1f0:	1b c0       	rjmp	.+54     	; 0x228 <Send_Value+0x15e>
+				{
+			
+					Local_vr = UCSR0A &  0x20;
+     1f2:	80 91 c0 00 	lds	r24, 0x00C0	; 0x8000c0 <__TEXT_REGION_LENGTH__+0x7e00c0>
+     1f6:	80 72       	andi	r24, 0x20	; 32
+     1f8:	89 83       	std	Y+1, r24	; 0x01
+					while(Local_vr ==0) Local_vr = UCSR0A & 0x20;
+     1fa:	04 c0       	rjmp	.+8      	; 0x204 <Send_Value+0x13a>
+     1fc:	80 91 c0 00 	lds	r24, 0x00C0	; 0x8000c0 <__TEXT_REGION_LENGTH__+0x7e00c0>
+     200:	80 72       	andi	r24, 0x20	; 32
+     202:	89 83       	std	Y+1, r24	; 0x01
+     204:	89 81       	ldd	r24, Y+1	; 0x01
+     206:	88 23       	and	r24, r24
+     208:	c9 f3       	breq	.-14     	; 0x1fc <Send_Value+0x132>
+					UCSR0A |= 0x20;
+     20a:	e0 ec       	ldi	r30, 0xC0	; 192
+     20c:	f0 e0       	ldi	r31, 0x00	; 0
+     20e:	80 81       	ld	r24, Z
+     210:	80 62       	ori	r24, 0x20	; 32
+     212:	80 83       	st	Z, r24
+					UDR0 = display_Chars_12[Local_vr1];
+     214:	ea 81       	ldd	r30, Y+2	; 0x02
+     216:	f0 e0       	ldi	r31, 0x00	; 0
+     218:	e0 50       	subi	r30, 0x00	; 0
+     21a:	ff 4f       	sbci	r31, 0xFF	; 255
+     21c:	80 81       	ld	r24, Z
+     21e:	80 93 c6 00 	sts	0x00C6, r24	; 0x8000c6 <__TEXT_REGION_LENGTH__+0x7e00c6>
+						}
+					}
+					else break;			
+				}
+
+				for (Local_vr1=0;Local_vr1 <12; Local_vr1++)
+     222:	8a 81       	ldd	r24, Y+2	; 0x02
+     224:	8f 5f       	subi	r24, 0xFF	; 255
+     226:	8a 83       	std	Y+2, r24	; 0x02
+     228:	8a 81       	ldd	r24, Y+2	; 0x02
+     22a:	8c 30       	cpi	r24, 0x0C	; 12
+     22c:	10 f3       	brcs	.-60     	; 0x1f2 <Send_Value+0x128>
+     22e:	08 c0       	rjmp	.+16     	; 0x240 <Send_Value+0x176>
+					UDR0 = display_Chars_12[Local_vr1];
+				}
+	}
+	else  // afisez datele din memorie
+	{
+		for (Local_vr1=0;Local_vr1<80;Local_vr1++)
+     230:	1a 82       	std	Y+2, r1	; 0x02
+     232:	03 c0       	rjmp	.+6      	; 0x23a <Send_Value+0x170>
+     234:	8a 81       	ldd	r24, Y+2	; 0x02
+     236:	8f 5f       	subi	r24, 0xFF	; 255
+     238:	8a 83       	std	Y+2, r24	; 0x02
+     23a:	8a 81       	ldd	r24, Y+2	; 0x02
+     23c:	80 35       	cpi	r24, 0x50	; 80
+     23e:	d0 f3       	brcs	.-12     	; 0x234 <Send_Value+0x16a>
+			//while(Local_vr ==0) Local_vr = UCSR0A & 0x20;
+			//UCSR0A |= 0x20;
+			//UDR0 = INEL_DATE[data_int];
+		}
+	}
+}
+     240:	26 96       	adiw	r28, 0x06	; 6
+     242:	0f b6       	in	r0, 0x3f	; 63
+     244:	f8 94       	cli
+     246:	de bf       	out	0x3e, r29	; 62
+     248:	0f be       	out	0x3f, r0	; 63
+     24a:	cd bf       	out	0x3d, r28	; 61
+     24c:	df 91       	pop	r29
+     24e:	cf 91       	pop	r28
+     250:	1f 91       	pop	r17
+     252:	0f 91       	pop	r16
+     254:	ff 90       	pop	r15
+     256:	ef 90       	pop	r14
+     258:	df 90       	pop	r13
+     25a:	cf 90       	pop	r12
+     25c:	08 95       	ret
+
+0000025e <Transmission_function>:
+
+
+//////////////////////////////////////////////////////////////////
+
+unsigned char Transmission_function(unsigned char CMD)
+{
+     25e:	cf 93       	push	r28
+     260:	df 93       	push	r29
+     262:	00 d0       	rcall	.+0      	; 0x264 <Transmission_function+0x6>
+     264:	cd b7       	in	r28, 0x3d	; 61
+     266:	de b7       	in	r29, 0x3e	; 62
+    volatile uint16_t LocalData=0;
+     268:	1a 82       	std	Y+2, r1	; 0x02
+     26a:	19 82       	std	Y+1, r1	; 0x01
+	uint8_t  *PointerSTR  ;
+	
+	//trec pe transmisie uC -> PC
+	/////////////////////*
+	
+	RS485_uC_Transmit;
+     26c:	9b b1       	in	r25, 0x0b	; 11
+     26e:	9f 7e       	andi	r25, 0xEF	; 239
+     270:	9b b9       	out	0x0b, r25	; 11
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+     272:	2f ef       	ldi	r18, 0xFF	; 255
+     274:	30 e7       	ldi	r19, 0x70	; 112
+     276:	92 e0       	ldi	r25, 0x02	; 2
+     278:	21 50       	subi	r18, 0x01	; 1
+     27a:	30 40       	sbci	r19, 0x00	; 0
+     27c:	90 40       	sbci	r25, 0x00	; 0
+     27e:	e1 f7       	brne	.-8      	; 0x278 <Transmission_function+0x1a>
+     280:	00 c0       	rjmp	.+0      	; 0x282 <Transmission_function+0x24>
+     282:	00 00       	nop
+	_delay_ms(50);//delay_ms(100);
+	//////////////////////
+
+	BuffRx_PC.Antet = Antet_Transmisie_uC_To_PC; //uC
+     284:	ef e1       	ldi	r30, 0x1F	; 31
+     286:	fd e0       	ldi	r31, 0x0D	; 13
+     288:	91 e2       	ldi	r25, 0x21	; 33
+     28a:	90 83       	st	Z, r25
+	BuffRx_PC.Adres_uC = Adr_uC; //uC
+     28c:	91 e7       	ldi	r25, 0x71	; 113
+     28e:	91 83       	std	Z+1, r25	; 0x01
+	BuffRx_PC.Cmd_PC = CMD; //uC  Stare_uC
+     290:	82 83       	std	Z+2, r24	; 0x02
+	//BuffRx_PC.Adr_Trad = Reg_Adr_Trad; //uC  Stare_uC
+
+	Index_Receptie_PC = 0;
+     292:	10 92 19 01 	sts	0x0119, r1	; 0x800119 <Index_Receptie_PC>
+
+
+		if(( CMD == CitesteVal_uC_x ) && (BuffRx_PC.Adr_Trad ==AXA_x))  //SelX   0A
+     296:	8a 30       	cpi	r24, 0x0A	; 10
+     298:	d9 f4       	brne	.+54     	; 0x2d0 <Transmission_function+0x72>
+     29a:	90 91 22 0d 	lds	r25, 0x0D22	; 0x800d22 <BuffRx_PC+0x3>
+     29e:	91 11       	cpse	r25, r1
+     2a0:	17 c0       	rjmp	.+46     	; 0x2d0 <Transmission_function+0x72>
+		{
+			LocalData = WirePosition.mm_X;
+     2a2:	a7 e2       	ldi	r26, 0x27	; 39
+     2a4:	bd e0       	ldi	r27, 0x0D	; 13
+     2a6:	16 96       	adiw	r26, 0x06	; 6
+     2a8:	2d 91       	ld	r18, X+
+     2aa:	3c 91       	ld	r19, X
+     2ac:	17 97       	sbiw	r26, 0x07	; 7
+     2ae:	3a 83       	std	Y+2, r19	; 0x02
+     2b0:	29 83       	std	Y+1, r18	; 0x01
+			BuffRx_PC.ValoareH = (LocalData & 0xff); //Temp LOW
+     2b2:	29 81       	ldd	r18, Y+1	; 0x01
+     2b4:	3a 81       	ldd	r19, Y+2	; 0x02
+     2b6:	24 83       	std	Z+4, r18	; 0x04
+			LocalData = LocalData >> 8;
+     2b8:	29 81       	ldd	r18, Y+1	; 0x01
+     2ba:	3a 81       	ldd	r19, Y+2	; 0x02
+     2bc:	23 2f       	mov	r18, r19
+     2be:	33 27       	eor	r19, r19
+     2c0:	3a 83       	std	Y+2, r19	; 0x02
+     2c2:	29 83       	std	Y+1, r18	; 0x01
+			BuffRx_PC.ValoareL = LocalData; //Temp High
+     2c4:	29 81       	ldd	r18, Y+1	; 0x01
+     2c6:	3a 81       	ldd	r19, Y+2	; 0x02
+     2c8:	25 83       	std	Z+5, r18	; 0x05
+			BuffRx_PC.OctetE = WirePosition.error_Xmm; //	
+     2ca:	18 96       	adiw	r26, 0x08	; 8
+     2cc:	9c 91       	ld	r25, X
+     2ce:	96 83       	std	Z+6, r25	; 0x06
+	  }
+		if(( CMD == CitesteVal_uC_y ) && (BuffRx_PC.Adr_Trad ==AXA_y))  //SelY  0A
+     2d0:	8a 30       	cpi	r24, 0x0A	; 10
+     2d2:	e9 f4       	brne	.+58     	; 0x30e <Transmission_function+0xb0>
+     2d4:	90 91 22 0d 	lds	r25, 0x0D22	; 0x800d22 <BuffRx_PC+0x3>
+     2d8:	91 30       	cpi	r25, 0x01	; 1
+     2da:	c9 f4       	brne	.+50     	; 0x30e <Transmission_function+0xb0>
+		{
+			LocalData = WirePosition.mm_Y;
+     2dc:	a7 e2       	ldi	r26, 0x27	; 39
+     2de:	bd e0       	ldi	r27, 0x0D	; 13
+     2e0:	19 96       	adiw	r26, 0x09	; 9
+     2e2:	2d 91       	ld	r18, X+
+     2e4:	3c 91       	ld	r19, X
+     2e6:	1a 97       	sbiw	r26, 0x0a	; 10
+     2e8:	3a 83       	std	Y+2, r19	; 0x02
+     2ea:	29 83       	std	Y+1, r18	; 0x01
+			BuffRx_PC.ValoareH = (LocalData & 0xff); //Temp LOW
+     2ec:	29 81       	ldd	r18, Y+1	; 0x01
+     2ee:	3a 81       	ldd	r19, Y+2	; 0x02
+     2f0:	ef e1       	ldi	r30, 0x1F	; 31
+     2f2:	fd e0       	ldi	r31, 0x0D	; 13
+     2f4:	24 83       	std	Z+4, r18	; 0x04
+			LocalData = LocalData >> 8;
+     2f6:	29 81       	ldd	r18, Y+1	; 0x01
+     2f8:	3a 81       	ldd	r19, Y+2	; 0x02
+     2fa:	23 2f       	mov	r18, r19
+     2fc:	33 27       	eor	r19, r19
+     2fe:	3a 83       	std	Y+2, r19	; 0x02
+     300:	29 83       	std	Y+1, r18	; 0x01
+			BuffRx_PC.ValoareL = LocalData; //Temp High
+     302:	29 81       	ldd	r18, Y+1	; 0x01
+     304:	3a 81       	ldd	r19, Y+2	; 0x02
+     306:	25 83       	std	Z+5, r18	; 0x05
+			BuffRx_PC.OctetE = WirePosition.error_Ymm; //
+     308:	1b 96       	adiw	r26, 0x0b	; 11
+     30a:	9c 91       	ld	r25, X
+     30c:	96 83       	std	Z+6, r25	; 0x06
+		}
+	////////////XXXXX comanda instant
+			if(( CMD == Citire_Instant_x ) && (BuffRx_PC.Adr_Trad ==AXA_x))  //SelX   0A
+     30e:	8b 30       	cpi	r24, 0x0B	; 11
+     310:	e9 f4       	brne	.+58     	; 0x34c <Transmission_function+0xee>
+     312:	90 91 22 0d 	lds	r25, 0x0D22	; 0x800d22 <BuffRx_PC+0x3>
+     316:	91 11       	cpse	r25, r1
+     318:	19 c0       	rjmp	.+50     	; 0x34c <Transmission_function+0xee>
+			{
+				LocalData = WirePosition.mm_X;
+     31a:	a7 e2       	ldi	r26, 0x27	; 39
+     31c:	bd e0       	ldi	r27, 0x0D	; 13
+     31e:	16 96       	adiw	r26, 0x06	; 6
+     320:	2d 91       	ld	r18, X+
+     322:	3c 91       	ld	r19, X
+     324:	17 97       	sbiw	r26, 0x07	; 7
+     326:	3a 83       	std	Y+2, r19	; 0x02
+     328:	29 83       	std	Y+1, r18	; 0x01
+				BuffRx_PC.ValoareH = (LocalData & 0xff); //Temp LOW
+     32a:	29 81       	ldd	r18, Y+1	; 0x01
+     32c:	3a 81       	ldd	r19, Y+2	; 0x02
+     32e:	ef e1       	ldi	r30, 0x1F	; 31
+     330:	fd e0       	ldi	r31, 0x0D	; 13
+     332:	24 83       	std	Z+4, r18	; 0x04
+				LocalData = LocalData >> 8;
+     334:	29 81       	ldd	r18, Y+1	; 0x01
+     336:	3a 81       	ldd	r19, Y+2	; 0x02
+     338:	23 2f       	mov	r18, r19
+     33a:	33 27       	eor	r19, r19
+     33c:	3a 83       	std	Y+2, r19	; 0x02
+     33e:	29 83       	std	Y+1, r18	; 0x01
+				BuffRx_PC.ValoareL = LocalData; //Temp High
+     340:	29 81       	ldd	r18, Y+1	; 0x01
+     342:	3a 81       	ldd	r19, Y+2	; 0x02
+     344:	25 83       	std	Z+5, r18	; 0x05
+				BuffRx_PC.OctetE = WirePosition.error_Xmm; //
+     346:	18 96       	adiw	r26, 0x08	; 8
+     348:	9c 91       	ld	r25, X
+     34a:	96 83       	std	Z+6, r25	; 0x06
+			}
+			if(( CMD == Citire_Instant_y ) && (BuffRx_PC.Adr_Trad ==AXA_y))  //SelY  0A
+     34c:	8b 30       	cpi	r24, 0x0B	; 11
+     34e:	e9 f4       	brne	.+58     	; 0x38a <Transmission_function+0x12c>
+     350:	90 91 22 0d 	lds	r25, 0x0D22	; 0x800d22 <BuffRx_PC+0x3>
+     354:	91 30       	cpi	r25, 0x01	; 1
+     356:	c9 f4       	brne	.+50     	; 0x38a <Transmission_function+0x12c>
+			{
+				LocalData = WirePosition.mm_Y;
+     358:	a7 e2       	ldi	r26, 0x27	; 39
+     35a:	bd e0       	ldi	r27, 0x0D	; 13
+     35c:	19 96       	adiw	r26, 0x09	; 9
+     35e:	2d 91       	ld	r18, X+
+     360:	3c 91       	ld	r19, X
+     362:	1a 97       	sbiw	r26, 0x0a	; 10
+     364:	3a 83       	std	Y+2, r19	; 0x02
+     366:	29 83       	std	Y+1, r18	; 0x01
+				BuffRx_PC.ValoareH = (LocalData & 0xff); //Temp LOW
+     368:	29 81       	ldd	r18, Y+1	; 0x01
+     36a:	3a 81       	ldd	r19, Y+2	; 0x02
+     36c:	ef e1       	ldi	r30, 0x1F	; 31
+     36e:	fd e0       	ldi	r31, 0x0D	; 13
+     370:	24 83       	std	Z+4, r18	; 0x04
+				LocalData = LocalData >> 8;
+     372:	29 81       	ldd	r18, Y+1	; 0x01
+     374:	3a 81       	ldd	r19, Y+2	; 0x02
+     376:	23 2f       	mov	r18, r19
+     378:	33 27       	eor	r19, r19
+     37a:	3a 83       	std	Y+2, r19	; 0x02
+     37c:	29 83       	std	Y+1, r18	; 0x01
+				BuffRx_PC.ValoareL = LocalData; //Temp High
+     37e:	29 81       	ldd	r18, Y+1	; 0x01
+     380:	3a 81       	ldd	r19, Y+2	; 0x02
+     382:	25 83       	std	Z+5, r18	; 0x05
+				BuffRx_PC.OctetE = WirePosition.error_Ymm; //
+     384:	1b 96       	adiw	r26, 0x0b	; 11
+     386:	9c 91       	ld	r25, X
+     388:	96 83       	std	Z+6, r25	; 0x06
+			} 
+	
+	///////////////////////////////////////	
+		if(( CMD == CitesteMasTrad_uC) && ( BuffRx_PC.Adr_Trad ==AXA_x ) )  //citire X
+     38a:	85 30       	cpi	r24, 0x05	; 5
+     38c:	e9 f4       	brne	.+58     	; 0x3c8 <Transmission_function+0x16a>
+     38e:	90 91 22 0d 	lds	r25, 0x0D22	; 0x800d22 <BuffRx_PC+0x3>
+     392:	91 11       	cpse	r25, r1
+     394:	19 c0       	rjmp	.+50     	; 0x3c8 <Transmission_function+0x16a>
+		{
+			LocalData = WirePosition.X_mm_mediu;
+     396:	a7 e2       	ldi	r26, 0x27	; 39
+     398:	bd e0       	ldi	r27, 0x0D	; 13
+     39a:	1c 96       	adiw	r26, 0x0c	; 12
+     39c:	2d 91       	ld	r18, X+
+     39e:	3c 91       	ld	r19, X
+     3a0:	1d 97       	sbiw	r26, 0x0d	; 13
+     3a2:	3a 83       	std	Y+2, r19	; 0x02
+     3a4:	29 83       	std	Y+1, r18	; 0x01
+			BuffRx_PC.ValoareH = (LocalData & 0xff); //Temp LOW
+     3a6:	29 81       	ldd	r18, Y+1	; 0x01
+     3a8:	3a 81       	ldd	r19, Y+2	; 0x02
+     3aa:	ef e1       	ldi	r30, 0x1F	; 31
+     3ac:	fd e0       	ldi	r31, 0x0D	; 13
+     3ae:	24 83       	std	Z+4, r18	; 0x04
+			LocalData = LocalData >> 8;
+     3b0:	29 81       	ldd	r18, Y+1	; 0x01
+     3b2:	3a 81       	ldd	r19, Y+2	; 0x02
+     3b4:	23 2f       	mov	r18, r19
+     3b6:	33 27       	eor	r19, r19
+     3b8:	3a 83       	std	Y+2, r19	; 0x02
+     3ba:	29 83       	std	Y+1, r18	; 0x01
+			BuffRx_PC.ValoareL = LocalData; //Temp High
+     3bc:	29 81       	ldd	r18, Y+1	; 0x01
+     3be:	3a 81       	ldd	r19, Y+2	; 0x02
+     3c0:	25 83       	std	Z+5, r18	; 0x05
+			BuffRx_PC.OctetE = WirePosition.errorXmediu; //
+     3c2:	1e 96       	adiw	r26, 0x0e	; 14
+     3c4:	9c 91       	ld	r25, X
+     3c6:	96 83       	std	Z+6, r25	; 0x06
+		}
+		if(( CMD == CitesteMasTrad_uC) && ( BuffRx_PC.Adr_Trad ==AXA_y ) )  //citire Y
+     3c8:	85 30       	cpi	r24, 0x05	; 5
+     3ca:	e9 f4       	brne	.+58     	; 0x406 <__LOCK_REGION_LENGTH__+0x6>
+     3cc:	90 91 22 0d 	lds	r25, 0x0D22	; 0x800d22 <BuffRx_PC+0x3>
+     3d0:	91 30       	cpi	r25, 0x01	; 1
+     3d2:	c9 f4       	brne	.+50     	; 0x406 <__LOCK_REGION_LENGTH__+0x6>
+		{
+			LocalData = WirePosition.Y_mm_mediu;
+     3d4:	a7 e2       	ldi	r26, 0x27	; 39
+     3d6:	bd e0       	ldi	r27, 0x0D	; 13
+     3d8:	1f 96       	adiw	r26, 0x0f	; 15
+     3da:	2d 91       	ld	r18, X+
+     3dc:	3c 91       	ld	r19, X
+     3de:	50 97       	sbiw	r26, 0x10	; 16
+     3e0:	3a 83       	std	Y+2, r19	; 0x02
+     3e2:	29 83       	std	Y+1, r18	; 0x01
+			BuffRx_PC.ValoareH = (LocalData & 0xff); //Temp LOW
+     3e4:	29 81       	ldd	r18, Y+1	; 0x01
+     3e6:	3a 81       	ldd	r19, Y+2	; 0x02
+     3e8:	ef e1       	ldi	r30, 0x1F	; 31
+     3ea:	fd e0       	ldi	r31, 0x0D	; 13
+     3ec:	24 83       	std	Z+4, r18	; 0x04
+			LocalData = LocalData >> 8;
+     3ee:	29 81       	ldd	r18, Y+1	; 0x01
+     3f0:	3a 81       	ldd	r19, Y+2	; 0x02
+     3f2:	23 2f       	mov	r18, r19
+     3f4:	33 27       	eor	r19, r19
+     3f6:	3a 83       	std	Y+2, r19	; 0x02
+     3f8:	29 83       	std	Y+1, r18	; 0x01
+			BuffRx_PC.ValoareL = LocalData; //Temp High
+     3fa:	29 81       	ldd	r18, Y+1	; 0x01
+     3fc:	3a 81       	ldd	r19, Y+2	; 0x02
+     3fe:	25 83       	std	Z+5, r18	; 0x05
+			BuffRx_PC.OctetE = WirePosition.errorYmediu; //
+     400:	51 96       	adiw	r26, 0x11	; 17
+     402:	9c 91       	ld	r25, X
+     404:	96 83       	std	Z+6, r25	; 0x06
+	if( CMD == RESET_uC)
+	{
+		//Actiune = Actiune | Start_masura;  //urmeaza peste 16ms masuratoarea
+	}
+   
+    LocalData = ((BuffRx_PC.Antet + BuffRx_PC.Adres_uC + BuffRx_PC.Cmd_PC + BuffRx_PC.Adr_Trad + BuffRx_PC.ValoareH + BuffRx_PC.ValoareL + BuffRx_PC.OctetE) & 0xFF);
+     406:	90 e0       	ldi	r25, 0x00	; 0
+     408:	8e 56       	subi	r24, 0x6E	; 110
+     40a:	9f 4f       	sbci	r25, 0xFF	; 255
+     40c:	ef e1       	ldi	r30, 0x1F	; 31
+     40e:	fd e0       	ldi	r31, 0x0D	; 13
+     410:	23 81       	ldd	r18, Z+3	; 0x03
+     412:	82 0f       	add	r24, r18
+     414:	91 1d       	adc	r25, r1
+     416:	24 81       	ldd	r18, Z+4	; 0x04
+     418:	82 0f       	add	r24, r18
+     41a:	91 1d       	adc	r25, r1
+     41c:	25 81       	ldd	r18, Z+5	; 0x05
+     41e:	82 0f       	add	r24, r18
+     420:	91 1d       	adc	r25, r1
+     422:	26 81       	ldd	r18, Z+6	; 0x06
+     424:	82 0f       	add	r24, r18
+     426:	91 1d       	adc	r25, r1
+     428:	99 27       	eor	r25, r25
+     42a:	9a 83       	std	Y+2, r25	; 0x02
+     42c:	89 83       	std	Y+1, r24	; 0x01
+	BuffRx_PC.Reg_SC = (~LocalData) +1;
+     42e:	89 81       	ldd	r24, Y+1	; 0x01
+     430:	9a 81       	ldd	r25, Y+2	; 0x02
+     432:	81 95       	neg	r24
+     434:	87 83       	std	Z+7, r24	; 0x07
+	
+	//transmisie_PC efectiv
+	ON_LED1;
+     436:	85 b1       	in	r24, 0x05	; 5
+     438:	8e 7f       	andi	r24, 0xFE	; 254
+     43a:	85 b9       	out	0x05, r24	; 5
+	PointerSTR =  &BuffRx_PC.Antet; 
+	for ( Index_Receptie_PC = 0; Index_Receptie_PC < 8; Index_Receptie_PC ++)
+     43c:	10 92 19 01 	sts	0x0119, r1	; 0x800119 <Index_Receptie_PC>
+     440:	1e c0       	rjmp	.+60     	; 0x47e <__LOCK_REGION_LENGTH__+0x7e>
+	{  
+					LocalData = UCSR1A &  0x20;
+     442:	80 91 c8 00 	lds	r24, 0x00C8	; 0x8000c8 <__TEXT_REGION_LENGTH__+0x7e00c8>
+     446:	80 72       	andi	r24, 0x20	; 32
+     448:	90 e0       	ldi	r25, 0x00	; 0
+     44a:	9a 83       	std	Y+2, r25	; 0x02
+     44c:	89 83       	std	Y+1, r24	; 0x01
+					while(LocalData ==0) LocalData = UCSR1A & 0x20;
+     44e:	06 c0       	rjmp	.+12     	; 0x45c <__LOCK_REGION_LENGTH__+0x5c>
+     450:	80 91 c8 00 	lds	r24, 0x00C8	; 0x8000c8 <__TEXT_REGION_LENGTH__+0x7e00c8>
+     454:	80 72       	andi	r24, 0x20	; 32
+     456:	90 e0       	ldi	r25, 0x00	; 0
+     458:	9a 83       	std	Y+2, r25	; 0x02
+     45a:	89 83       	std	Y+1, r24	; 0x01
+     45c:	89 81       	ldd	r24, Y+1	; 0x01
+     45e:	9a 81       	ldd	r25, Y+2	; 0x02
+     460:	89 2b       	or	r24, r25
+     462:	b1 f3       	breq	.-20     	; 0x450 <__LOCK_REGION_LENGTH__+0x50>
+					UCSR1A |= 0x20;
+     464:	a8 ec       	ldi	r26, 0xC8	; 200
+     466:	b0 e0       	ldi	r27, 0x00	; 0
+     468:	8c 91       	ld	r24, X
+     46a:	80 62       	ori	r24, 0x20	; 32
+     46c:	8c 93       	st	X, r24
+		UDR1 = *PointerSTR ;
+     46e:	81 91       	ld	r24, Z+
+     470:	80 93 ce 00 	sts	0x00CE, r24	; 0x8000ce <__TEXT_REGION_LENGTH__+0x7e00ce>
+	BuffRx_PC.Reg_SC = (~LocalData) +1;
+	
+	//transmisie_PC efectiv
+	ON_LED1;
+	PointerSTR =  &BuffRx_PC.Antet; 
+	for ( Index_Receptie_PC = 0; Index_Receptie_PC < 8; Index_Receptie_PC ++)
+     474:	80 91 19 01 	lds	r24, 0x0119	; 0x800119 <Index_Receptie_PC>
+     478:	8f 5f       	subi	r24, 0xFF	; 255
+     47a:	80 93 19 01 	sts	0x0119, r24	; 0x800119 <Index_Receptie_PC>
+     47e:	80 91 19 01 	lds	r24, 0x0119	; 0x800119 <Index_Receptie_PC>
+     482:	88 30       	cpi	r24, 0x08	; 8
+     484:	f0 f2       	brcs	.-68     	; 0x442 <__LOCK_REGION_LENGTH__+0x42>
+					while(LocalData ==0) LocalData = UCSR1A & 0x20;
+					UCSR1A |= 0x20;
+		UDR1 = *PointerSTR ;
+		PointerSTR++;
+	}
+						LocalData = UCSR1A &  (1<< TXC1);
+     486:	80 91 c8 00 	lds	r24, 0x00C8	; 0x8000c8 <__TEXT_REGION_LENGTH__+0x7e00c8>
+     48a:	80 74       	andi	r24, 0x40	; 64
+     48c:	90 e0       	ldi	r25, 0x00	; 0
+     48e:	9a 83       	std	Y+2, r25	; 0x02
+     490:	89 83       	std	Y+1, r24	; 0x01
+						while(LocalData ==0) LocalData = UCSR1A &  (1<< TXC1);
+     492:	06 c0       	rjmp	.+12     	; 0x4a0 <__LOCK_REGION_LENGTH__+0xa0>
+     494:	80 91 c8 00 	lds	r24, 0x00C8	; 0x8000c8 <__TEXT_REGION_LENGTH__+0x7e00c8>
+     498:	80 74       	andi	r24, 0x40	; 64
+     49a:	90 e0       	ldi	r25, 0x00	; 0
+     49c:	9a 83       	std	Y+2, r25	; 0x02
+     49e:	89 83       	std	Y+1, r24	; 0x01
+     4a0:	89 81       	ldd	r24, Y+1	; 0x01
+     4a2:	9a 81       	ldd	r25, Y+2	; 0x02
+     4a4:	89 2b       	or	r24, r25
+     4a6:	b1 f3       	breq	.-20     	; 0x494 <__LOCK_REGION_LENGTH__+0x94>
+						UCSR1A |= 0x20;
+     4a8:	e8 ec       	ldi	r30, 0xC8	; 200
+     4aa:	f0 e0       	ldi	r31, 0x00	; 0
+     4ac:	80 81       	ld	r24, Z
+     4ae:	80 62       	ori	r24, 0x20	; 32
+     4b0:	80 83       	st	Z, r24
+	
+	Index_Receptie_PC = 0;
+     4b2:	10 92 19 01 	sts	0x0119, r1	; 0x800119 <Index_Receptie_PC>
+     4b6:	8f e3       	ldi	r24, 0x3F	; 63
+     4b8:	9c e9       	ldi	r25, 0x9C	; 156
+     4ba:	01 97       	sbiw	r24, 0x01	; 1
+     4bc:	f1 f7       	brne	.-4      	; 0x4ba <__LOCK_REGION_LENGTH__+0xba>
+     4be:	00 c0       	rjmp	.+0      	; 0x4c0 <__LOCK_REGION_LENGTH__+0xc0>
+     4c0:	00 00       	nop
+	_delay_ms(10);//obtional
+	RS485_uC_Receptie;
+     4c2:	8b b1       	in	r24, 0x0b	; 11
+     4c4:	80 61       	ori	r24, 0x10	; 16
+     4c6:	8b b9       	out	0x0b, r24	; 11
+    OFF_LED1;
+     4c8:	85 b1       	in	r24, 0x05	; 5
+     4ca:	81 60       	ori	r24, 0x01	; 1
+     4cc:	85 b9       	out	0x05, r24	; 5
+	return 0;
+}
+     4ce:	80 e0       	ldi	r24, 0x00	; 0
+     4d0:	0f 90       	pop	r0
+     4d2:	0f 90       	pop	r0
+     4d4:	df 91       	pop	r29
+     4d6:	cf 91       	pop	r28
+     4d8:	08 95       	ret
+
+000004da <VerificPachete_Intirziate>:
+//////////////////////////////////////////////////////////////////
+
+ void VerificPachete_Intirziate(void){
+	uint16_t static Contor_local = 0 ;   //se incrementeaza la 4ms
+	 
+            if (Index_Receptie_PC_OLD != Index_Receptie_PC)
+     4da:	90 91 18 01 	lds	r25, 0x0118	; 0x800118 <Index_Receptie_PC_OLD>
+     4de:	80 91 19 01 	lds	r24, 0x0119	; 0x800119 <Index_Receptie_PC>
+     4e2:	98 17       	cp	r25, r24
+     4e4:	39 f0       	breq	.+14     	; 0x4f4 <VerificPachete_Intirziate+0x1a>
+            {
+	            Index_Receptie_PC_OLD = Index_Receptie_PC;
+     4e6:	80 93 18 01 	sts	0x0118, r24	; 0x800118 <Index_Receptie_PC_OLD>
+	            Contor_local = 0;
+     4ea:	10 92 17 01 	sts	0x0117, r1	; 0x800117 <Contor_local.2030+0x1>
+     4ee:	10 92 16 01 	sts	0x0116, r1	; 0x800116 <Contor_local.2030>
+     4f2:	08 95       	ret
+            }
+            //if ((Index_Receptie_PC_OLD == Index_Receptie_PC))
+            else
+			{
+						Contor_local ++;
+     4f4:	80 91 16 01 	lds	r24, 0x0116	; 0x800116 <Contor_local.2030>
+     4f8:	90 91 17 01 	lds	r25, 0x0117	; 0x800117 <Contor_local.2030+0x1>
+     4fc:	01 96       	adiw	r24, 0x01	; 1
+     4fe:	90 93 17 01 	sts	0x0117, r25	; 0x800117 <Contor_local.2030+0x1>
+     502:	80 93 16 01 	sts	0x0116, r24	; 0x800116 <Contor_local.2030>
+						if (Contor_local >= 10) //40ms x 20  163ms 325ms  //9  DACA SUNT INTRERUPERI IN RECEPTIE  (cond 2 == -> >=)
+     506:	0a 97       	sbiw	r24, 0x0a	; 10
+     508:	60 f0       	brcs	.+24     	; 0x522 <VerificPachete_Intirziate+0x48>
+						{
+							Index_Receptie_PC =0;
+     50a:	10 92 19 01 	sts	0x0119, r1	; 0x800119 <Index_Receptie_PC>
+							Index_Receptie_PC_OLD =0;
+     50e:	10 92 18 01 	sts	0x0118, r1	; 0x800118 <Index_Receptie_PC_OLD>
+							Contor_local = 0;
+     512:	10 92 17 01 	sts	0x0117, r1	; 0x800117 <Contor_local.2030+0x1>
+     516:	10 92 16 01 	sts	0x0116, r1	; 0x800116 <Contor_local.2030>
+							RS485_uC_Receptie; // am completat in 2020 //obs la oasa se bloca la datele de la alt uC  (cond 2)
+     51a:	8b b1       	in	r24, 0x0b	; 11
+     51c:	80 61       	ori	r24, 0x10	; 16
+     51e:	8b b9       	out	0x0b, r24	; 11
+							wdt_reset();
+     520:	a8 95       	wdr
+     522:	08 95       	ret
+
+00000524 <Semnalizare_Pornire>:
+
+// delay la start bling led de 4 ori marcheaza pornirea aplicatiei
+void Semnalizare_Pornire(void)
+{ uint8_t Repet_blink=0;
+	//
+	for(Repet_blink=0;Repet_blink < 4; Repet_blink++)
+     524:	90 e0       	ldi	r25, 0x00	; 0
+     526:	1b c0       	rjmp	.+54     	; 0x55e <Semnalizare_Pornire+0x3a>
+	{    wdt_reset();
+     528:	a8 95       	wdr
+     52a:	2f ef       	ldi	r18, 0xFF	; 255
+     52c:	35 ea       	ldi	r19, 0xA5	; 165
+     52e:	8e e0       	ldi	r24, 0x0E	; 14
+     530:	21 50       	subi	r18, 0x01	; 1
+     532:	30 40       	sbci	r19, 0x00	; 0
+     534:	80 40       	sbci	r24, 0x00	; 0
+     536:	e1 f7       	brne	.-8      	; 0x530 <Semnalizare_Pornire+0xc>
+     538:	00 c0       	rjmp	.+0      	; 0x53a <Semnalizare_Pornire+0x16>
+     53a:	00 00       	nop
+		_delay_ms(300);//delay_ms(500);
+		ON_LED1;
+     53c:	85 b1       	in	r24, 0x05	; 5
+     53e:	8e 7f       	andi	r24, 0xFE	; 254
+     540:	85 b9       	out	0x05, r24	; 5
+		 wdt_reset();
+     542:	a8 95       	wdr
+     544:	2f ef       	ldi	r18, 0xFF	; 255
+     546:	35 ea       	ldi	r19, 0xA5	; 165
+     548:	8e e0       	ldi	r24, 0x0E	; 14
+     54a:	21 50       	subi	r18, 0x01	; 1
+     54c:	30 40       	sbci	r19, 0x00	; 0
+     54e:	80 40       	sbci	r24, 0x00	; 0
+     550:	e1 f7       	brne	.-8      	; 0x54a <Semnalizare_Pornire+0x26>
+     552:	00 c0       	rjmp	.+0      	; 0x554 <Semnalizare_Pornire+0x30>
+     554:	00 00       	nop
+		_delay_ms(300);//delay_ms(500);
+		OFF_LED1;	
+     556:	85 b1       	in	r24, 0x05	; 5
+     558:	81 60       	ori	r24, 0x01	; 1
+     55a:	85 b9       	out	0x05, r24	; 5
+
+// delay la start bling led de 4 ori marcheaza pornirea aplicatiei
+void Semnalizare_Pornire(void)
+{ uint8_t Repet_blink=0;
+	//
+	for(Repet_blink=0;Repet_blink < 4; Repet_blink++)
+     55c:	9f 5f       	subi	r25, 0xFF	; 255
+     55e:	94 30       	cpi	r25, 0x04	; 4
+     560:	18 f3       	brcs	.-58     	; 0x528 <Semnalizare_Pornire+0x4>
+		ON_LED1;
+		 wdt_reset();
+		_delay_ms(300);//delay_ms(500);
+		OFF_LED1;	
+	}
+}
+     562:	08 95       	ret
+
+00000564 <SalvezDate>:
+//////////////////////////////////////////
+
+void SalvezDate( uint8_t AXA){
+	volatile static uint8_t ContorX=0, ContorY=0;
+	
+	switch (AXA)
+     564:	88 37       	cpi	r24, 0x78	; 120
+     566:	19 f0       	breq	.+6      	; 0x56e <SalvezDate+0xa>
+     568:	89 37       	cpi	r24, 0x79	; 121
+     56a:	21 f1       	breq	.+72     	; 0x5b4 <SalvezDate+0x50>
+     56c:	08 95       	ret
+	{
+		case 'x':
+				//if (WirePosition.error_Xmm ==0)
+				//{
+					FirX.PozitiePixel[ContorX] = WirePosition.mm_X;
+     56e:	e0 91 15 01 	lds	r30, 0x0115	; 0x800115 <ContorX.2041>
+     572:	f0 e0       	ldi	r31, 0x00	; 0
+     574:	a7 e2       	ldi	r26, 0x27	; 39
+     576:	bd e0       	ldi	r27, 0x0D	; 13
+     578:	16 96       	adiw	r26, 0x06	; 6
+     57a:	8d 91       	ld	r24, X+
+     57c:	9c 91       	ld	r25, X
+     57e:	17 97       	sbiw	r26, 0x07	; 7
+     580:	ee 0f       	add	r30, r30
+     582:	ff 1f       	adc	r31, r31
+     584:	e7 56       	subi	r30, 0x67	; 103
+     586:	f2 4f       	sbci	r31, 0xF2	; 242
+     588:	91 83       	std	Z+1, r25	; 0x01
+     58a:	80 83       	st	Z, r24
+					FirX.PozitieError[ContorX] = WirePosition.error_Xmm;
+     58c:	e0 91 15 01 	lds	r30, 0x0115	; 0x800115 <ContorX.2041>
+     590:	f0 e0       	ldi	r31, 0x00	; 0
+     592:	18 96       	adiw	r26, 0x08	; 8
+     594:	8c 91       	ld	r24, X
+     596:	e7 52       	subi	r30, 0x27	; 39
+     598:	f2 4f       	sbci	r31, 0xF2	; 242
+     59a:	80 83       	st	Z, r24
+					ContorX++;
+     59c:	80 91 15 01 	lds	r24, 0x0115	; 0x800115 <ContorX.2041>
+     5a0:	8f 5f       	subi	r24, 0xFF	; 255
+     5a2:	80 93 15 01 	sts	0x0115, r24	; 0x800115 <ContorX.2041>
+					if (ContorX >= SaveDataLenght) ContorX =0;
+     5a6:	80 91 15 01 	lds	r24, 0x0115	; 0x800115 <ContorX.2041>
+     5aa:	80 32       	cpi	r24, 0x20	; 32
+     5ac:	28 f1       	brcs	.+74     	; 0x5f8 <SalvezDate+0x94>
+     5ae:	10 92 15 01 	sts	0x0115, r1	; 0x800115 <ContorX.2041>
+     5b2:	08 95       	ret
+		break;
+		
+		case 'y':
+				//if (WirePosition.error_Ymm ==0)
+				//{
+					FirY.PozitiePixel[ContorY] = WirePosition.mm_Y;
+     5b4:	e0 91 14 01 	lds	r30, 0x0114	; 0x800114 <__data_end>
+     5b8:	f0 e0       	ldi	r31, 0x00	; 0
+     5ba:	a7 e2       	ldi	r26, 0x27	; 39
+     5bc:	bd e0       	ldi	r27, 0x0D	; 13
+     5be:	19 96       	adiw	r26, 0x09	; 9
+     5c0:	8d 91       	ld	r24, X+
+     5c2:	9c 91       	ld	r25, X
+     5c4:	1a 97       	sbiw	r26, 0x0a	; 10
+     5c6:	ee 0f       	add	r30, r30
+     5c8:	ff 1f       	adc	r31, r31
+     5ca:	e7 5c       	subi	r30, 0xC7	; 199
+     5cc:	f2 4f       	sbci	r31, 0xF2	; 242
+     5ce:	91 83       	std	Z+1, r25	; 0x01
+     5d0:	80 83       	st	Z, r24
+					FirY.PozitieError[ContorY] = WirePosition.error_Ymm;
+     5d2:	e0 91 14 01 	lds	r30, 0x0114	; 0x800114 <__data_end>
+     5d6:	f0 e0       	ldi	r31, 0x00	; 0
+     5d8:	1b 96       	adiw	r26, 0x0b	; 11
+     5da:	8c 91       	ld	r24, X
+     5dc:	e7 58       	subi	r30, 0x87	; 135
+     5de:	f2 4f       	sbci	r31, 0xF2	; 242
+     5e0:	80 83       	st	Z, r24
+					ContorY++;
+     5e2:	80 91 14 01 	lds	r24, 0x0114	; 0x800114 <__data_end>
+     5e6:	8f 5f       	subi	r24, 0xFF	; 255
+     5e8:	80 93 14 01 	sts	0x0114, r24	; 0x800114 <__data_end>
+					if (ContorY >= SaveDataLenght) ContorY =0;
+     5ec:	80 91 14 01 	lds	r24, 0x0114	; 0x800114 <__data_end>
+     5f0:	80 32       	cpi	r24, 0x20	; 32
+     5f2:	10 f0       	brcs	.+4      	; 0x5f8 <SalvezDate+0x94>
+     5f4:	10 92 14 01 	sts	0x0114, r1	; 0x800114 <__data_end>
+     5f8:	08 95       	ret
+
+000005fa <MedieDate>:
+				//}
+		break;
+	}
+}
+//////  CALCULEZ MEDIA ULTIMELOR 32 DE DATE //ELIMIN DATELE ERONATE
+	uint8_t MedieDate( uint8_t AXA){
+     5fa:	1f 93       	push	r17
+     5fc:	cf 93       	push	r28
+     5fe:	df 93       	push	r29
+     600:	cd b7       	in	r28, 0x3d	; 61
+     602:	de b7       	in	r29, 0x3e	; 62
+     604:	27 97       	sbiw	r28, 0x07	; 7
+     606:	0f b6       	in	r0, 0x3f	; 63
+     608:	f8 94       	cli
+     60a:	de bf       	out	0x3e, r29	; 62
+     60c:	0f be       	out	0x3f, r0	; 63
+     60e:	cd bf       	out	0x3d, r28	; 61
+     610:	18 2f       	mov	r17, r24
+		
+		volatile uint8_t index_date=0,ErrorCount=0,DataCount=0;
+     612:	19 82       	std	Y+1, r1	; 0x01
+     614:	1a 82       	std	Y+2, r1	; 0x02
+     616:	1b 82       	std	Y+3, r1	; 0x03
+		volatile uint32_t LocalDataMedie=0;
+     618:	1c 82       	std	Y+4, r1	; 0x04
+     61a:	1d 82       	std	Y+5, r1	; 0x05
+     61c:	1e 82       	std	Y+6, r1	; 0x06
+     61e:	1f 82       	std	Y+7, r1	; 0x07
+			 //FirX.PozitiePixel[index_date] = 8000;
+			 //FirX.PozitieError[index_date] =0;
+			 ////if ((index_date> 10) && (index_date<22)) FirX.PozitieError[index_date] =2;
+		 //}			 
+		 // incar tebelul cu masuratori in pointer
+		switch(AXA){
+     620:	89 37       	cpi	r24, 0x79	; 121
+     622:	29 f0       	breq	.+10     	; 0x62e <MedieDate+0x34>
+			case 'x':
+				PointData = (uint16_t) &FirX.PozitiePixel[0];
+				PointError =(uint16_t) &FirX.PozitieError[0];
+     624:	29 ed       	ldi	r18, 0xD9	; 217
+     626:	3d e0       	ldi	r19, 0x0D	; 13
+			 ////if ((index_date> 10) && (index_date<22)) FirX.PozitieError[index_date] =2;
+		 //}			 
+		 // incar tebelul cu masuratori in pointer
+		switch(AXA){
+			case 'x':
+				PointData = (uint16_t) &FirX.PozitiePixel[0];
+     628:	49 e9       	ldi	r20, 0x99	; 153
+     62a:	5d e0       	ldi	r21, 0x0D	; 13
+     62c:	04 c0       	rjmp	.+8      	; 0x636 <MedieDate+0x3c>
+				PointError =(uint16_t) &FirX.PozitieError[0];
+			break;
+			case 'y':
+				PointData =(uint16_t)&FirY.PozitiePixel[0];
+				PointError =(uint16_t) &FirY.PozitieError[0];			
+     62e:	29 e7       	ldi	r18, 0x79	; 121
+     630:	3d e0       	ldi	r19, 0x0D	; 13
+			case 'x':
+				PointData = (uint16_t) &FirX.PozitiePixel[0];
+				PointError =(uint16_t) &FirX.PozitieError[0];
+			break;
+			case 'y':
+				PointData =(uint16_t)&FirY.PozitiePixel[0];
+     632:	49 e3       	ldi	r20, 0x39	; 57
+     634:	5d e0       	ldi	r21, 0x0D	; 13
+			default:
+							PointData = (uint16_t)&FirX.PozitiePixel[0];
+							PointError = (uint16_t)&FirX.PozitieError[0];
+		}
+ // calculez media datelor cu eroare zero		 
+		 LocalDataMedie = 0;
+     636:	1c 82       	std	Y+4, r1	; 0x04
+     638:	1d 82       	std	Y+5, r1	; 0x05
+     63a:	1e 82       	std	Y+6, r1	; 0x06
+     63c:	1f 82       	std	Y+7, r1	; 0x07
+		 for ( index_date=0; index_date < (SaveDataLenght);index_date++)
+     63e:	19 82       	std	Y+1, r1	; 0x01
+     640:	21 c0       	rjmp	.+66     	; 0x684 <MedieDate+0x8a>
+		 {			 
+			 if ((*(PointError+index_date)) == 0)
+     642:	89 81       	ldd	r24, Y+1	; 0x01
+     644:	f9 01       	movw	r30, r18
+     646:	e8 0f       	add	r30, r24
+     648:	f1 1d       	adc	r31, r1
+     64a:	80 81       	ld	r24, Z
+     64c:	81 11       	cpse	r24, r1
+     64e:	17 c0       	rjmp	.+46     	; 0x67e <MedieDate+0x84>
+			 {	 LocalDataMedie+= *(PointData+index_date);
+     650:	e9 81       	ldd	r30, Y+1	; 0x01
+     652:	f0 e0       	ldi	r31, 0x00	; 0
+     654:	ee 0f       	add	r30, r30
+     656:	ff 1f       	adc	r31, r31
+     658:	e4 0f       	add	r30, r20
+     65a:	f5 1f       	adc	r31, r21
+     65c:	60 81       	ld	r22, Z
+     65e:	71 81       	ldd	r23, Z+1	; 0x01
+     660:	8c 81       	ldd	r24, Y+4	; 0x04
+     662:	9d 81       	ldd	r25, Y+5	; 0x05
+     664:	ae 81       	ldd	r26, Y+6	; 0x06
+     666:	bf 81       	ldd	r27, Y+7	; 0x07
+     668:	86 0f       	add	r24, r22
+     66a:	97 1f       	adc	r25, r23
+     66c:	a1 1d       	adc	r26, r1
+     66e:	b1 1d       	adc	r27, r1
+     670:	8c 83       	std	Y+4, r24	; 0x04
+     672:	9d 83       	std	Y+5, r25	; 0x05
+     674:	ae 83       	std	Y+6, r26	; 0x06
+     676:	bf 83       	std	Y+7, r27	; 0x07
+				 DataCount++;				 
+     678:	8b 81       	ldd	r24, Y+3	; 0x03
+     67a:	8f 5f       	subi	r24, 0xFF	; 255
+     67c:	8b 83       	std	Y+3, r24	; 0x03
+							PointData = (uint16_t)&FirX.PozitiePixel[0];
+							PointError = (uint16_t)&FirX.PozitieError[0];
+		}
+ // calculez media datelor cu eroare zero		 
+		 LocalDataMedie = 0;
+		 for ( index_date=0; index_date < (SaveDataLenght);index_date++)
+     67e:	89 81       	ldd	r24, Y+1	; 0x01
+     680:	8f 5f       	subi	r24, 0xFF	; 255
+     682:	89 83       	std	Y+1, r24	; 0x01
+     684:	89 81       	ldd	r24, Y+1	; 0x01
+     686:	80 32       	cpi	r24, 0x20	; 32
+     688:	e0 f2       	brcs	.-72     	; 0x642 <MedieDate+0x48>
+			 }		 
+			  //PointError++;
+			  //PointData++;
+		 }		 
+//verific cite date au fost cu eroare 0;		 
+		 if (DataCount >= (SaveDataLenght-4))
+     68a:	8b 81       	ldd	r24, Y+3	; 0x03
+     68c:	8c 31       	cpi	r24, 0x1C	; 28
+     68e:	10 f1       	brcs	.+68     	; 0x6d4 <MedieDate+0xda>
+		 {
+				if (AXA == 'x') {
+     690:	18 37       	cpi	r17, 0x78	; 120
+     692:	71 f4       	brne	.+28     	; 0x6b0 <MedieDate+0xb6>
+					WirePosition.X_mm_mediu = LocalDataMedie/DataCount;   // media valorilor
+     694:	6c 81       	ldd	r22, Y+4	; 0x04
+     696:	7d 81       	ldd	r23, Y+5	; 0x05
+     698:	8e 81       	ldd	r24, Y+6	; 0x06
+     69a:	9f 81       	ldd	r25, Y+7	; 0x07
+     69c:	2b 81       	ldd	r18, Y+3	; 0x03
+     69e:	30 e0       	ldi	r19, 0x00	; 0
+     6a0:	40 e0       	ldi	r20, 0x00	; 0
+     6a2:	50 e0       	ldi	r21, 0x00	; 0
+     6a4:	45 d7       	rcall	.+3722   	; 0x1530 <__udivmodsi4>
+     6a6:	e7 e2       	ldi	r30, 0x27	; 39
+     6a8:	fd e0       	ldi	r31, 0x0D	; 13
+     6aa:	35 87       	std	Z+13, r19	; 0x0d
+     6ac:	24 87       	std	Z+12, r18	; 0x0c
+					WirePosition.errorXmediu = 0;                         // media valorilor
+     6ae:	16 86       	std	Z+14, r1	; 0x0e
+					}
+				if (AXA == 'y') {
+     6b0:	19 37       	cpi	r17, 0x79	; 121
+     6b2:	c9 f5       	brne	.+114    	; 0x726 <MedieDate+0x12c>
+					WirePosition.Y_mm_mediu = LocalDataMedie/DataCount;
+     6b4:	6c 81       	ldd	r22, Y+4	; 0x04
+     6b6:	7d 81       	ldd	r23, Y+5	; 0x05
+     6b8:	8e 81       	ldd	r24, Y+6	; 0x06
+     6ba:	9f 81       	ldd	r25, Y+7	; 0x07
+     6bc:	2b 81       	ldd	r18, Y+3	; 0x03
+     6be:	30 e0       	ldi	r19, 0x00	; 0
+     6c0:	40 e0       	ldi	r20, 0x00	; 0
+     6c2:	50 e0       	ldi	r21, 0x00	; 0
+     6c4:	35 d7       	rcall	.+3690   	; 0x1530 <__udivmodsi4>
+     6c6:	e7 e2       	ldi	r30, 0x27	; 39
+     6c8:	fd e0       	ldi	r31, 0x0D	; 13
+     6ca:	30 8b       	std	Z+16, r19	; 0x10
+     6cc:	27 87       	std	Z+15, r18	; 0x0f
+					WirePosition.errorYmediu = 0;
+     6ce:	11 8a       	std	Z+17, r1	; 0x11
+				}
+			return OK;				
+     6d0:	81 e0       	ldi	r24, 0x01	; 1
+     6d2:	2c c0       	rjmp	.+88     	; 0x72c <MedieDate+0x132>
+		 }
+		else
+		{
+				if (AXA == 'x')
+     6d4:	18 37       	cpi	r17, 0x78	; 120
+     6d6:	89 f4       	brne	.+34     	; 0x6fa <MedieDate+0x100>
+				{
+					WirePosition.X_mm_mediu = WirePosition.mm_X;  //ultima valoare
+     6d8:	e7 e2       	ldi	r30, 0x27	; 39
+     6da:	fd e0       	ldi	r31, 0x0D	; 13
+     6dc:	86 81       	ldd	r24, Z+6	; 0x06
+     6de:	97 81       	ldd	r25, Z+7	; 0x07
+     6e0:	95 87       	std	Z+13, r25	; 0x0d
+     6e2:	84 87       	std	Z+12, r24	; 0x0c
+						if (DataCount >= (SaveDataLenght/2))    WirePosition.errorXmediu = MasuratoareIstabila;  //daca sunt peste 16 instabil 
+     6e4:	8b 81       	ldd	r24, Y+3	; 0x03
+     6e6:	80 31       	cpi	r24, 0x10	; 16
+     6e8:	20 f0       	brcs	.+8      	; 0x6f2 <MedieDate+0xf8>
+     6ea:	83 e0       	ldi	r24, 0x03	; 3
+     6ec:	80 93 35 0d 	sts	0x0D35, r24	; 0x800d35 <WirePosition+0xe>
+     6f0:	04 c0       	rjmp	.+8      	; 0x6fa <MedieDate+0x100>
+						else WirePosition.errorXmediu = WirePosition.error_Xmm;  //daca sub 16 copiez eroarea
+     6f2:	e7 e2       	ldi	r30, 0x27	; 39
+     6f4:	fd e0       	ldi	r31, 0x0D	; 13
+     6f6:	80 85       	ldd	r24, Z+8	; 0x08
+     6f8:	86 87       	std	Z+14, r24	; 0x0e
+				}
+				if (AXA == 'y')
+     6fa:	19 37       	cpi	r17, 0x79	; 121
+     6fc:	b1 f4       	brne	.+44     	; 0x72a <MedieDate+0x130>
+				{
+					WirePosition.Y_mm_mediu = WirePosition.mm_Y;  //ultima valoare
+     6fe:	e7 e2       	ldi	r30, 0x27	; 39
+     700:	fd e0       	ldi	r31, 0x0D	; 13
+     702:	81 85       	ldd	r24, Z+9	; 0x09
+     704:	92 85       	ldd	r25, Z+10	; 0x0a
+     706:	90 8b       	std	Z+16, r25	; 0x10
+     708:	87 87       	std	Z+15, r24	; 0x0f
+						if (DataCount >= (SaveDataLenght/2)) WirePosition.errorYmediu = MasuratoareIstabila;
+     70a:	8b 81       	ldd	r24, Y+3	; 0x03
+     70c:	80 31       	cpi	r24, 0x10	; 16
+     70e:	28 f0       	brcs	.+10     	; 0x71a <MedieDate+0x120>
+     710:	83 e0       	ldi	r24, 0x03	; 3
+     712:	80 93 38 0d 	sts	0x0D38, r24	; 0x800d38 <WirePosition+0x11>
+						else WirePosition.errorYmediu = WirePosition.error_Ymm;
+				}
+			return NotOK;				 
+     716:	80 e0       	ldi	r24, 0x00	; 0
+     718:	09 c0       	rjmp	.+18     	; 0x72c <MedieDate+0x132>
+				}
+				if (AXA == 'y')
+				{
+					WirePosition.Y_mm_mediu = WirePosition.mm_Y;  //ultima valoare
+						if (DataCount >= (SaveDataLenght/2)) WirePosition.errorYmediu = MasuratoareIstabila;
+						else WirePosition.errorYmediu = WirePosition.error_Ymm;
+     71a:	e7 e2       	ldi	r30, 0x27	; 39
+     71c:	fd e0       	ldi	r31, 0x0D	; 13
+     71e:	83 85       	ldd	r24, Z+11	; 0x0b
+     720:	81 8b       	std	Z+17, r24	; 0x11
+				}
+			return NotOK;				 
+     722:	80 e0       	ldi	r24, 0x00	; 0
+     724:	03 c0       	rjmp	.+6      	; 0x72c <MedieDate+0x132>
+					}
+				if (AXA == 'y') {
+					WirePosition.Y_mm_mediu = LocalDataMedie/DataCount;
+					WirePosition.errorYmediu = 0;
+				}
+			return OK;				
+     726:	81 e0       	ldi	r24, 0x01	; 1
+     728:	01 c0       	rjmp	.+2      	; 0x72c <MedieDate+0x132>
+				{
+					WirePosition.Y_mm_mediu = WirePosition.mm_Y;  //ultima valoare
+						if (DataCount >= (SaveDataLenght/2)) WirePosition.errorYmediu = MasuratoareIstabila;
+						else WirePosition.errorYmediu = WirePosition.error_Ymm;
+				}
+			return NotOK;				 
+     72a:	80 e0       	ldi	r24, 0x00	; 0
+		} 
+		return NotOK;
+	}
+     72c:	27 96       	adiw	r28, 0x07	; 7
+     72e:	0f b6       	in	r0, 0x3f	; 63
+     730:	f8 94       	cli
+     732:	de bf       	out	0x3e, r29	; 62
+     734:	0f be       	out	0x3f, r0	; 63
+     736:	cd bf       	out	0x3d, r28	; 61
+     738:	df 91       	pop	r29
+     73a:	cf 91       	pop	r28
+     73c:	1f 91       	pop	r17
+     73e:	08 95       	ret
+
+00000740 <main>:
+//////////////
+int main(void)
+{
+    /* Replace with your application code */
+	 
+	 Timer_1_Initialisation_0_1S();  //thred citire sensor	 
+     740:	a8 d5       	rcall	.+2896   	; 0x1292 <Timer_1_Initialisation_0_1S>
+	 
+	 Port_initialisation();         //initializare port
+     742:	84 d5       	rcall	.+2824   	; 0x124c <Port_initialisation>
+	 RX_TX_0_Initialisation();      //initializare RX0	
+     744:	b7 d5       	rcall	.+2926   	; 0x12b4 <RX_TX_0_Initialisation>
+	 
+	 Timer_0_Initialisation_4mS();   //thred determinare pachete intirziate 
+     746:	bf d5       	rcall	.+2942   	; 0x12c6 <Timer_0_Initialisation_4mS>
+     748:	c7 d5       	rcall	.+2958   	; 0x12d8 <Initializare_TX_RX_1_RS485>
+	 Initializare_TX_RX_1_RS485();        //initializare RX1 RS485
+     74a:	f8 94       	cli
+     74c:	a8 95       	wdr
+	 
+	
+		//watchdog timer is a simple countdown
+		cli();
+     74e:	e0 e6       	ldi	r30, 0x60	; 96
+		wdt_reset(); 
+     750:	f0 e0       	ldi	r31, 0x00	; 0
+		WDTCSR |= (1<<WDCE) | (1<<WDE);
+     752:	80 81       	ld	r24, Z
+     754:	88 61       	ori	r24, 0x18	; 24
+     756:	80 83       	st	Z, r24
+     758:	8f e0       	ldi	r24, 0x0F	; 15
+        WDTCSR = ((1<<WDE) | (1<<WDP2) | (1<<WDP1) | (1<<WDP0));  //0.5s
+     75a:	80 83       	st	Z, r24
+     75c:	e3 de       	rcall	.-570    	; 0x524 <Semnalizare_Pornire>
+		///////// end watchdog///////
+		Semnalizare_Pornire();
+     75e:	8b b1       	in	r24, 0x0b	; 11
+     760:	80 61       	ori	r24, 0x10	; 16
+		RS485_uC_Receptie;
+     762:	8b b9       	out	0x0b, r24	; 11
+     764:	10 92 19 01 	sts	0x0119, r1	; 0x800119 <Index_Receptie_PC>
+		Index_Receptie_PC = 0;
+     768:	10 92 18 01 	sts	0x0118, r1	; 0x800118 <Index_Receptie_PC_OLD>
+		Index_Receptie_PC_OLD=0;
+     76c:	78 94       	sei
+     76e:	ff cf       	rjmp	.-2      	; 0x76e <main+0x2e>
+
+00000770 <__vector_20>:
+		sei();		
+     770:	1f 92       	push	r1
+     772:	0f 92       	push	r0
+    {
+		
+    }//end while
+} //end main
+//ISR Rx
+ISR(USART0_RX_vect) {
+     774:	0f b6       	in	r0, 0x3f	; 63
+     776:	0f 92       	push	r0
+     778:	11 24       	eor	r1, r1
+     77a:	0b b6       	in	r0, 0x3b	; 59
+     77c:	0f 92       	push	r0
+     77e:	2f 93       	push	r18
+     780:	3f 93       	push	r19
+     782:	4f 93       	push	r20
+     784:	5f 93       	push	r21
+     786:	6f 93       	push	r22
+     788:	7f 93       	push	r23
+     78a:	8f 93       	push	r24
+     78c:	9f 93       	push	r25
+     78e:	af 93       	push	r26
+     790:	bf 93       	push	r27
+     792:	ef 93       	push	r30
+     794:	ff 93       	push	r31
+	
+	//afisez 99999 = 999.99*100;  folosesc 2 zecimale
+	//intreruperea de receptie seiriala
+	uint16_t data=0;
+	uint8_t Local_vr=0;
+	ON_LED2;// testez rutina rx
+     796:	85 b1       	in	r24, 0x05	; 5
+     798:	8d 7f       	andi	r24, 0xFD	; 253
+     79a:	85 b9       	out	0x05, r24	; 5
+	
+	data = UDR0; //citesc comanda receptionata
+     79c:	80 91 c6 00 	lds	r24, 0x00C6	; 0x8000c6 <__TEXT_REGION_LENGTH__+0x7e00c6>
+	
+	switch(data)
+     7a0:	8d 36       	cpi	r24, 0x6D	; 109
+     7a2:	21 f1       	breq	.+72     	; 0x7ec <__vector_20+0x7c>
+     7a4:	18 f4       	brcc	.+6      	; 0x7ac <__vector_20+0x3c>
+     7a6:	85 36       	cpi	r24, 0x65	; 101
+     7a8:	c9 f0       	breq	.+50     	; 0x7dc <__vector_20+0x6c>
+     7aa:	5c c0       	rjmp	.+184    	; 0x864 <__vector_20+0xf4>
+     7ac:	8e 36       	cpi	r24, 0x6E	; 110
+     7ae:	09 f4       	brne	.+2      	; 0x7b2 <__vector_20+0x42>
+     7b0:	3b c0       	rjmp	.+118    	; 0x828 <__vector_20+0xb8>
+     7b2:	88 37       	cpi	r24, 0x78	; 120
+     7b4:	09 f0       	breq	.+2      	; 0x7b8 <__vector_20+0x48>
+     7b6:	56 c0       	rjmp	.+172    	; 0x864 <__vector_20+0xf4>
+	{
+		case 'x': //rezultat ADC
+		Send_Value('x', WirePosition.N_X*6.35);		
+     7b8:	60 91 27 0d 	lds	r22, 0x0D27	; 0x800d27 <WirePosition>
+     7bc:	70 91 28 0d 	lds	r23, 0x0D28	; 0x800d28 <WirePosition+0x1>
+     7c0:	80 e0       	ldi	r24, 0x00	; 0
+     7c2:	90 e0       	ldi	r25, 0x00	; 0
+     7c4:	c4 d5       	rcall	.+2952   	; 0x134e <__floatunsisf>
+     7c6:	23 e3       	ldi	r18, 0x33	; 51
+     7c8:	33 e3       	ldi	r19, 0x33	; 51
+     7ca:	4b ec       	ldi	r20, 0xCB	; 203
+     7cc:	50 e4       	ldi	r21, 0x40	; 64
+     7ce:	25 d6       	rcall	.+3146   	; 0x141a <__mulsf3>
+     7d0:	92 d5       	rcall	.+2852   	; 0x12f6 <__fixunssfsi>
+     7d2:	ab 01       	movw	r20, r22
+     7d4:	bc 01       	movw	r22, r24
+     7d6:	88 e7       	ldi	r24, 0x78	; 120
+     7d8:	78 dc       	rcall	.-1808   	; 0xca <Send_Value>
+		break;
+     7da:	44 c0       	rjmp	.+136    	; 0x864 <__vector_20+0xf4>
+		case 'e'://Volt medie
+		Send_Value('e', WirePosition.error_X);
+     7dc:	40 91 29 0d 	lds	r20, 0x0D29	; 0x800d29 <WirePosition+0x2>
+     7e0:	50 e0       	ldi	r21, 0x00	; 0
+     7e2:	60 e0       	ldi	r22, 0x00	; 0
+     7e4:	70 e0       	ldi	r23, 0x00	; 0
+     7e6:	85 e6       	ldi	r24, 0x65	; 101
+     7e8:	70 dc       	rcall	.-1824   	; 0xca <Send_Value>
+		break;
+     7ea:	3c c0       	rjmp	.+120    	; 0x864 <__vector_20+0xf4>
+	uint8_t Local_vr=0;
+	ON_LED2;// testez rutina rx
+	
+	data = UDR0; //citesc comanda receptionata
+	
+	switch(data)
+     7ec:	20 e0       	ldi	r18, 0x00	; 0
+     7ee:	30 e0       	ldi	r19, 0x00	; 0
+		break;
+		case 'e'://Volt medie
+		Send_Value('e', WirePosition.error_X);
+		break;
+		case 'm':// memoria x
+			for (data=0;data <MaXLenghtPixel; data++)
+     7f0:	21 15       	cp	r18, r1
+     7f2:	86 e0       	ldi	r24, 0x06	; 6
+     7f4:	38 07       	cpc	r19, r24
+     7f6:	b0 f5       	brcc	.+108    	; 0x864 <__vector_20+0xf4>
+			{
+				Local_vr = UCSR0A &  0x20;
+     7f8:	80 91 c0 00 	lds	r24, 0x00C0	; 0x8000c0 <__TEXT_REGION_LENGTH__+0x7e00c0>
+     7fc:	80 72       	andi	r24, 0x20	; 32
+				while(Local_vr ==0) Local_vr = UCSR0A & 0x20;
+     7fe:	81 11       	cpse	r24, r1
+     800:	04 c0       	rjmp	.+8      	; 0x80a <__vector_20+0x9a>
+     802:	80 91 c0 00 	lds	r24, 0x00C0	; 0x8000c0 <__TEXT_REGION_LENGTH__+0x7e00c0>
+     806:	80 72       	andi	r24, 0x20	; 32
+     808:	fa cf       	rjmp	.-12     	; 0x7fe <__vector_20+0x8e>
+				UCSR0A |= 0x20;
+     80a:	e0 ec       	ldi	r30, 0xC0	; 192
+     80c:	f0 e0       	ldi	r31, 0x00	; 0
+     80e:	80 81       	ld	r24, Z
+     810:	80 62       	ori	r24, 0x20	; 32
+     812:	80 83       	st	Z, r24
+				UDR0 = (PixelsValue_X[data]+48); //conversie din hexa in ascii
+     814:	f9 01       	movw	r30, r18
+     816:	e1 5e       	subi	r30, 0xE1	; 225
+     818:	f8 4f       	sbci	r31, 0xF8	; 248
+     81a:	80 81       	ld	r24, Z
+     81c:	80 5d       	subi	r24, 0xD0	; 208
+     81e:	80 93 c6 00 	sts	0x00C6, r24	; 0x8000c6 <__TEXT_REGION_LENGTH__+0x7e00c6>
+		break;
+		case 'e'://Volt medie
+		Send_Value('e', WirePosition.error_X);
+		break;
+		case 'm':// memoria x
+			for (data=0;data <MaXLenghtPixel; data++)
+     822:	2f 5f       	subi	r18, 0xFF	; 255
+     824:	3f 4f       	sbci	r19, 0xFF	; 255
+     826:	e4 cf       	rjmp	.-56     	; 0x7f0 <__vector_20+0x80>
+	uint8_t Local_vr=0;
+	ON_LED2;// testez rutina rx
+	
+	data = UDR0; //citesc comanda receptionata
+	
+	switch(data)
+     828:	20 e0       	ldi	r18, 0x00	; 0
+     82a:	30 e0       	ldi	r19, 0x00	; 0
+				UCSR0A |= 0x20;
+				UDR0 = (PixelsValue_X[data]+48); //conversie din hexa in ascii
+			}		
+		break;		
+		case 'n':// memoria y
+			for (data=0;data <MaXLenghtPixel; data++)
+     82c:	21 15       	cp	r18, r1
+     82e:	86 e0       	ldi	r24, 0x06	; 6
+     830:	38 07       	cpc	r19, r24
+     832:	c0 f4       	brcc	.+48     	; 0x864 <__vector_20+0xf4>
+			{
+				Local_vr = UCSR0A &  0x20;
+     834:	80 91 c0 00 	lds	r24, 0x00C0	; 0x8000c0 <__TEXT_REGION_LENGTH__+0x7e00c0>
+     838:	80 72       	andi	r24, 0x20	; 32
+				while(Local_vr ==0) Local_vr = UCSR0A & 0x20;
+     83a:	81 11       	cpse	r24, r1
+     83c:	04 c0       	rjmp	.+8      	; 0x846 <__vector_20+0xd6>
+     83e:	80 91 c0 00 	lds	r24, 0x00C0	; 0x8000c0 <__TEXT_REGION_LENGTH__+0x7e00c0>
+     842:	80 72       	andi	r24, 0x20	; 32
+     844:	fa cf       	rjmp	.-12     	; 0x83a <__vector_20+0xca>
+				UCSR0A |= 0x20;
+     846:	e0 ec       	ldi	r30, 0xC0	; 192
+     848:	f0 e0       	ldi	r31, 0x00	; 0
+     84a:	80 81       	ld	r24, Z
+     84c:	80 62       	ori	r24, 0x20	; 32
+     84e:	80 83       	st	Z, r24
+				UDR0 = (PixelsValue_Y[data]+48);
+     850:	f9 01       	movw	r30, r18
+     852:	e1 5e       	subi	r30, 0xE1	; 225
+     854:	fe 4f       	sbci	r31, 0xFE	; 254
+     856:	80 81       	ld	r24, Z
+     858:	80 5d       	subi	r24, 0xD0	; 208
+     85a:	80 93 c6 00 	sts	0x00C6, r24	; 0x8000c6 <__TEXT_REGION_LENGTH__+0x7e00c6>
+				UCSR0A |= 0x20;
+				UDR0 = (PixelsValue_X[data]+48); //conversie din hexa in ascii
+			}		
+		break;		
+		case 'n':// memoria y
+			for (data=0;data <MaXLenghtPixel; data++)
+     85e:	2f 5f       	subi	r18, 0xFF	; 255
+     860:	3f 4f       	sbci	r19, 0xFF	; 255
+     862:	e4 cf       	rjmp	.-56     	; 0x82c <__vector_20+0xbc>
+				UDR0 = (PixelsValue_Y[data]+48);
+			}
+		//break;
+	}
+	
+	OFF_LED2;
+     864:	85 b1       	in	r24, 0x05	; 5
+     866:	82 60       	ori	r24, 0x02	; 2
+     868:	85 b9       	out	0x05, r24	; 5
+}
+     86a:	ff 91       	pop	r31
+     86c:	ef 91       	pop	r30
+     86e:	bf 91       	pop	r27
+     870:	af 91       	pop	r26
+     872:	9f 91       	pop	r25
+     874:	8f 91       	pop	r24
+     876:	7f 91       	pop	r23
+     878:	6f 91       	pop	r22
+     87a:	5f 91       	pop	r21
+     87c:	4f 91       	pop	r20
+     87e:	3f 91       	pop	r19
+     880:	2f 91       	pop	r18
+     882:	0f 90       	pop	r0
+     884:	0b be       	out	0x3b, r0	; 59
+     886:	0f 90       	pop	r0
+     888:	0f be       	out	0x3f, r0	; 63
+     88a:	0f 90       	pop	r0
+     88c:	1f 90       	pop	r1
+     88e:	18 95       	reti
+
+00000890 <__vector_13>:
+/////////// end  USART0_RX_vect  //// 
+
+// interrupt of 0.1 sec
+ISR(TIMER1_COMPA_vect)
+{
+     890:	1f 92       	push	r1
+     892:	0f 92       	push	r0
+     894:	0f b6       	in	r0, 0x3f	; 63
+     896:	0f 92       	push	r0
+     898:	11 24       	eor	r1, r1
+     89a:	0b b6       	in	r0, 0x3b	; 59
+     89c:	0f 92       	push	r0
+     89e:	2f 93       	push	r18
+     8a0:	3f 93       	push	r19
+     8a2:	4f 93       	push	r20
+     8a4:	5f 93       	push	r21
+     8a6:	6f 93       	push	r22
+     8a8:	7f 93       	push	r23
+     8aa:	8f 93       	push	r24
+     8ac:	9f 93       	push	r25
+     8ae:	af 93       	push	r26
+     8b0:	bf 93       	push	r27
+     8b2:	ef 93       	push	r30
+     8b4:	ff 93       	push	r31
+	volatile static uint16_t timerCounter=0;
+	wdt_reset();
+     8b6:	a8 95       	wdr
+	timerCounter ++;
+     8b8:	80 91 1c 01 	lds	r24, 0x011C	; 0x80011c <_ZZ11__vector_13E12timerCounter>
+     8bc:	90 91 1d 01 	lds	r25, 0x011D	; 0x80011d <_ZZ11__vector_13E12timerCounter+0x1>
+     8c0:	01 96       	adiw	r24, 0x01	; 1
+     8c2:	90 93 1d 01 	sts	0x011D, r25	; 0x80011d <_ZZ11__vector_13E12timerCounter+0x1>
+     8c6:	80 93 1c 01 	sts	0x011C, r24	; 0x80011c <_ZZ11__vector_13E12timerCounter>
+	if (timerCounter == 20)  //10
+     8ca:	80 91 1c 01 	lds	r24, 0x011C	; 0x80011c <_ZZ11__vector_13E12timerCounter>
+     8ce:	90 91 1d 01 	lds	r25, 0x011D	; 0x80011d <_ZZ11__vector_13E12timerCounter+0x1>
+     8d2:	44 97       	sbiw	r24, 0x14	; 20
+     8d4:	41 f4       	brne	.+16     	; 0x8e6 <__vector_13+0x56>
+	{	//timerCounter=0;
+		ON_LED1;//
+     8d6:	85 b1       	in	r24, 0x05	; 5
+     8d8:	8e 7f       	andi	r24, 0xFE	; 254
+     8da:	85 b9       	out	0x05, r24	; 5
+		//wdt_reset();
+			Captura_AxaX('x');
+     8dc:	88 e7       	ldi	r24, 0x78	; 120
+     8de:	d2 d3       	rcall	.+1956   	; 0x1084 <Captura_AxaX>
+		OFF_LED1;
+     8e0:	85 b1       	in	r24, 0x05	; 5
+     8e2:	81 60       	ori	r24, 0x01	; 1
+     8e4:	85 b9       	out	0x05, r24	; 5
+	}//end 
+	if (timerCounter >= 40)  //20
+     8e6:	80 91 1c 01 	lds	r24, 0x011C	; 0x80011c <_ZZ11__vector_13E12timerCounter>
+     8ea:	90 91 1d 01 	lds	r25, 0x011D	; 0x80011d <_ZZ11__vector_13E12timerCounter+0x1>
+     8ee:	88 97       	sbiw	r24, 0x28	; 40
+     8f0:	60 f0       	brcs	.+24     	; 0x90a <__vector_13+0x7a>
+	{	ON_LED2;//
+     8f2:	85 b1       	in	r24, 0x05	; 5
+     8f4:	8d 7f       	andi	r24, 0xFD	; 253
+     8f6:	85 b9       	out	0x05, r24	; 5
+		//wdt_reset();
+		timerCounter=0;
+     8f8:	10 92 1d 01 	sts	0x011D, r1	; 0x80011d <_ZZ11__vector_13E12timerCounter+0x1>
+     8fc:	10 92 1c 01 	sts	0x011C, r1	; 0x80011c <_ZZ11__vector_13E12timerCounter>
+			Captura_AxaY('y');
+     900:	89 e7       	ldi	r24, 0x79	; 121
+     902:	32 d4       	rcall	.+2148   	; 0x1168 <Captura_AxaY>
+		OFF_LED2;
+     904:	85 b1       	in	r24, 0x05	; 5
+     906:	82 60       	ori	r24, 0x02	; 2
+     908:	85 b9       	out	0x05, r24	; 5
+	}//end	
+}//end isr
+     90a:	ff 91       	pop	r31
+     90c:	ef 91       	pop	r30
+     90e:	bf 91       	pop	r27
+     910:	af 91       	pop	r26
+     912:	9f 91       	pop	r25
+     914:	8f 91       	pop	r24
+     916:	7f 91       	pop	r23
+     918:	6f 91       	pop	r22
+     91a:	5f 91       	pop	r21
+     91c:	4f 91       	pop	r20
+     91e:	3f 91       	pop	r19
+     920:	2f 91       	pop	r18
+     922:	0f 90       	pop	r0
+     924:	0b be       	out	0x3b, r0	; 59
+     926:	0f 90       	pop	r0
+     928:	0f be       	out	0x3f, r0	; 63
+     92a:	0f 90       	pop	r0
+     92c:	1f 90       	pop	r1
+     92e:	18 95       	reti
+
+00000930 <__vector_18>:
+/////////////////////
+
+ISR(TIMER0_OVF_vect)
+{
+     930:	1f 92       	push	r1
+     932:	0f 92       	push	r0
+     934:	0f b6       	in	r0, 0x3f	; 63
+     936:	0f 92       	push	r0
+     938:	11 24       	eor	r1, r1
+     93a:	0b b6       	in	r0, 0x3b	; 59
+     93c:	0f 92       	push	r0
+     93e:	2f 93       	push	r18
+     940:	3f 93       	push	r19
+     942:	4f 93       	push	r20
+     944:	5f 93       	push	r21
+     946:	6f 93       	push	r22
+     948:	7f 93       	push	r23
+     94a:	8f 93       	push	r24
+     94c:	9f 93       	push	r25
+     94e:	af 93       	push	r26
+     950:	bf 93       	push	r27
+     952:	ef 93       	push	r30
+     954:	ff 93       	push	r31
+	uint16_t static Counter_1sec=0;
+	wdt_reset();
+     956:	a8 95       	wdr
+	Counter_1sec++;
+     958:	80 91 1a 01 	lds	r24, 0x011A	; 0x80011a <_ZZ11__vector_18E12Counter_1sec>
+     95c:	90 91 1b 01 	lds	r25, 0x011B	; 0x80011b <_ZZ11__vector_18E12Counter_1sec+0x1>
+     960:	01 96       	adiw	r24, 0x01	; 1
+     962:	90 93 1b 01 	sts	0x011B, r25	; 0x80011b <_ZZ11__vector_18E12Counter_1sec+0x1>
+     966:	80 93 1a 01 	sts	0x011A, r24	; 0x80011a <_ZZ11__vector_18E12Counter_1sec>
+	
+				if (Counter_1sec == 489) 
+				{
+					//Trimite_Valoare('x',WirePosition.mm_X );//WirePosition.mm_X  denisa
+				}
+				if (Counter_1sec >= 976)
+     96a:	80 3d       	cpi	r24, 0xD0	; 208
+     96c:	93 40       	sbci	r25, 0x03	; 3
+     96e:	20 f0       	brcs	.+8      	; 0x978 <__vector_18+0x48>
+				{ Counter_1sec =0;
+     970:	10 92 1b 01 	sts	0x011B, r1	; 0x80011b <_ZZ11__vector_18E12Counter_1sec+0x1>
+     974:	10 92 1a 01 	sts	0x011A, r1	; 0x80011a <_ZZ11__vector_18E12Counter_1sec>
+					//Trimite_Valoare('y',WirePosition.mm_Y);//WirePosition.mm_X  denisa
+				}
+	
+	 
+	//verific pachete intirziate
+	VerificPachete_Intirziate();
+     978:	b0 dd       	rcall	.-1184   	; 0x4da <VerificPachete_Intirziate>
+	
+	//calculez X/Y medie
+	//raspund la comanda de pe rs485
+			switch(Actiune)
+     97a:	80 91 1e 01 	lds	r24, 0x011E	; 0x80011e <Actiune>
+     97e:	89 35       	cpi	r24, 0x59	; 89
+     980:	f1 f0       	breq	.+60     	; 0x9be <__vector_18+0x8e>
+     982:	18 f4       	brcc	.+6      	; 0x98a <__vector_18+0x5a>
+     984:	88 35       	cpi	r24, 0x58	; 88
+     986:	81 f0       	breq	.+32     	; 0x9a8 <__vector_18+0x78>
+     988:	25 c0       	rjmp	.+74     	; 0x9d4 <__vector_18+0xa4>
+     98a:	88 37       	cpi	r24, 0x78	; 120
+     98c:	19 f0       	breq	.+6      	; 0x994 <__vector_18+0x64>
+     98e:	89 37       	cpi	r24, 0x79	; 121
+     990:	31 f0       	breq	.+12     	; 0x99e <__vector_18+0x6e>
+     992:	20 c0       	rjmp	.+64     	; 0x9d4 <__vector_18+0xa4>
+			{
+				case 'x':
+					MedieDate('x');
+     994:	88 e7       	ldi	r24, 0x78	; 120
+     996:	31 de       	rcall	.-926    	; 0x5fa <MedieDate>
+					Actiune=0;
+     998:	10 92 1e 01 	sts	0x011E, r1	; 0x80011e <Actiune>
+				break;
+		
+				case 'y':
+					MedieDate('y');
+     99c:	1d c0       	rjmp	.+58     	; 0x9d8 <__vector_18+0xa8>
+     99e:	89 e7       	ldi	r24, 0x79	; 121
+     9a0:	2c de       	rcall	.-936    	; 0x5fa <MedieDate>
+					Actiune=0;
+     9a2:	10 92 1e 01 	sts	0x011E, r1	; 0x80011e <Actiune>
+				break;
+     9a6:	18 c0       	rjmp	.+48     	; 0x9d8 <__vector_18+0xa8>
+				case 'X':
+					WirePosition.X_mm_mediu = WirePosition.mm_X;  //ultima valoare
+     9a8:	e7 e2       	ldi	r30, 0x27	; 39
+     9aa:	fd e0       	ldi	r31, 0x0D	; 13
+     9ac:	86 81       	ldd	r24, Z+6	; 0x06
+     9ae:	97 81       	ldd	r25, Z+7	; 0x07
+     9b0:	95 87       	std	Z+13, r25	; 0x0d
+     9b2:	84 87       	std	Z+12, r24	; 0x0c
+					WirePosition.errorXmediu = WirePosition.error_Xmm;  //daca sunt peste 16 instabil  //valoare instant X
+     9b4:	80 85       	ldd	r24, Z+8	; 0x08
+     9b6:	86 87       	std	Z+14, r24	; 0x0e
+					Actiune=0;
+     9b8:	10 92 1e 01 	sts	0x011E, r1	; 0x80011e <Actiune>
+				break;				
+     9bc:	0d c0       	rjmp	.+26     	; 0x9d8 <__vector_18+0xa8>
+				case 'Y':
+					WirePosition.Y_mm_mediu = WirePosition.mm_Y;  //valoare instant Y
+     9be:	e7 e2       	ldi	r30, 0x27	; 39
+     9c0:	fd e0       	ldi	r31, 0x0D	; 13
+     9c2:	81 85       	ldd	r24, Z+9	; 0x09
+     9c4:	92 85       	ldd	r25, Z+10	; 0x0a
+     9c6:	90 8b       	std	Z+16, r25	; 0x10
+     9c8:	87 87       	std	Z+15, r24	; 0x0f
+					WirePosition.errorYmediu = WirePosition.error_Ymm;  //valoare instant Y
+     9ca:	83 85       	ldd	r24, Z+11	; 0x0b
+     9cc:	81 8b       	std	Z+17, r24	; 0x11
+					Actiune=0;
+     9ce:	10 92 1e 01 	sts	0x011E, r1	; 0x80011e <Actiune>
+				break;				
+     9d2:	02 c0       	rjmp	.+4      	; 0x9d8 <__vector_18+0xa8>
+				default:
+				Actiune = 0;
+     9d4:	10 92 1e 01 	sts	0x011E, r1	; 0x80011e <Actiune>
+			}
+	
+	
+}
+     9d8:	ff 91       	pop	r31
+     9da:	ef 91       	pop	r30
+     9dc:	bf 91       	pop	r27
+     9de:	af 91       	pop	r26
+     9e0:	9f 91       	pop	r25
+     9e2:	8f 91       	pop	r24
+     9e4:	7f 91       	pop	r23
+     9e6:	6f 91       	pop	r22
+     9e8:	5f 91       	pop	r21
+     9ea:	4f 91       	pop	r20
+     9ec:	3f 91       	pop	r19
+     9ee:	2f 91       	pop	r18
+     9f0:	0f 90       	pop	r0
+     9f2:	0b be       	out	0x3b, r0	; 59
+     9f4:	0f 90       	pop	r0
+     9f6:	0f be       	out	0x3f, r0	; 63
+     9f8:	0f 90       	pop	r0
+     9fa:	1f 90       	pop	r1
+     9fc:	18 95       	reti
+
+000009fe <__vector_28>:
+
+ISR(USART1_RX_vect)   //receptie RS485
+{
+     9fe:	1f 92       	push	r1
+     a00:	0f 92       	push	r0
+     a02:	0f b6       	in	r0, 0x3f	; 63
+     a04:	0f 92       	push	r0
+     a06:	11 24       	eor	r1, r1
+     a08:	0b b6       	in	r0, 0x3b	; 59
+     a0a:	0f 92       	push	r0
+     a0c:	2f 93       	push	r18
+     a0e:	3f 93       	push	r19
+     a10:	4f 93       	push	r20
+     a12:	5f 93       	push	r21
+     a14:	6f 93       	push	r22
+     a16:	7f 93       	push	r23
+     a18:	8f 93       	push	r24
+     a1a:	9f 93       	push	r25
+     a1c:	af 93       	push	r26
+     a1e:	bf 93       	push	r27
+     a20:	ef 93       	push	r30
+     a22:	ff 93       	push	r31
+     a24:	cf 93       	push	r28
+     a26:	df 93       	push	r29
+     a28:	1f 92       	push	r1
+     a2a:	cd b7       	in	r28, 0x3d	; 61
+     a2c:	de b7       	in	r29, 0x3e	; 62
+	 volatile uint8_t Data_RX = 0;
+     a2e:	19 82       	std	Y+1, r1	; 0x01
+     
+	  Data_RX = UCSR0A;
+     a30:	80 91 c0 00 	lds	r24, 0x00C0	; 0x8000c0 <__TEXT_REGION_LENGTH__+0x7e00c0>
+     a34:	89 83       	std	Y+1, r24	; 0x01
+      if((Data_RX & ((1<<DOR1) |(1<<FE1) |(1<UPE1))) == 0) //start1//am receptie un caracter
+     a36:	89 81       	ldd	r24, Y+1	; 0x01
+     a38:	89 71       	andi	r24, 0x19	; 25
+     a3a:	09 f0       	breq	.+2      	; 0xa3e <__vector_28+0x40>
+     a3c:	76 c0       	rjmp	.+236    	; 0xb2a <__vector_28+0x12c>
+      { 
+		Data_RX = UDR1;
+     a3e:	80 91 ce 00 	lds	r24, 0x00CE	; 0x8000ce <__TEXT_REGION_LENGTH__+0x7e00ce>
+     a42:	89 83       	std	Y+1, r24	; 0x01
+		
+		Index_Receptie_PC++;
+     a44:	80 91 19 01 	lds	r24, 0x0119	; 0x800119 <Index_Receptie_PC>
+     a48:	8f 5f       	subi	r24, 0xFF	; 255
+     a4a:	80 93 19 01 	sts	0x0119, r24	; 0x800119 <Index_Receptie_PC>
+		UDR0 = Index_Receptie_PC;
+     a4e:	80 93 c6 00 	sts	0x00C6, r24	; 0x8000c6 <__TEXT_REGION_LENGTH__+0x7e00c6>
+		
+		//if (Index_Receptie_PC <= 5) Index_Receptie_PC++;
+		//else Index_Receptie_PC=1;	 
+
+
+			if((Index_Receptie_PC == 1) && (Data_RX != Antet_Receptie_uC))  Index_Receptie_PC = 6;
+     a52:	80 91 19 01 	lds	r24, 0x0119	; 0x800119 <Index_Receptie_PC>
+     a56:	81 30       	cpi	r24, 0x01	; 1
+     a58:	29 f4       	brne	.+10     	; 0xa64 <__vector_28+0x66>
+     a5a:	89 81       	ldd	r24, Y+1	; 0x01
+     a5c:	85 32       	cpi	r24, 0x25	; 37
+     a5e:	21 f4       	brne	.+8      	; 0xa68 <__vector_28+0x6a>
+     a60:	80 e0       	ldi	r24, 0x00	; 0
+     a62:	03 c0       	rjmp	.+6      	; 0xa6a <__vector_28+0x6c>
+     a64:	80 e0       	ldi	r24, 0x00	; 0
+     a66:	01 c0       	rjmp	.+2      	; 0xa6a <__vector_28+0x6c>
+     a68:	81 e0       	ldi	r24, 0x01	; 1
+     a6a:	88 23       	and	r24, r24
+     a6c:	19 f0       	breq	.+6      	; 0xa74 <__vector_28+0x76>
+     a6e:	86 e0       	ldi	r24, 0x06	; 6
+     a70:	80 93 19 01 	sts	0x0119, r24	; 0x800119 <Index_Receptie_PC>
+			
+			if (Index_Receptie_PC <= 5)   //start2  //trebuie sa tratez daca nu vin intr-un interval de timp !!!!!
+     a74:	80 91 19 01 	lds	r24, 0x0119	; 0x800119 <Index_Receptie_PC>
+     a78:	86 30       	cpi	r24, 0x06	; 6
+     a7a:	08 f0       	brcs	.+2      	; 0xa7e <__vector_28+0x80>
+     a7c:	56 c0       	rjmp	.+172    	; 0xb2a <__vector_28+0x12c>
+			{   
+				if (Index_Receptie_PC == 1) BuffRx_PC.Antet = Data_RX; 
+     a7e:	81 30       	cpi	r24, 0x01	; 1
+     a80:	19 f4       	brne	.+6      	; 0xa88 <__vector_28+0x8a>
+     a82:	99 81       	ldd	r25, Y+1	; 0x01
+     a84:	90 93 1f 0d 	sts	0x0D1F, r25	; 0x800d1f <BuffRx_PC>
+			   
+				if((Index_Receptie_PC == 2) && (Data_RX != Adr_uC)) {
+     a88:	82 30       	cpi	r24, 0x02	; 2
+     a8a:	29 f4       	brne	.+10     	; 0xa96 <__vector_28+0x98>
+     a8c:	89 81       	ldd	r24, Y+1	; 0x01
+     a8e:	81 37       	cpi	r24, 0x71	; 113
+     a90:	21 f4       	brne	.+8      	; 0xa9a <__vector_28+0x9c>
+     a92:	80 e0       	ldi	r24, 0x00	; 0
+     a94:	03 c0       	rjmp	.+6      	; 0xa9c <__vector_28+0x9e>
+     a96:	80 e0       	ldi	r24, 0x00	; 0
+     a98:	01 c0       	rjmp	.+2      	; 0xa9c <__vector_28+0x9e>
+     a9a:	81 e0       	ldi	r24, 0x01	; 1
+     a9c:	88 23       	and	r24, r24
+     a9e:	19 f0       	breq	.+6      	; 0xaa6 <__vector_28+0xa8>
+					Index_Receptie_PC = 6; 
+     aa0:	86 e0       	ldi	r24, 0x06	; 6
+     aa2:	80 93 19 01 	sts	0x0119, r24	; 0x800119 <Index_Receptie_PC>
+				}
+	           if (Index_Receptie_PC == 2) BuffRx_PC.Adres_uC = Data_RX; 
+     aa6:	80 91 19 01 	lds	r24, 0x0119	; 0x800119 <Index_Receptie_PC>
+     aaa:	82 30       	cpi	r24, 0x02	; 2
+     aac:	19 f4       	brne	.+6      	; 0xab4 <__vector_28+0xb6>
+     aae:	99 81       	ldd	r25, Y+1	; 0x01
+     ab0:	90 93 20 0d 	sts	0x0D20, r25	; 0x800d20 <BuffRx_PC+0x1>
+			   
+				if((Index_Receptie_PC >= 3) && (Index_Receptie_PC <=5))
+     ab4:	9d ef       	ldi	r25, 0xFD	; 253
+     ab6:	98 0f       	add	r25, r24
+     ab8:	93 30       	cpi	r25, 0x03	; 3
+     aba:	b8 f5       	brcc	.+110    	; 0xb2a <__vector_28+0x12c>
+				{// start3
+										
+										
+					if (Index_Receptie_PC == 3)  BuffRx_PC.Cmd_PC = Data_RX;
+     abc:	83 30       	cpi	r24, 0x03	; 3
+     abe:	19 f4       	brne	.+6      	; 0xac6 <__vector_28+0xc8>
+     ac0:	99 81       	ldd	r25, Y+1	; 0x01
+     ac2:	90 93 21 0d 	sts	0x0D21, r25	; 0x800d21 <BuffRx_PC+0x2>
+					if (Index_Receptie_PC == 4)  BuffRx_PC.Adr_Trad = Data_RX;
+     ac6:	84 30       	cpi	r24, 0x04	; 4
+     ac8:	19 f4       	brne	.+6      	; 0xad0 <__vector_28+0xd2>
+     aca:	99 81       	ldd	r25, Y+1	; 0x01
+     acc:	90 93 22 0d 	sts	0x0D22, r25	; 0x800d22 <BuffRx_PC+0x3>
+					if (Index_Receptie_PC == 5)
+     ad0:	85 30       	cpi	r24, 0x05	; 5
+     ad2:	59 f5       	brne	.+86     	; 0xb2a <__vector_28+0x12c>
+					{
+						BuffRx_PC.Reg_SC = Antet_Receptie_uC + Adr_uC + BuffRx_PC.Cmd_PC + BuffRx_PC.Adr_Trad + Data_RX;
+     ad4:	ef e1       	ldi	r30, 0x1F	; 31
+     ad6:	fd e0       	ldi	r31, 0x0D	; 13
+     ad8:	82 81       	ldd	r24, Z+2	; 0x02
+     ada:	23 81       	ldd	r18, Z+3	; 0x03
+     adc:	99 81       	ldd	r25, Y+1	; 0x01
+     ade:	38 2f       	mov	r19, r24
+     ae0:	32 0f       	add	r19, r18
+     ae2:	93 0f       	add	r25, r19
+     ae4:	9a 56       	subi	r25, 0x6A	; 106
+     ae6:	97 83       	std	Z+7, r25	; 0x07
+						Index_Receptie_PC = 0;
+     ae8:	10 92 19 01 	sts	0x0119, r1	; 0x800119 <Index_Receptie_PC>
+						  
+							if (BuffRx_PC.Reg_SC == 0) {
+     aec:	91 11       	cpse	r25, r1
+     aee:	1d c0       	rjmp	.+58     	; 0xb2a <__vector_28+0x12c>
+								
+								if (( BuffRx_PC.Cmd_PC == CitesteVal_uC_x ) && (BuffRx_PC.Adr_Trad == AXA_x )) Actiune ='x';
+     af0:	8a 30       	cpi	r24, 0x0A	; 10
+     af2:	29 f4       	brne	.+10     	; 0xafe <__vector_28+0x100>
+     af4:	21 11       	cpse	r18, r1
+     af6:	03 c0       	rjmp	.+6      	; 0xafe <__vector_28+0x100>
+     af8:	98 e7       	ldi	r25, 0x78	; 120
+     afa:	90 93 1e 01 	sts	0x011E, r25	; 0x80011e <Actiune>
+								if (( BuffRx_PC.Cmd_PC == CitesteVal_uC_y ) && (BuffRx_PC.Adr_Trad == AXA_y )) Actiune ='y';
+     afe:	8a 30       	cpi	r24, 0x0A	; 10
+     b00:	29 f4       	brne	.+10     	; 0xb0c <__vector_28+0x10e>
+     b02:	21 30       	cpi	r18, 0x01	; 1
+     b04:	19 f4       	brne	.+6      	; 0xb0c <__vector_28+0x10e>
+     b06:	99 e7       	ldi	r25, 0x79	; 121
+     b08:	90 93 1e 01 	sts	0x011E, r25	; 0x80011e <Actiune>
+								
+								if (( BuffRx_PC.Cmd_PC == Citire_Instant_x ) && (BuffRx_PC.Adr_Trad == AXA_x )) Actiune ='X';
+     b0c:	8b 30       	cpi	r24, 0x0B	; 11
+     b0e:	29 f4       	brne	.+10     	; 0xb1a <__vector_28+0x11c>
+     b10:	21 11       	cpse	r18, r1
+     b12:	03 c0       	rjmp	.+6      	; 0xb1a <__vector_28+0x11c>
+     b14:	98 e5       	ldi	r25, 0x58	; 88
+     b16:	90 93 1e 01 	sts	0x011E, r25	; 0x80011e <Actiune>
+								if (( BuffRx_PC.Cmd_PC == Citire_Instant_y ) && (BuffRx_PC.Adr_Trad == AXA_y )) Actiune ='Y';								
+     b1a:	8b 30       	cpi	r24, 0x0B	; 11
+     b1c:	29 f4       	brne	.+10     	; 0xb28 <__vector_28+0x12a>
+     b1e:	21 30       	cpi	r18, 0x01	; 1
+     b20:	19 f4       	brne	.+6      	; 0xb28 <__vector_28+0x12a>
+     b22:	99 e5       	ldi	r25, 0x59	; 89
+     b24:	90 93 1e 01 	sts	0x011E, r25	; 0x80011e <Actiune>
+								
+								Transmission_function(BuffRx_PC.Cmd_PC);
+     b28:	9a db       	rcall	.-2252   	; 0x25e <Transmission_function>
+		} //end start1
+	//else Index_Receptie_PC = 0;
+	
+	//if (Index_Receptie_PC > 5) Index_Receptie_PC = 0;//deocamdata
+
+     b2a:	0f 90       	pop	r0
+     b2c:	df 91       	pop	r29
+     b2e:	cf 91       	pop	r28
+     b30:	ff 91       	pop	r31
+     b32:	ef 91       	pop	r30
+     b34:	bf 91       	pop	r27
+     b36:	af 91       	pop	r26
+     b38:	9f 91       	pop	r25
+     b3a:	8f 91       	pop	r24
+     b3c:	7f 91       	pop	r23
+     b3e:	6f 91       	pop	r22
+     b40:	5f 91       	pop	r21
+     b42:	4f 91       	pop	r20
+     b44:	3f 91       	pop	r19
+     b46:	2f 91       	pop	r18
+     b48:	0f 90       	pop	r0
+     b4a:	0b be       	out	0x3b, r0	; 59
+     b4c:	0f 90       	pop	r0
+     b4e:	0f be       	out	0x3f, r0	; 63
+     b50:	0f 90       	pop	r0
+     b52:	1f 90       	pop	r1
+     b54:	18 95       	reti
+
+00000b56 <TSL_nop>:
+	...
+				asm ("nop"); 
+				asm ("nop");
+				asm ("nop");
+				asm ("nop");
+				asm ("nop");
+				asm ("nop");
+     b6a:	08 95       	ret
+
+00000b6c <TSL_Port_initalization>:
+		//if ((TSL_local_data) != 0 ) return NotOK; //0x10
+		//else return OK;//if SO=0 return OK;TSL_SO
+//}
+
+//xxxxxxxxxxxxxxx
+uint8_t TSL_Port_initalization(uint8_t TSL_SI_HOLD,uint8_t TSL_SO ,uint8_t TSL_AO , uint8_t TSL_clk){
+     b6c:	0f 93       	push	r16
+     b6e:	1f 93       	push	r17
+     b70:	cf 93       	push	r28
+     b72:	df 93       	push	r29
+     b74:	1f 92       	push	r1
+     b76:	cd b7       	in	r28, 0x3d	; 61
+     b78:	de b7       	in	r29, 0x3e	; 62
+	volatile  uint8_t TSL_local_data=0;
+     b7a:	19 82       	std	Y+1, r1	; 0x01
+	//reset port
+
+
+	
+	TSL_local_data = (TSL_DDR_uC & (~((1<<TSL_SI_HOLD)| (1<<TSL_SO)  | (1<<TSL_clk) | (1<<TSL_AO))));
+     b7c:	31 b1       	in	r19, 0x01	; 1
+     b7e:	e1 e0       	ldi	r30, 0x01	; 1
+     b80:	f0 e0       	ldi	r31, 0x00	; 0
+     b82:	df 01       	movw	r26, r30
+     b84:	02 c0       	rjmp	.+4      	; 0xb8a <TSL_Port_initalization+0x1e>
+     b86:	aa 0f       	add	r26, r26
+     b88:	bb 1f       	adc	r27, r27
+     b8a:	8a 95       	dec	r24
+     b8c:	e2 f7       	brpl	.-8      	; 0xb86 <TSL_Port_initalization+0x1a>
+     b8e:	8f 01       	movw	r16, r30
+     b90:	02 c0       	rjmp	.+4      	; 0xb96 <TSL_Port_initalization+0x2a>
+     b92:	00 0f       	add	r16, r16
+     b94:	11 1f       	adc	r17, r17
+     b96:	6a 95       	dec	r22
+     b98:	e2 f7       	brpl	.-8      	; 0xb92 <TSL_Port_initalization+0x26>
+     b9a:	cf 01       	movw	r24, r30
+     b9c:	02 c0       	rjmp	.+4      	; 0xba2 <TSL_Port_initalization+0x36>
+     b9e:	88 0f       	add	r24, r24
+     ba0:	99 1f       	adc	r25, r25
+     ba2:	2a 95       	dec	r18
+     ba4:	e2 f7       	brpl	.-8      	; 0xb9e <TSL_Port_initalization+0x32>
+     ba6:	02 c0       	rjmp	.+4      	; 0xbac <TSL_Port_initalization+0x40>
+     ba8:	ee 0f       	add	r30, r30
+     baa:	ff 1f       	adc	r31, r31
+     bac:	4a 95       	dec	r20
+     bae:	e2 f7       	brpl	.-8      	; 0xba8 <TSL_Port_initalization+0x3c>
+     bb0:	90 2f       	mov	r25, r16
+     bb2:	9a 2b       	or	r25, r26
+     bb4:	98 2b       	or	r25, r24
+     bb6:	e9 2b       	or	r30, r25
+     bb8:	e0 95       	com	r30
+     bba:	3e 23       	and	r19, r30
+     bbc:	39 83       	std	Y+1, r19	; 0x01
+	TSL_local_data |= ( (1<<TSL_SI_HOLD)| (0<<TSL_SO) | (1<<TSL_clk) | (0<<TSL_AO) );
+     bbe:	99 81       	ldd	r25, Y+1	; 0x01
+     bc0:	a8 2b       	or	r26, r24
+     bc2:	a9 2b       	or	r26, r25
+     bc4:	a9 83       	std	Y+1, r26	; 0x01
+	//TSL_SI_HOLD=out  TSL_SO =int   TSL_CLK = out    TSL_AO=z analog
+	TSL_DDR_uC = TSL_local_data;//directie
+     bc6:	99 81       	ldd	r25, Y+1	; 0x01
+     bc8:	91 b9       	out	0x01, r25	; 1
+	
+	TSL_local_data = (TSL_PORT_uC & (~((1<<TSL_SI_HOLD) | (1<<TSL_SO) | (1<<TSL_clk) | (1<<TSL_AO))));
+     bca:	92 b1       	in	r25, 0x02	; 2
+     bcc:	e9 23       	and	r30, r25
+     bce:	e9 83       	std	Y+1, r30	; 0x01
+	TSL_local_data |= ((0<<TSL_SI_HOLD)| (0<<TSL_SO) | (1<<TSL_clk) | (0<<TSL_AO));
+     bd0:	99 81       	ldd	r25, Y+1	; 0x01
+     bd2:	89 2b       	or	r24, r25
+     bd4:	89 83       	std	Y+1, r24	; 0x01
+	TSL_PORT_uC = TSL_local_data;
+     bd6:	89 81       	ldd	r24, Y+1	; 0x01
+     bd8:	82 b9       	out	0x02, r24	; 2
+	//check  TSL_SO = low
+	//wait for pin TSL_SO = to be low
+	TSL_nop();
+     bda:	bd df       	rcall	.-134    	; 0xb56 <TSL_nop>
+	
+	TSL_local_data = (TSL_PinPort_uC & (1<<TSL_SO)) ;
+     bdc:	80 b1       	in	r24, 0x00	; 0
+     bde:	08 23       	and	r16, r24
+     be0:	09 83       	std	Y+1, r16	; 0x01
+	if ((TSL_local_data) != 0 ) return NotOK; //0x10
+     be2:	89 81       	ldd	r24, Y+1	; 0x01
+     be4:	88 23       	and	r24, r24
+     be6:	11 f0       	breq	.+4      	; 0xbec <TSL_Port_initalization+0x80>
+     be8:	80 e0       	ldi	r24, 0x00	; 0
+     bea:	01 c0       	rjmp	.+2      	; 0xbee <TSL_Port_initalization+0x82>
+	else return OK;//if SO=0 return OK;TSL_SO
+     bec:	81 e0       	ldi	r24, 0x01	; 1
+}
+     bee:	0f 90       	pop	r0
+     bf0:	df 91       	pop	r29
+     bf2:	cf 91       	pop	r28
+     bf4:	1f 91       	pop	r17
+     bf6:	0f 91       	pop	r16
+     bf8:	08 95       	ret
+
+00000bfa <ReadPixelValuefromTSL>:
+//  valoarea pizelului "PixelPosition" este incarcata in sirul PixelsValue pe pozitia  PixelPosition
+// 
+void  ReadPixelValuefromTSL(uint16_t PixelPosition,uint8_t XorY)
+{
+	//PixelsValue[PixelPosition] =PixelPosition;
+	if (XorY =='y')//trebuie inversat pt ca pe scanarea lui x citesc de fapt y si invers
+     bfa:	69 37       	cpi	r22, 0x79	; 121
+     bfc:	69 f4       	brne	.+26     	; 0xc18 <ReadPixelValuefromTSL+0x1e>
+	{   
+					//if ((PixelPosition > 100) && (PixelPosition < 150))  PixelsValue_Y[PixelPosition] =0;
+					//else  PixelsValue_Y[PixelPosition] =2;
+		
+		if ((ACSR & (1<<ACO)) !=0) PixelsValue_Y[PixelPosition] =0;//0;//0;
+     bfe:	00 b6       	in	r0, 0x30	; 48
+     c00:	05 fe       	sbrs	r0, 5
+     c02:	05 c0       	rjmp	.+10     	; 0xc0e <ReadPixelValuefromTSL+0x14>
+     c04:	fc 01       	movw	r30, r24
+     c06:	e1 5e       	subi	r30, 0xE1	; 225
+     c08:	fe 4f       	sbci	r31, 0xFE	; 254
+     c0a:	10 82       	st	Z, r1
+     c0c:	05 c0       	rjmp	.+10     	; 0xc18 <ReadPixelValuefromTSL+0x1e>
+		else PixelsValue_Y[PixelPosition] =1;//1;//1;		
+     c0e:	21 e0       	ldi	r18, 0x01	; 1
+     c10:	fc 01       	movw	r30, r24
+     c12:	e1 5e       	subi	r30, 0xE1	; 225
+     c14:	fe 4f       	sbci	r31, 0xFE	; 254
+     c16:	20 83       	st	Z, r18
+	}
+	if (XorY =='x')
+     c18:	68 37       	cpi	r22, 0x78	; 120
+     c1a:	69 f4       	brne	.+26     	; 0xc36 <ReadPixelValuefromTSL+0x3c>
+	{
+					//if ((PixelPosition > 500) && (PixelPosition < 550))  PixelsValue_X[PixelPosition] =0;
+					//else  PixelsValue_X[PixelPosition] =1;		
+		if ((ACSR & (1<<ACO)) !=0) PixelsValue_X[PixelPosition] =0;//0;//0;
+     c1c:	00 b6       	in	r0, 0x30	; 48
+     c1e:	05 fe       	sbrs	r0, 5
+     c20:	05 c0       	rjmp	.+10     	; 0xc2c <ReadPixelValuefromTSL+0x32>
+     c22:	fc 01       	movw	r30, r24
+     c24:	e1 5e       	subi	r30, 0xE1	; 225
+     c26:	f8 4f       	sbci	r31, 0xF8	; 248
+     c28:	10 82       	st	Z, r1
+     c2a:	08 95       	ret
+		else PixelsValue_X[PixelPosition] =1;//1;//1;
+     c2c:	fc 01       	movw	r30, r24
+     c2e:	e1 5e       	subi	r30, 0xE1	; 225
+     c30:	f8 4f       	sbci	r31, 0xF8	; 248
+     c32:	21 e0       	ldi	r18, 0x01	; 1
+     c34:	20 83       	st	Z, r18
+     c36:	08 95       	ret
+
+00000c38 <ReadPozitionfromTSL>:
+}
+//xxxxxxxxxxxxxxx
+
+
+//xxxxxxxxxxxxxxxxxxx
+uint8_t  ReadPozitionfromTSL(uint8_t TSL_SI_HOLD,uint8_t TSL_SO, uint8_t TSL_clk, uint8_t XorY){
+     c38:	9f 92       	push	r9
+     c3a:	af 92       	push	r10
+     c3c:	bf 92       	push	r11
+     c3e:	cf 92       	push	r12
+     c40:	df 92       	push	r13
+     c42:	ef 92       	push	r14
+     c44:	ff 92       	push	r15
+     c46:	0f 93       	push	r16
+     c48:	1f 93       	push	r17
+     c4a:	cf 93       	push	r28
+     c4c:	df 93       	push	r29
+     c4e:	00 d0       	rcall	.+0      	; 0xc50 <ReadPozitionfromTSL+0x18>
+     c50:	1f 92       	push	r1
+     c52:	cd b7       	in	r28, 0x3d	; 61
+     c54:	de b7       	in	r29, 0x3e	; 62
+     c56:	c8 2e       	mov	r12, r24
+     c58:	96 2e       	mov	r9, r22
+     c5a:	a2 2e       	mov	r10, r18
+	volatile uint16_t clock_index =0;
+     c5c:	1a 82       	std	Y+2, r1	; 0x02
+     c5e:	19 82       	std	Y+1, r1	; 0x01
+	volatile uint8_t  RP_local_data =0;
+     c60:	1b 82       	std	Y+3, r1	; 0x03
+				//RP_local_data = TSL_PinPort_uC;//(TSL_PinPort_uC & (1<<TSL_SO)) ;
+				//RP_local_data &= (1<<TSL_SO) ;  // ar trebui sa fie 0 daca nu-i mai astept ALTA DATA
+	
+	
+	//RP_local_data =
+	TSL_PORT_uC |=((1<<TSL_clk));// clk=1;          0____/----1
+     c62:	82 b1       	in	r24, 0x02	; 2
+     c64:	01 e0       	ldi	r16, 0x01	; 1
+     c66:	10 e0       	ldi	r17, 0x00	; 0
+     c68:	78 01       	movw	r14, r16
+     c6a:	02 c0       	rjmp	.+4      	; 0xc70 <ReadPozitionfromTSL+0x38>
+     c6c:	ee 0c       	add	r14, r14
+     c6e:	ff 1c       	adc	r15, r15
+     c70:	4a 95       	dec	r20
+     c72:	e2 f7       	brpl	.-8      	; 0xc6c <ReadPozitionfromTSL+0x34>
+     c74:	be 2c       	mov	r11, r14
+     c76:	8e 29       	or	r24, r14
+     c78:	82 b9       	out	0x02, r24	; 2
+	TSL_nop();
+     c7a:	6d df       	rcall	.-294    	; 0xb56 <TSL_nop>
+	TSL_PORT_uC &=(~(1<<TSL_clk));// clk=0;          1----\____0
+     c7c:	82 b1       	in	r24, 0x02	; 2
+     c7e:	de 2c       	mov	r13, r14
+     c80:	d0 94       	com	r13
+     c82:	8d 21       	and	r24, r13
+	TSL_nop();
+     c84:	82 b9       	out	0x02, r24	; 2
+     c86:	67 df       	rcall	.-306    	; 0xb56 <TSL_nop>
+	TSL_PORT_uC |=(1<<TSL_SI_HOLD);// SI=1;;      __0_______/----1
+     c88:	82 b1       	in	r24, 0x02	; 2
+     c8a:	02 c0       	rjmp	.+4      	; 0xc90 <ReadPozitionfromTSL+0x58>
+     c8c:	00 0f       	add	r16, r16
+     c8e:	11 1f       	adc	r17, r17
+     c90:	ca 94       	dec	r12
+     c92:	e2 f7       	brpl	.-8      	; 0xc8c <ReadPozitionfromTSL+0x54>
+     c94:	c0 2e       	mov	r12, r16
+     c96:	80 2b       	or	r24, r16
+	TSL_nop();
+     c98:	82 b9       	out	0x02, r24	; 2
+	TSL_nop();
+     c9a:	5d df       	rcall	.-326    	; 0xb56 <TSL_nop>
+     c9c:	5c df       	rcall	.-328    	; 0xb56 <TSL_nop>
+	TSL_nop();
+     c9e:	5b df       	rcall	.-330    	; 0xb56 <TSL_nop>
+     ca0:	1a 82       	std	Y+2, r1	; 0x02
+
+	for (clock_index =0;clock_index < (TSL_pixel_lenght + 300 ); clock_index++)  //10 cresc integrasion time
+     ca2:	19 82       	std	Y+1, r1	; 0x01
+     ca4:	37 c0       	rjmp	.+110    	; 0xd14 <ReadPozitionfromTSL+0xdc>
+	//for (clock_index =0;clock_index < (TSL_pixel_lenght-1); clock_index++)  //10 cresc integrasion time
+	{
+		TSL_PORT_uC |=((1<<TSL_clk));// clk=1;          0____/----1
+     ca6:	82 b1       	in	r24, 0x02	; 2
+		TSL_nop();
+     ca8:	8b 29       	or	r24, r11
+     caa:	82 b9       	out	0x02, r24	; 2
+		TSL_nop();
+     cac:	54 df       	rcall	.-344    	; 0xb56 <TSL_nop>
+     cae:	53 df       	rcall	.-346    	; 0xb56 <TSL_nop>
+		TSL_nop();
+     cb0:	52 df       	rcall	.-348    	; 0xb56 <TSL_nop>
+		TSL_nop();
+     cb2:	51 df       	rcall	.-350    	; 0xb56 <TSL_nop>
+     cb4:	50 df       	rcall	.-352    	; 0xb56 <TSL_nop>
+		TSL_nop();
+     cb6:	82 b1       	in	r24, 0x02	; 2
+	
+		TSL_PORT_uC &=(~((1<<TSL_SI_HOLD)));// SI=0;;      1----\_________0
+     cb8:	9c 2d       	mov	r25, r12
+     cba:	90 95       	com	r25
+     cbc:	89 23       	and	r24, r25
+     cbe:	82 b9       	out	0x02, r24	; 2
+     cc0:	4a df       	rcall	.-364    	; 0xb56 <TSL_nop>
+		TSL_nop();
+     cc2:	82 b1       	in	r24, 0x02	; 2
+     cc4:	8d 21       	and	r24, r13
+
+		TSL_PORT_uC &=(~(1<<TSL_clk));// clk=0;          1----\____0
+     cc6:	82 b9       	out	0x02, r24	; 2
+     cc8:	46 df       	rcall	.-372    	; 0xb56 <TSL_nop>
+		TSL_nop();
+     cca:	89 81       	ldd	r24, Y+1	; 0x01
+     ccc:	9a 81       	ldd	r25, Y+2	; 0x02
+		//TSL_nop();   //one ore more; to have an certain settling time of min120ns
+		///////////////////
+		//Red analog out of sensor or pixel value
+		if (clock_index < TSL_pixel_lenght) ReadPixelValuefromTSL(clock_index, XorY);
+     cce:	81 15       	cp	r24, r1
+     cd0:	96 40       	sbci	r25, 0x06	; 6
+     cd2:	20 f4       	brcc	.+8      	; 0xcdc <ReadPozitionfromTSL+0xa4>
+     cd4:	89 81       	ldd	r24, Y+1	; 0x01
+     cd6:	9a 81       	ldd	r25, Y+2	; 0x02
+     cd8:	6a 2d       	mov	r22, r10
+     cda:	8f df       	rcall	.-226    	; 0xbfa <ReadPixelValuefromTSL>
+     cdc:	89 81       	ldd	r24, Y+1	; 0x01
+     cde:	9a 81       	ldd	r25, Y+2	; 0x02
+		////////////////////
+		//if(clock_index == (TSL_pixel_lenght-1))//TSL_pixel_Half_lenght
+		if((clock_index >= (TSL_pixel_lenght-5)) && (RP_local_data ==0))//TSL_pixel_Half_lenght  //testez inainte cu 5 pixeli de final daca vine SO
+     ce0:	8b 3f       	cpi	r24, 0xFB	; 251
+     ce2:	95 40       	sbci	r25, 0x05	; 5
+     ce4:	88 f0       	brcs	.+34     	; 0xd08 <ReadPozitionfromTSL+0xd0>
+     ce6:	8b 81       	ldd	r24, Y+3	; 0x03
+     ce8:	81 11       	cpse	r24, r1
+     cea:	0e c0       	rjmp	.+28     	; 0xd08 <ReadPozitionfromTSL+0xd0>
+     cec:	34 df       	rcall	.-408    	; 0xb56 <TSL_nop>
+     cee:	80 b1       	in	r24, 0x00	; 0
+		{   
+			TSL_nop();
+     cf0:	8b 83       	std	Y+3, r24	; 0x03
+			RP_local_data = TSL_PinPort_uC;//(TSL_PinPort_uC & (1<<TSL_SO)) ;
+     cf2:	81 e0       	ldi	r24, 0x01	; 1
+     cf4:	90 e0       	ldi	r25, 0x00	; 0
+			RP_local_data &= (1<<TSL_SO) ;
+     cf6:	09 2c       	mov	r0, r9
+     cf8:	02 c0       	rjmp	.+4      	; 0xcfe <ReadPozitionfromTSL+0xc6>
+     cfa:	88 0f       	add	r24, r24
+     cfc:	99 1f       	adc	r25, r25
+     cfe:	0a 94       	dec	r0
+     d00:	e2 f7       	brpl	.-8      	; 0xcfa <ReadPozitionfromTSL+0xc2>
+     d02:	9b 81       	ldd	r25, Y+3	; 0x03
+     d04:	89 23       	and	r24, r25
+     d06:	8b 83       	std	Y+3, r24	; 0x03
+     d08:	26 df       	rcall	.-436    	; 0xb56 <TSL_nop>
+     d0a:	89 81       	ldd	r24, Y+1	; 0x01
+
+		}
+		TSL_nop();
+     d0c:	9a 81       	ldd	r25, Y+2	; 0x02
+	TSL_PORT_uC |=(1<<TSL_SI_HOLD);// SI=1;;      __0_______/----1
+	TSL_nop();
+	TSL_nop();
+	TSL_nop();
+
+	for (clock_index =0;clock_index < (TSL_pixel_lenght + 300 ); clock_index++)  //10 cresc integrasion time
+     d0e:	01 96       	adiw	r24, 0x01	; 1
+     d10:	9a 83       	std	Y+2, r25	; 0x02
+     d12:	89 83       	std	Y+1, r24	; 0x01
+     d14:	89 81       	ldd	r24, Y+1	; 0x01
+     d16:	9a 81       	ldd	r25, Y+2	; 0x02
+     d18:	8c 32       	cpi	r24, 0x2C	; 44
+     d1a:	97 40       	sbci	r25, 0x07	; 7
+     d1c:	08 f4       	brcc	.+2      	; 0xd20 <ReadPozitionfromTSL+0xe8>
+		}
+		TSL_nop();
+	}
+	//////end for
+	//last value for clk and SI hold 0;
+	TSL_PORT_uC |=((1<<TSL_SI_HOLD));// TSL_SI_HOLD=1;          0____/----1
+     d1e:	c3 cf       	rjmp	.-122    	; 0xca6 <ReadPozitionfromTSL+0x6e>
+     d20:	82 b1       	in	r24, 0x02	; 2
+	TSL_nop();
+     d22:	80 2b       	or	r24, r16
+     d24:	82 b9       	out	0x02, r24	; 2
+	TSL_PORT_uC |=((1<<TSL_clk));// TSL_SI_HOLD=1;          0____/----1
+     d26:	17 df       	rcall	.-466    	; 0xb56 <TSL_nop>
+     d28:	82 b1       	in	r24, 0x02	; 2
+     d2a:	e8 2a       	or	r14, r24
+	TSL_nop();
+     d2c:	e2 b8       	out	0x02, r14	; 2
+     d2e:	13 df       	rcall	.-474    	; 0xb56 <TSL_nop>
+	TSL_nop();
+     d30:	12 df       	rcall	.-476    	; 0xb56 <TSL_nop>
+     d32:	11 df       	rcall	.-478    	; 0xb56 <TSL_nop>
+	TSL_nop();
+     d34:	10 df       	rcall	.-480    	; 0xb56 <TSL_nop>
+     d36:	82 b1       	in	r24, 0x02	; 2
+	TSL_nop();
+     d38:	00 95       	com	r16
+     d3a:	08 23       	and	r16, r24
+
+
+	TSL_PORT_uC &=(~((1<<TSL_SI_HOLD)));// TSL_SI_HOLD=0;          1----\____0
+     d3c:	02 b9       	out	0x02, r16	; 2
+     d3e:	0b df       	rcall	.-490    	; 0xb56 <TSL_nop>
+     d40:	84 ee       	ldi	r24, 0xE4	; 228
+     d42:	81 b9       	out	0x01, r24	; 1
+	TSL_nop();
+     d44:	8b e1       	ldi	r24, 0x1B	; 27
+     d46:	82 b9       	out	0x02, r24	; 2
+	TSL_DDR_uC = 0xE4;
+     d48:	8b 81       	ldd	r24, Y+3	; 0x03
+     d4a:	81 11       	cpse	r24, r1
+	TSL_PORT_uC = 0x1B;
+     d4c:	81 e0       	ldi	r24, 0x01	; 1
+     d4e:	0f 90       	pop	r0
+	//TSL_PORT_uC = 0x1B;//(~(1<<TSL_clk));// TSL_CLK=0;;      1----\_________0
+	//				TSL_PORT_uC &=(~((1<<TSL_SI_HOLD)|(1<<TSL_CLK)));// SI=Clk=0;;      1----\_________0
+	
+				if ((RP_local_data) != 0 ) return OK; // if SO=1 return OK;TSL_SO
+     d50:	0f 90       	pop	r0
+     d52:	0f 90       	pop	r0
+     d54:	df 91       	pop	r29
+				else return NotOK;
+	
+}
+     d56:	cf 91       	pop	r28
+     d58:	1f 91       	pop	r17
+     d5a:	0f 91       	pop	r16
+     d5c:	ff 90       	pop	r15
+     d5e:	ef 90       	pop	r14
+     d60:	df 90       	pop	r13
+     d62:	cf 90       	pop	r12
+     d64:	bf 90       	pop	r11
+     d66:	af 90       	pop	r10
+     d68:	9f 90       	pop	r9
+     d6a:	08 95       	ret
+
+00000d6c <DetermineWirePosition>:
+     d6c:	cf 93       	push	r28
+     d6e:	df 93       	push	r29
+     d70:	cd b7       	in	r28, 0x3d	; 61
+     d72:	de b7       	in	r29, 0x3e	; 62
+}
+/////////////////////   end -ReadPixelValuefromTSL /////////////////////
+
+////input = pointer to the string  1280 lenght
+////Return wire position (the middle wire position) as index pixel of 63um 1280*63um=80.640mm
+uint8_t DetermineWirePosition( uint8_t XorY){
+     d74:	2a 97       	sbiw	r28, 0x0a	; 10
+     d76:	0f b6       	in	r0, 0x3f	; 63
+     d78:	f8 94       	cli
+     d7a:	de bf       	out	0x3e, r29	; 62
+     d7c:	0f be       	out	0x3f, r0	; 63
+     d7e:	cd bf       	out	0x3d, r28	; 61
+	volatile uint16_t WireWidth=0;
+     d80:	1a 82       	std	Y+2, r1	; 0x02
+     d82:	19 82       	std	Y+1, r1	; 0x01
+    volatile uint16_t ShadowWidth=0;
+     d84:	1c 82       	std	Y+4, r1	; 0x04
+     d86:	1b 82       	std	Y+3, r1	; 0x03
+	volatile uint8_t count_SmalShadow=0,count_LargeShadow=0;
+     d88:	1d 82       	std	Y+5, r1	; 0x05
+     d8a:	1e 82       	std	Y+6, r1	; 0x06
+	volatile uint16_t OldPixelsOrder=0, PixelsOrder=0;
+     d8c:	18 86       	std	Y+8, r1	; 0x08
+     d8e:	1f 82       	std	Y+7, r1	; 0x07
+     d90:	1a 86       	std	Y+10, r1	; 0x0a
+     d92:	19 86       	std	Y+9, r1	; 0x09
+	volatile uint8_t * PointerPixelArray;
+	
+	//RESETEZ POZITIA SI EROAREA CORESPUNZATOARE DIRECTIE CITITE	
+	if (XorY == 'x')
+     d94:	88 37       	cpi	r24, 0x78	; 120
+     d96:	39 f4       	brne	.+14     	; 0xda6 <DetermineWirePosition+0x3a>
+	{	WirePosition.mm_X = 0;
+     d98:	e7 e2       	ldi	r30, 0x27	; 39
+     d9a:	fd e0       	ldi	r31, 0x0D	; 13
+     d9c:	17 82       	std	Z+7, r1	; 0x07
+     d9e:	16 82       	std	Z+6, r1	; 0x06
+		WirePosition.N_X = 0;
+     da0:	11 82       	std	Z+1, r1	; 0x01
+     da2:	10 82       	st	Z, r1
+		WirePosition.error_X = 0;
+     da4:	12 82       	std	Z+2, r1	; 0x02
+		PointerPixelArray = PixelsValue_X; //pointer la situl lui X
+	}
+	if (XorY == 'y')
+     da6:	89 37       	cpi	r24, 0x79	; 121
+     da8:	51 f4       	brne	.+20     	; 0xdbe <DetermineWirePosition+0x52>
+	{   WirePosition.mm_Y = 0;
+     daa:	e7 e2       	ldi	r30, 0x27	; 39
+     dac:	fd e0       	ldi	r31, 0x0D	; 13
+     dae:	12 86       	std	Z+10, r1	; 0x0a
+     db0:	11 86       	std	Z+9, r1	; 0x09
+		WirePosition.N_Y = 0;
+     db2:	14 82       	std	Z+4, r1	; 0x04
+     db4:	13 82       	std	Z+3, r1	; 0x03
+		WirePosition.error_Y = 0;
+     db6:	15 82       	std	Z+5, r1	; 0x05
+		PointerPixelArray = PixelsValue_Y; //pointer la situl lui Y
+     db8:	4f e1       	ldi	r20, 0x1F	; 31
+     dba:	51 e0       	ldi	r21, 0x01	; 1
+     dbc:	02 c0       	rjmp	.+4      	; 0xdc2 <DetermineWirePosition+0x56>
+     dbe:	4f e1       	ldi	r20, 0x1F	; 31
+     dc0:	57 e0       	ldi	r21, 0x07	; 7
+		
+	}  
+////////////////////////////////////////////////////////	
+//-> INCEP DETERMINAREA POZITIEI	
+		PixelsOrder = 0;
+     dc2:	1a 86       	std	Y+10, r1	; 0x0a
+     dc4:	19 86       	std	Y+9, r1	; 0x09
+		//for (PixelIndex =0;PixelIndex < TSL_pixel_lenght ; PixelIndex++)
+		while(( PixelsOrder) < (MaXLenghtPixel-20))  //nu citesc pina la ultimi pixeli s-ara fie zero   1111 fir 11000 
+     dc6:	97 c0       	rjmp	.+302    	; 0xef6 <DetermineWirePosition+0x18a>
+		{
+			if ((*(PointerPixelArray +PixelsOrder))< 1 )  // valoare pixel mai mic de 1/ pixel value low that 1
+     dc8:	e9 85       	ldd	r30, Y+9	; 0x09
+     dca:	fa 85       	ldd	r31, Y+10	; 0x0a
+     dcc:	e4 0f       	add	r30, r20
+     dce:	f5 1f       	adc	r31, r21
+     dd0:	60 81       	ld	r22, Z
+     dd2:	61 11       	cpse	r22, r1
+     dd4:	8a c0       	rjmp	.+276    	; 0xeea <DetermineWirePosition+0x17e>
+			{
+                OldPixelsOrder = PixelsOrder;
+     dd6:	29 85       	ldd	r18, Y+9	; 0x09
+     dd8:	3a 85       	ldd	r19, Y+10	; 0x0a
+     dda:	38 87       	std	Y+8, r19	; 0x08
+     ddc:	2f 83       	std	Y+7, r18	; 0x07
+				WireWidth=0;//fir size=0
+     dde:	1a 82       	std	Y+2, r1	; 0x02
+     de0:	19 82       	std	Y+1, r1	; 0x01
+				while (((*(PointerPixelArray +PixelsOrder))< 1) && (WireWidth < MaxWireWidth) && (PixelsOrder < MaXLenghtPixel)) // valoare pixel mai mic de 1
+     de2:	12 c0       	rjmp	.+36     	; 0xe08 <DetermineWirePosition+0x9c>
+				{   
+					PixelsOrder++;  //increment pointer
+     de4:	29 85       	ldd	r18, Y+9	; 0x09
+     de6:	3a 85       	ldd	r19, Y+10	; 0x0a
+     de8:	2f 5f       	subi	r18, 0xFF	; 255
+     dea:	3f 4f       	sbci	r19, 0xFF	; 255
+     dec:	3a 87       	std	Y+10, r19	; 0x0a
+     dee:	29 87       	std	Y+9, r18	; 0x09
+					WireWidth ++;  //determin dimensiune umbrei /shadow with 
+     df0:	29 81       	ldd	r18, Y+1	; 0x01
+     df2:	3a 81       	ldd	r19, Y+2	; 0x02
+     df4:	2f 5f       	subi	r18, 0xFF	; 255
+     df6:	3f 4f       	sbci	r19, 0xFF	; 255
+     df8:	3a 83       	std	Y+2, r19	; 0x02
+     dfa:	29 83       	std	Y+1, r18	; 0x01
+					ShadowWidth++;//determin dimensiune umbrey totale+eroare/shadow with with
+     dfc:	2b 81       	ldd	r18, Y+3	; 0x03
+     dfe:	3c 81       	ldd	r19, Y+4	; 0x04
+     e00:	2f 5f       	subi	r18, 0xFF	; 255
+     e02:	3f 4f       	sbci	r19, 0xFF	; 255
+     e04:	3c 83       	std	Y+4, r19	; 0x04
+     e06:	2b 83       	std	Y+3, r18	; 0x03
+		{
+			if ((*(PointerPixelArray +PixelsOrder))< 1 )  // valoare pixel mai mic de 1/ pixel value low that 1
+			{
+                OldPixelsOrder = PixelsOrder;
+				WireWidth=0;//fir size=0
+				while (((*(PointerPixelArray +PixelsOrder))< 1) && (WireWidth < MaxWireWidth) && (PixelsOrder < MaXLenghtPixel)) // valoare pixel mai mic de 1
+     e08:	e9 85       	ldd	r30, Y+9	; 0x09
+     e0a:	fa 85       	ldd	r31, Y+10	; 0x0a
+     e0c:	e4 0f       	add	r30, r20
+     e0e:	f5 1f       	adc	r31, r21
+     e10:	90 81       	ld	r25, Z
+     e12:	91 11       	cpse	r25, r1
+     e14:	0a c0       	rjmp	.+20     	; 0xe2a <DetermineWirePosition+0xbe>
+     e16:	29 81       	ldd	r18, Y+1	; 0x01
+     e18:	3a 81       	ldd	r19, Y+2	; 0x02
+     e1a:	2f 33       	cpi	r18, 0x3F	; 63
+     e1c:	31 05       	cpc	r19, r1
+     e1e:	28 f4       	brcc	.+10     	; 0xe2a <DetermineWirePosition+0xbe>
+     e20:	29 85       	ldd	r18, Y+9	; 0x09
+     e22:	3a 85       	ldd	r19, Y+10	; 0x0a
+     e24:	21 15       	cp	r18, r1
+     e26:	36 40       	sbci	r19, 0x06	; 6
+     e28:	e8 f2       	brcs	.-70     	; 0xde4 <DetermineWirePosition+0x78>
+					PixelsOrder++;  //increment pointer
+					WireWidth ++;  //determin dimensiune umbrei /shadow with 
+					ShadowWidth++;//determin dimensiune umbrey totale+eroare/shadow with with
+					
+				}				    
+					if ((WireWidth > NoisWireWidth) && (WireWidth < MinimWireWidth))
+     e2a:	29 81       	ldd	r18, Y+1	; 0x01
+     e2c:	3a 81       	ldd	r19, Y+2	; 0x02
+     e2e:	26 30       	cpi	r18, 0x06	; 6
+     e30:	31 05       	cpc	r19, r1
+     e32:	a0 f0       	brcs	.+40     	; 0xe5c <DetermineWirePosition+0xf0>
+     e34:	29 81       	ldd	r18, Y+1	; 0x01
+     e36:	3a 81       	ldd	r19, Y+2	; 0x02
+     e38:	2b 30       	cpi	r18, 0x0B	; 11
+     e3a:	31 05       	cpc	r19, r1
+     e3c:	78 f4       	brcc	.+30     	; 0xe5c <DetermineWirePosition+0xf0>
+					{   count_SmalShadow++;  // riplu mic 
+     e3e:	9d 81       	ldd	r25, Y+5	; 0x05
+     e40:	9f 5f       	subi	r25, 0xFF	; 255
+     e42:	9d 83       	std	Y+5, r25	; 0x05
+						if (XorY == 'x') WirePosition.error_X = smal_shadow;
+     e44:	88 37       	cpi	r24, 0x78	; 120
+     e46:	19 f4       	brne	.+6      	; 0xe4e <DetermineWirePosition+0xe2>
+     e48:	90 e4       	ldi	r25, 0x40	; 64
+     e4a:	90 93 29 0d 	sts	0x0D29, r25	; 0x800d29 <WirePosition+0x2>
+						if (XorY == 'y') WirePosition.error_Y = smal_shadow;
+     e4e:	89 37       	cpi	r24, 0x79	; 121
+     e50:	19 f4       	brne	.+6      	; 0xe58 <DetermineWirePosition+0xec>
+     e52:	90 e4       	ldi	r25, 0x40	; 64
+     e54:	90 93 2c 0d 	sts	0x0D2C, r25	; 0x800d2c <WirePosition+0x5>
+						WireWidth = 0;
+     e58:	1a 82       	std	Y+2, r1	; 0x02
+     e5a:	19 82       	std	Y+1, r1	; 0x01
+					}//end if min
+					if (WireWidth > MaxWireWidth)  
+     e5c:	29 81       	ldd	r18, Y+1	; 0x01
+     e5e:	3a 81       	ldd	r19, Y+2	; 0x02
+     e60:	20 34       	cpi	r18, 0x40	; 64
+     e62:	31 05       	cpc	r19, r1
+     e64:	78 f0       	brcs	.+30     	; 0xe84 <DetermineWirePosition+0x118>
+					{   count_LargeShadow++;
+     e66:	9e 81       	ldd	r25, Y+6	; 0x06
+     e68:	9f 5f       	subi	r25, 0xFF	; 255
+     e6a:	9e 83       	std	Y+6, r25	; 0x06
+						if (XorY == 'x') WirePosition.error_X = large_shadow;
+     e6c:	88 37       	cpi	r24, 0x78	; 120
+     e6e:	19 f4       	brne	.+6      	; 0xe76 <DetermineWirePosition+0x10a>
+     e70:	91 e4       	ldi	r25, 0x41	; 65
+     e72:	90 93 29 0d 	sts	0x0D29, r25	; 0x800d29 <WirePosition+0x2>
+						if (XorY == 'y') WirePosition.error_Y = large_shadow;
+     e76:	89 37       	cpi	r24, 0x79	; 121
+     e78:	09 f0       	breq	.+2      	; 0xe7c <DetermineWirePosition+0x110>
+     e7a:	98 c0       	rjmp	.+304    	; 0xfac <DetermineWirePosition+0x240>
+     e7c:	81 e4       	ldi	r24, 0x41	; 65
+     e7e:	80 93 2c 0d 	sts	0x0D2C, r24	; 0x800d2c <WirePosition+0x5>
+     e82:	94 c0       	rjmp	.+296    	; 0xfac <DetermineWirePosition+0x240>
+						return NotOK; 
+					}//end if max
+					if ((WireWidth >= MinimWireWidth) && ((WireWidth <= MaxWireWidth)))
+     e84:	29 81       	ldd	r18, Y+1	; 0x01
+     e86:	3a 81       	ldd	r19, Y+2	; 0x02
+     e88:	2b 30       	cpi	r18, 0x0B	; 11
+     e8a:	31 05       	cpc	r19, r1
+     e8c:	70 f1       	brcs	.+92     	; 0xeea <DetermineWirePosition+0x17e>
+     e8e:	29 81       	ldd	r18, Y+1	; 0x01
+     e90:	3a 81       	ldd	r19, Y+2	; 0x02
+     e92:	20 34       	cpi	r18, 0x40	; 64
+     e94:	31 05       	cpc	r19, r1
+     e96:	48 f5       	brcc	.+82     	; 0xeea <DetermineWirePosition+0x17e>
+					{   count_LargeShadow ++; //riplu mare
+     e98:	9e 81       	ldd	r25, Y+6	; 0x06
+     e9a:	9f 5f       	subi	r25, 0xFF	; 255
+     e9c:	9e 83       	std	Y+6, r25	; 0x06
+						if (XorY == 'x') 
+     e9e:	88 37       	cpi	r24, 0x78	; 120
+     ea0:	81 f4       	brne	.+32     	; 0xec2 <DetermineWirePosition+0x156>
+						{	WirePosition.N_X = (OldPixelsOrder +(WireWidth>>1)-1);
+     ea2:	29 81       	ldd	r18, Y+1	; 0x01
+     ea4:	3a 81       	ldd	r19, Y+2	; 0x02
+     ea6:	b9 01       	movw	r22, r18
+     ea8:	76 95       	lsr	r23
+     eaa:	67 95       	ror	r22
+     eac:	2f 81       	ldd	r18, Y+7	; 0x07
+     eae:	38 85       	ldd	r19, Y+8	; 0x08
+     eb0:	26 0f       	add	r18, r22
+     eb2:	37 1f       	adc	r19, r23
+     eb4:	21 50       	subi	r18, 0x01	; 1
+     eb6:	31 09       	sbc	r19, r1
+     eb8:	e7 e2       	ldi	r30, 0x27	; 39
+     eba:	fd e0       	ldi	r31, 0x0D	; 13
+     ebc:	31 83       	std	Z+1, r19	; 0x01
+     ebe:	20 83       	st	Z, r18
+							WirePosition.error_X = OK_shadow;
+     ec0:	12 82       	std	Z+2, r1	; 0x02
+						}
+						if (XorY == 'y') 
+     ec2:	89 37       	cpi	r24, 0x79	; 121
+     ec4:	81 f4       	brne	.+32     	; 0xee6 <DetermineWirePosition+0x17a>
+						{   WirePosition.N_Y = (OldPixelsOrder +(WireWidth>>1)-1);
+     ec6:	29 81       	ldd	r18, Y+1	; 0x01
+     ec8:	3a 81       	ldd	r19, Y+2	; 0x02
+     eca:	b9 01       	movw	r22, r18
+     ecc:	76 95       	lsr	r23
+     ece:	67 95       	ror	r22
+     ed0:	2f 81       	ldd	r18, Y+7	; 0x07
+     ed2:	38 85       	ldd	r19, Y+8	; 0x08
+     ed4:	26 0f       	add	r18, r22
+     ed6:	37 1f       	adc	r19, r23
+     ed8:	21 50       	subi	r18, 0x01	; 1
+     eda:	31 09       	sbc	r19, r1
+     edc:	e7 e2       	ldi	r30, 0x27	; 39
+     ede:	fd e0       	ldi	r31, 0x0D	; 13
+     ee0:	34 83       	std	Z+4, r19	; 0x04
+     ee2:	23 83       	std	Z+3, r18	; 0x03
+							WirePosition.error_Y = OK_shadow;
+     ee4:	15 82       	std	Z+5, r1	; 0x05
+						}
+						WireWidth =0;
+     ee6:	1a 82       	std	Y+2, r1	; 0x02
+     ee8:	19 82       	std	Y+1, r1	; 0x01
+						
+					}  //end if compute position				
+			}//end if valoare pixel mai mic de 1
+			PixelsOrder++;
+     eea:	29 85       	ldd	r18, Y+9	; 0x09
+     eec:	3a 85       	ldd	r19, Y+10	; 0x0a
+     eee:	2f 5f       	subi	r18, 0xFF	; 255
+     ef0:	3f 4f       	sbci	r19, 0xFF	; 255
+     ef2:	3a 87       	std	Y+10, r19	; 0x0a
+     ef4:	29 87       	std	Y+9, r18	; 0x09
+	}  
+////////////////////////////////////////////////////////	
+//-> INCEP DETERMINAREA POZITIEI	
+		PixelsOrder = 0;
+		//for (PixelIndex =0;PixelIndex < TSL_pixel_lenght ; PixelIndex++)
+		while(( PixelsOrder) < (MaXLenghtPixel-20))  //nu citesc pina la ultimi pixeli s-ara fie zero   1111 fir 11000 
+     ef6:	29 85       	ldd	r18, Y+9	; 0x09
+     ef8:	3a 85       	ldd	r19, Y+10	; 0x0a
+     efa:	2c 3e       	cpi	r18, 0xEC	; 236
+     efc:	35 40       	sbci	r19, 0x05	; 5
+     efe:	08 f4       	brcc	.+2      	; 0xf02 <DetermineWirePosition+0x196>
+     f00:	63 cf       	rjmp	.-314    	; 0xdc8 <DetermineWirePosition+0x5c>
+			}//end if valoare pixel mai mic de 1
+			PixelsOrder++;
+		}//end while  // AM TERMINAT DE DETERMINAT POZITIA
+
+// OARE AM DETERMINAT CEVA TESTEZ POTITIA RESPECTIV EROAREA PINA AICI
+			 if(( XorY == 'x') && (ShadowWidth !=0) && (WirePosition.N_X == 0) && (WirePosition.error_X == 0))
+     f02:	88 37       	cpi	r24, 0x78	; 120
+     f04:	91 f4       	brne	.+36     	; 0xf2a <DetermineWirePosition+0x1be>
+     f06:	2b 81       	ldd	r18, Y+3	; 0x03
+     f08:	3c 81       	ldd	r19, Y+4	; 0x04
+     f0a:	23 2b       	or	r18, r19
+     f0c:	71 f0       	breq	.+28     	; 0xf2a <DetermineWirePosition+0x1be>
+     f0e:	20 91 27 0d 	lds	r18, 0x0D27	; 0x800d27 <WirePosition>
+     f12:	30 91 28 0d 	lds	r19, 0x0D28	; 0x800d28 <WirePosition+0x1>
+     f16:	23 2b       	or	r18, r19
+     f18:	41 f4       	brne	.+16     	; 0xf2a <DetermineWirePosition+0x1be>
+     f1a:	60 91 29 0d 	lds	r22, 0x0D29	; 0x800d29 <WirePosition+0x2>
+     f1e:	61 11       	cpse	r22, r1
+     f20:	04 c0       	rjmp	.+8      	; 0xf2a <DetermineWirePosition+0x1be>
+			 {    WirePosition.error_X=LipsaFir;
+     f22:	85 e3       	ldi	r24, 0x35	; 53
+     f24:	80 93 29 0d 	sts	0x0D29, r24	; 0x800d29 <WirePosition+0x2>
+				  return NotOK ;
+     f28:	41 c0       	rjmp	.+130    	; 0xfac <DetermineWirePosition+0x240>
+			 }
+			 if(( XorY == 'y') && (ShadowWidth !=0) && (WirePosition.N_Y == 0) && (WirePosition.error_Y == 0)){
+     f2a:	89 37       	cpi	r24, 0x79	; 121
+     f2c:	91 f4       	brne	.+36     	; 0xf52 <DetermineWirePosition+0x1e6>
+     f2e:	2b 81       	ldd	r18, Y+3	; 0x03
+     f30:	3c 81       	ldd	r19, Y+4	; 0x04
+     f32:	23 2b       	or	r18, r19
+     f34:	71 f0       	breq	.+28     	; 0xf52 <DetermineWirePosition+0x1e6>
+     f36:	20 91 2a 0d 	lds	r18, 0x0D2A	; 0x800d2a <WirePosition+0x3>
+     f3a:	30 91 2b 0d 	lds	r19, 0x0D2B	; 0x800d2b <WirePosition+0x4>
+     f3e:	23 2b       	or	r18, r19
+     f40:	41 f4       	brne	.+16     	; 0xf52 <DetermineWirePosition+0x1e6>
+     f42:	60 91 2c 0d 	lds	r22, 0x0D2C	; 0x800d2c <WirePosition+0x5>
+     f46:	61 11       	cpse	r22, r1
+     f48:	04 c0       	rjmp	.+8      	; 0xf52 <DetermineWirePosition+0x1e6>
+				   WirePosition.error_Y=LipsaFir;
+     f4a:	85 e3       	ldi	r24, 0x35	; 53
+     f4c:	80 93 2c 0d 	sts	0x0D2C, r24	; 0x800d2c <WirePosition+0x5>
+				  return  NotOK;
+     f50:	2d c0       	rjmp	.+90     	; 0xfac <DetermineWirePosition+0x240>
+			 }
+////////////////////////////////////////////   IES CU LIPSA FIR
+		
+			if ((ShadowWidth >(MaxWireWidth+(MaxWireWidth/2))) ||(count_SmalShadow >40))
+     f52:	2b 81       	ldd	r18, Y+3	; 0x03
+     f54:	3c 81       	ldd	r19, Y+4	; 0x04
+     f56:	2f 35       	cpi	r18, 0x5F	; 95
+     f58:	31 05       	cpc	r19, r1
+     f5a:	18 f4       	brcc	.+6      	; 0xf62 <DetermineWirePosition+0x1f6>
+     f5c:	9d 81       	ldd	r25, Y+5	; 0x05
+     f5e:	99 32       	cpi	r25, 0x29	; 41
+     f60:	60 f0       	brcs	.+24     	; 0xf7a <DetermineWirePosition+0x20e>
+			{
+				if (XorY == 'x') WirePosition.error_X = Noise_shadow;
+     f62:	88 37       	cpi	r24, 0x78	; 120
+     f64:	19 f4       	brne	.+6      	; 0xf6c <DetermineWirePosition+0x200>
+     f66:	93 e4       	ldi	r25, 0x43	; 67
+     f68:	90 93 29 0d 	sts	0x0D29, r25	; 0x800d29 <WirePosition+0x2>
+				if (XorY == 'y') WirePosition.error_Y = Noise_shadow;
+     f6c:	89 37       	cpi	r24, 0x79	; 121
+     f6e:	c9 f4       	brne	.+50     	; 0xfa2 <DetermineWirePosition+0x236>
+     f70:	83 e4       	ldi	r24, 0x43	; 67
+     f72:	80 93 2c 0d 	sts	0x0D2C, r24	; 0x800d2c <WirePosition+0x5>
+				return  NotOK;
+     f76:	60 e0       	ldi	r22, 0x00	; 0
+     f78:	19 c0       	rjmp	.+50     	; 0xfac <DetermineWirePosition+0x240>
+			}		    	
+			
+			if ((ShadowWidth >(MaxWireWidth+(MaxWireWidth/2))) ||(count_LargeShadow >10))
+     f7a:	2b 81       	ldd	r18, Y+3	; 0x03
+     f7c:	3c 81       	ldd	r19, Y+4	; 0x04
+     f7e:	2f 35       	cpi	r18, 0x5F	; 95
+     f80:	31 05       	cpc	r19, r1
+     f82:	18 f4       	brcc	.+6      	; 0xf8a <DetermineWirePosition+0x21e>
+     f84:	9e 81       	ldd	r25, Y+6	; 0x06
+     f86:	9b 30       	cpi	r25, 0x0B	; 11
+     f88:	70 f0       	brcs	.+28     	; 0xfa6 <DetermineWirePosition+0x23a>
+			{				
+				if (XorY == 'x') WirePosition.error_X = numerous_shadow;
+     f8a:	88 37       	cpi	r24, 0x78	; 120
+     f8c:	19 f4       	brne	.+6      	; 0xf94 <DetermineWirePosition+0x228>
+     f8e:	92 e4       	ldi	r25, 0x42	; 66
+     f90:	90 93 29 0d 	sts	0x0D29, r25	; 0x800d29 <WirePosition+0x2>
+				if (XorY == 'y') WirePosition.error_Y = numerous_shadow;
+     f94:	89 37       	cpi	r24, 0x79	; 121
+     f96:	49 f4       	brne	.+18     	; 0xfaa <DetermineWirePosition+0x23e>
+     f98:	82 e4       	ldi	r24, 0x42	; 66
+     f9a:	80 93 2c 0d 	sts	0x0D2C, r24	; 0x800d2c <WirePosition+0x5>
+				return  NotOK;
+     f9e:	60 e0       	ldi	r22, 0x00	; 0
+     fa0:	05 c0       	rjmp	.+10     	; 0xfac <DetermineWirePosition+0x240>
+		
+			if ((ShadowWidth >(MaxWireWidth+(MaxWireWidth/2))) ||(count_SmalShadow >40))
+			{
+				if (XorY == 'x') WirePosition.error_X = Noise_shadow;
+				if (XorY == 'y') WirePosition.error_Y = Noise_shadow;
+				return  NotOK;
+     fa2:	60 e0       	ldi	r22, 0x00	; 0
+     fa4:	03 c0       	rjmp	.+6      	; 0xfac <DetermineWirePosition+0x240>
+			{				
+				if (XorY == 'x') WirePosition.error_X = numerous_shadow;
+				if (XorY == 'y') WirePosition.error_Y = numerous_shadow;
+				return  NotOK;
+			} 
+			else return  OK	;	
+     fa6:	61 e0       	ldi	r22, 0x01	; 1
+     fa8:	01 c0       	rjmp	.+2      	; 0xfac <DetermineWirePosition+0x240>
+			
+			if ((ShadowWidth >(MaxWireWidth+(MaxWireWidth/2))) ||(count_LargeShadow >10))
+			{				
+				if (XorY == 'x') WirePosition.error_X = numerous_shadow;
+				if (XorY == 'y') WirePosition.error_Y = numerous_shadow;
+				return  NotOK;
+     faa:	60 e0       	ldi	r22, 0x00	; 0
+			} 
+			else return  OK	;	
+}
+     fac:	86 2f       	mov	r24, r22
+     fae:	2a 96       	adiw	r28, 0x0a	; 10
+     fb0:	0f b6       	in	r0, 0x3f	; 63
+     fb2:	f8 94       	cli
+     fb4:	de bf       	out	0x3e, r29	; 62
+     fb6:	0f be       	out	0x3f, r0	; 63
+     fb8:	cd bf       	out	0x3d, r28	; 61
+     fba:	df 91       	pop	r29
+     fbc:	cf 91       	pop	r28
+     fbe:	08 95       	ret
+
+00000fc0 <CalculezPozitieFirMM>:
+//input parameter [PixelOrder] wire position in order number[1-1280],axis x or y  [xy]
+//return true if calculation is OK NotOK if error
+//load x, y value of wire position in [WirePosition.mm_X] [WirePosition.mm_Y]
+
+uint8_t CalculezPozitieFirMM( uint16_t PixelOrderCalc, uint8_t xyClac)
+{
+     fc0:	0f 93       	push	r16
+     fc2:	1f 93       	push	r17
+     fc4:	cf 93       	push	r28
+     fc6:	df 93       	push	r29
+     fc8:	1f 92       	push	r1
+     fca:	cd b7       	in	r28, 0x3d	; 61
+     fcc:	de b7       	in	r29, 0x3e	; 62
+	volatile uint8_t error_in;
+	
+	switch(xyClac){
+     fce:	68 37       	cpi	r22, 0x78	; 120
+     fd0:	19 f0       	breq	.+6      	; 0xfd8 <CalculezPozitieFirMM+0x18>
+     fd2:	69 37       	cpi	r22, 0x79	; 121
+     fd4:	29 f0       	breq	.+10     	; 0xfe0 <CalculezPozitieFirMM+0x20>
+     fd6:	4b c0       	rjmp	.+150    	; 0x106e <__EEPROM_REGION_LENGTH__+0x6e>
+			case 'x':
+				error_in = WirePosition.error_X;
+     fd8:	20 91 29 0d 	lds	r18, 0x0D29	; 0x800d29 <WirePosition+0x2>
+     fdc:	29 83       	std	Y+1, r18	; 0x01
+			break;	
+     fde:	03 c0       	rjmp	.+6      	; 0xfe6 <CalculezPozitieFirMM+0x26>
+			case 'y':
+				error_in = WirePosition.error_Y;
+     fe0:	20 91 2c 0d 	lds	r18, 0x0D2C	; 0x800d2c <WirePosition+0x5>
+     fe4:	29 83       	std	Y+1, r18	; 0x01
+			default:
+			return NotOK;
+			}
+	//error_in = 0;
+	//if ( (error_in ==0) && (PixelOrder > MinimWireWidth) && (PixelOrder < (MaXLenghtPixel - MaxWireWidth)))  //[15  1580-63]
+   if ((error_in != smal_shadow) && (PixelOrderCalc > MinimWireWidth) && (PixelOrderCalc < (MaXLenghtPixel - MaxWireWidth)))  //[15  1580-63]
+     fe6:	29 81       	ldd	r18, Y+1	; 0x01
+     fe8:	20 34       	cpi	r18, 0x40	; 64
+     fea:	91 f1       	breq	.+100    	; 0x1050 <__EEPROM_REGION_LENGTH__+0x50>
+     fec:	8c 30       	cpi	r24, 0x0C	; 12
+     fee:	91 05       	cpc	r25, r1
+     ff0:	78 f1       	brcs	.+94     	; 0x1050 <__EEPROM_REGION_LENGTH__+0x50>
+     ff2:	81 3c       	cpi	r24, 0xC1	; 193
+     ff4:	25 e0       	ldi	r18, 0x05	; 5
+     ff6:	92 07       	cpc	r25, r18
+     ff8:	58 f5       	brcc	.+86     	; 0x1050 <__EEPROM_REGION_LENGTH__+0x50>
+
+	{		switch(xyClac){
+     ffa:	68 37       	cpi	r22, 0x78	; 120
+     ffc:	19 f0       	breq	.+6      	; 0x1004 <__EEPROM_REGION_LENGTH__+0x4>
+     ffe:	69 37       	cpi	r22, 0x79	; 121
+    1000:	a1 f0       	breq	.+40     	; 0x102a <__EEPROM_REGION_LENGTH__+0x2a>
+    1002:	37 c0       	rjmp	.+110    	; 0x1072 <__EEPROM_REGION_LENGTH__+0x72>
+					case 'x':
+						WirePosition.mm_X = PixelOrderCalc*Pixelsixe_uM;
+    1004:	bc 01       	movw	r22, r24
+    1006:	80 e0       	ldi	r24, 0x00	; 0
+    1008:	90 e0       	ldi	r25, 0x00	; 0
+    100a:	a1 d1       	rcall	.+834    	; 0x134e <__floatunsisf>
+    100c:	23 e3       	ldi	r18, 0x33	; 51
+    100e:	33 e3       	ldi	r19, 0x33	; 51
+    1010:	4b ec       	ldi	r20, 0xCB	; 203
+    1012:	50 e4       	ldi	r21, 0x40	; 64
+    1014:	02 d2       	rcall	.+1028   	; 0x141a <__mulsf3>
+    1016:	07 e2       	ldi	r16, 0x27	; 39
+    1018:	1d e0       	ldi	r17, 0x0D	; 13
+    101a:	6d d1       	rcall	.+730    	; 0x12f6 <__fixunssfsi>
+    101c:	f8 01       	movw	r30, r16
+    101e:	77 83       	std	Z+7, r23	; 0x07
+    1020:	66 83       	std	Z+6, r22	; 0x06
+						WirePosition.error_Xmm = (error_in );
+    1022:	89 81       	ldd	r24, Y+1	; 0x01
+    1024:	80 87       	std	Z+8, r24	; 0x08
+					case 'y':
+						WirePosition.mm_Y = PixelOrderCalc*Pixelsixe_uM;
+						WirePosition.error_Ymm = (error_in );
+					break;
+					}
+			return OK;
+    1026:	81 e0       	ldi	r24, 0x01	; 1
+
+	{		switch(xyClac){
+					case 'x':
+						WirePosition.mm_X = PixelOrderCalc*Pixelsixe_uM;
+						WirePosition.error_Xmm = (error_in );
+					break;
+    1028:	27 c0       	rjmp	.+78     	; 0x1078 <__EEPROM_REGION_LENGTH__+0x78>
+					case 'y':
+						WirePosition.mm_Y = PixelOrderCalc*Pixelsixe_uM;
+    102a:	bc 01       	movw	r22, r24
+    102c:	80 e0       	ldi	r24, 0x00	; 0
+    102e:	90 e0       	ldi	r25, 0x00	; 0
+    1030:	8e d1       	rcall	.+796    	; 0x134e <__floatunsisf>
+    1032:	23 e3       	ldi	r18, 0x33	; 51
+    1034:	33 e3       	ldi	r19, 0x33	; 51
+    1036:	4b ec       	ldi	r20, 0xCB	; 203
+    1038:	50 e4       	ldi	r21, 0x40	; 64
+    103a:	ef d1       	rcall	.+990    	; 0x141a <__mulsf3>
+    103c:	07 e2       	ldi	r16, 0x27	; 39
+    103e:	1d e0       	ldi	r17, 0x0D	; 13
+    1040:	5a d1       	rcall	.+692    	; 0x12f6 <__fixunssfsi>
+    1042:	f8 01       	movw	r30, r16
+    1044:	72 87       	std	Z+10, r23	; 0x0a
+    1046:	61 87       	std	Z+9, r22	; 0x09
+						WirePosition.error_Ymm = (error_in );
+    1048:	89 81       	ldd	r24, Y+1	; 0x01
+    104a:	83 87       	std	Z+11, r24	; 0x0b
+					break;
+					}
+			return OK;
+    104c:	81 e0       	ldi	r24, 0x01	; 1
+						WirePosition.error_Xmm = (error_in );
+					break;
+					case 'y':
+						WirePosition.mm_Y = PixelOrderCalc*Pixelsixe_uM;
+						WirePosition.error_Ymm = (error_in );
+					break;
+    104e:	14 c0       	rjmp	.+40     	; 0x1078 <__EEPROM_REGION_LENGTH__+0x78>
+					}
+			return OK;
+	} 
+	else 
+	{
+		switch(xyClac){
+    1050:	68 37       	cpi	r22, 0x78	; 120
+    1052:	19 f0       	breq	.+6      	; 0x105a <__EEPROM_REGION_LENGTH__+0x5a>
+    1054:	69 37       	cpi	r22, 0x79	; 121
+    1056:	31 f0       	breq	.+12     	; 0x1064 <__EEPROM_REGION_LENGTH__+0x64>
+    1058:	0e c0       	rjmp	.+28     	; 0x1076 <__EEPROM_REGION_LENGTH__+0x76>
+			case 'x':
+					WirePosition.error_Xmm = LipsaFir;
+    105a:	85 e3       	ldi	r24, 0x35	; 53
+    105c:	80 93 2f 0d 	sts	0x0D2F, r24	; 0x800d2f <WirePosition+0x8>
+					WirePosition.error_Ymm = LipsaFir;
+			break;
+		return NotOK;
+		}
+	}
+	return NotOK;
+    1060:	80 e0       	ldi	r24, 0x00	; 0
+	else 
+	{
+		switch(xyClac){
+			case 'x':
+					WirePosition.error_Xmm = LipsaFir;
+			break;
+    1062:	0a c0       	rjmp	.+20     	; 0x1078 <__EEPROM_REGION_LENGTH__+0x78>
+			case 'y':
+					WirePosition.error_Ymm = LipsaFir;
+    1064:	85 e3       	ldi	r24, 0x35	; 53
+    1066:	80 93 32 0d 	sts	0x0D32, r24	; 0x800d32 <WirePosition+0xb>
+			break;
+		return NotOK;
+		}
+	}
+	return NotOK;
+    106a:	80 e0       	ldi	r24, 0x00	; 0
+			case 'x':
+					WirePosition.error_Xmm = LipsaFir;
+			break;
+			case 'y':
+					WirePosition.error_Ymm = LipsaFir;
+			break;
+    106c:	05 c0       	rjmp	.+10     	; 0x1078 <__EEPROM_REGION_LENGTH__+0x78>
+			break;	
+			case 'y':
+				error_in = WirePosition.error_Y;
+			break;	
+			default:
+			return NotOK;
+    106e:	80 e0       	ldi	r24, 0x00	; 0
+    1070:	03 c0       	rjmp	.+6      	; 0x1078 <__EEPROM_REGION_LENGTH__+0x78>
+					case 'y':
+						WirePosition.mm_Y = PixelOrderCalc*Pixelsixe_uM;
+						WirePosition.error_Ymm = (error_in );
+					break;
+					}
+			return OK;
+    1072:	81 e0       	ldi	r24, 0x01	; 1
+    1074:	01 c0       	rjmp	.+2      	; 0x1078 <__EEPROM_REGION_LENGTH__+0x78>
+					WirePosition.error_Ymm = LipsaFir;
+			break;
+		return NotOK;
+		}
+	}
+	return NotOK;
+    1076:	80 e0       	ldi	r24, 0x00	; 0
+}
+    1078:	0f 90       	pop	r0
+    107a:	df 91       	pop	r29
+    107c:	cf 91       	pop	r28
+    107e:	1f 91       	pop	r17
+    1080:	0f 91       	pop	r16
+    1082:	08 95       	ret
+
+00001084 <Captura_AxaX>:
+
+// void  function 
+//initializare comp, initializare port TSL, led on Citire, calcul + tx uder0 
+void Captura_AxaX(uint8_t x_cmd){
+    1084:	cf 93       	push	r28
+    1086:	df 93       	push	r29
+    1088:	00 d0       	rcall	.+0      	; 0x108a <Captura_AxaX+0x6>
+    108a:	cd b7       	in	r28, 0x3d	; 61
+    108c:	de b7       	in	r29, 0x3e	; 62
+	volatile uint16_t local_sterg=0;
+    108e:	1a 82       	std	Y+2, r1	; 0x02
+    1090:	19 82       	std	Y+1, r1	; 0x01
+
+		WirePosition.error_X = 0; //clear flag error
+    1092:	e7 e2       	ldi	r30, 0x27	; 39
+    1094:	fd e0       	ldi	r31, 0x0D	; 13
+    1096:	12 82       	std	Z+2, r1	; 0x02
+		WirePosition.error_Xmm = 0;
+    1098:	10 86       	std	Z+8, r1	; 0x08
+		WirePosition.N_X = 0;	
+    109a:	11 82       	std	Z+1, r1	; 0x01
+    109c:	10 82       	st	Z, r1
+
+// sterg citirile anterioare
+	       for(local_sterg =0;local_sterg < TSL_pixel_lenght; local_sterg++) {PixelsValue_X[local_sterg] = 0;}	
+    109e:	1a 82       	std	Y+2, r1	; 0x02
+    10a0:	19 82       	std	Y+1, r1	; 0x01
+    10a2:	0a c0       	rjmp	.+20     	; 0x10b8 <Captura_AxaX+0x34>
+    10a4:	e9 81       	ldd	r30, Y+1	; 0x01
+    10a6:	fa 81       	ldd	r31, Y+2	; 0x02
+    10a8:	e1 5e       	subi	r30, 0xE1	; 225
+    10aa:	f8 4f       	sbci	r31, 0xF8	; 248
+    10ac:	10 82       	st	Z, r1
+    10ae:	89 81       	ldd	r24, Y+1	; 0x01
+    10b0:	9a 81       	ldd	r25, Y+2	; 0x02
+    10b2:	01 96       	adiw	r24, 0x01	; 1
+    10b4:	9a 83       	std	Y+2, r25	; 0x02
+    10b6:	89 83       	std	Y+1, r24	; 0x01
+    10b8:	89 81       	ldd	r24, Y+1	; 0x01
+    10ba:	9a 81       	ldd	r25, Y+2	; 0x02
+    10bc:	81 15       	cp	r24, r1
+    10be:	96 40       	sbci	r25, 0x06	; 6
+    10c0:	88 f3       	brcs	.-30     	; 0x10a4 <Captura_AxaX+0x20>
+	
+			AnalogComparator_Initialisation(Channel_AO_x); //admux0Channel_AO_x
+    10c2:	80 e0       	ldi	r24, 0x00	; 0
+    10c4:	d0 d0       	rcall	.+416    	; 0x1266 <AnalogComparator_Initialisation>
+			ON_LED_x;
+    10c6:	88 b1       	in	r24, 0x08	; 8
+    10c8:	81 60       	ori	r24, 0x01	; 1
+    10ca:	88 b9       	out	0x08, r24	; 8
+
+			//TSL_Port_initalization(TSL_SI_HOLD_x, TSL_SO_x , TSL_AO_x, TSL_CLK_x );
+			if(TSL_Port_initalization(TSL_SI_HOLD_x, TSL_SO_x , TSL_AO_x, TSL_CLK_x ) !=NotOK)
+    10cc:	20 91 0c 01 	lds	r18, 0x010C	; 0x80010c <TSL_CLK_x>
+    10d0:	40 91 f9 0d 	lds	r20, 0x0DF9	; 0x800df9 <TSL_AO_x>
+    10d4:	60 91 11 01 	lds	r22, 0x0111	; 0x800111 <TSL_SO_x>
+    10d8:	80 91 12 01 	lds	r24, 0x0112	; 0x800112 <TSL_SI_HOLD_x>
+    10dc:	47 dd       	rcall	.-1394   	; 0xb6c <TSL_Port_initalization>
+    10de:	88 23       	and	r24, r24
+    10e0:	29 f1       	breq	.+74     	; 0x112c <Captura_AxaX+0xa8>
+				//ReadPozitionfromTSL(TSL_SI_HOLD_x, TSL_SO_x, TSL_CLK_x, 'x');
+				//ReadPozitionfromTSL(TSL_SI_HOLD_x, TSL_SO_x, TSL_CLK_x, 'x');  denisa
+
+				//ReadPozitionfromTSL(TSL_SI_HOLD_x, TSL_SO_x, TSL_CLK_x, 'x');
+				//WirePosition.N_X = 500;
+				if( ReadPozitionfromTSL(TSL_SI_HOLD_x, TSL_SO_x, TSL_CLK_x, 'x') !=NotOK)
+    10e2:	28 e7       	ldi	r18, 0x78	; 120
+    10e4:	40 91 0c 01 	lds	r20, 0x010C	; 0x80010c <TSL_CLK_x>
+    10e8:	60 91 11 01 	lds	r22, 0x0111	; 0x800111 <TSL_SO_x>
+    10ec:	80 91 12 01 	lds	r24, 0x0112	; 0x800112 <TSL_SI_HOLD_x>
+    10f0:	a3 dd       	rcall	.-1210   	; 0xc38 <ReadPozitionfromTSL>
+    10f2:	88 23       	and	r24, r24
+    10f4:	b9 f0       	breq	.+46     	; 0x1124 <Captura_AxaX+0xa0>
+				 {      OFF_LED_x;
+    10f6:	88 b1       	in	r24, 0x08	; 8
+    10f8:	8e 7f       	andi	r24, 0xFE	; 254
+    10fa:	88 b9       	out	0x08, r24	; 8
+						OFF_LED_y; //adaugat 12.23
+    10fc:	88 b1       	in	r24, 0x08	; 8
+    10fe:	8d 7f       	andi	r24, 0xFD	; 253
+    1100:	88 b9       	out	0x08, r24	; 8
+						
+					    Comparator_Disable;
+    1102:	80 b7       	in	r24, 0x30	; 48
+    1104:	80 68       	ori	r24, 0x80	; 128
+    1106:	80 bf       	out	0x30, r24	; 48
+						Comparator_MuxDisable;
+    1108:	eb e7       	ldi	r30, 0x7B	; 123
+    110a:	f0 e0       	ldi	r31, 0x00	; 0
+    110c:	80 81       	ld	r24, Z
+    110e:	80 7b       	andi	r24, 0xB0	; 176
+					    DetermineWirePosition('x'); 
+    1110:	80 83       	st	Z, r24
+    1112:	88 e7       	ldi	r24, 0x78	; 120
+    1114:	2b de       	rcall	.-938    	; 0xd6c <DetermineWirePosition>
+						//if(	DetermineWirePosition(PixelsValue,x_cmd)!=NotOK)
+						//{ON_LED2;
+						
+						CalculezPozitieFirMM(WirePosition.N_X,'x');
+    1116:	68 e7       	ldi	r22, 0x78	; 120
+    1118:	80 91 27 0d 	lds	r24, 0x0D27	; 0x800d27 <WirePosition>
+    111c:	90 91 28 0d 	lds	r25, 0x0D28	; 0x800d28 <WirePosition+0x1>
+    1120:	4f df       	rcall	.-354    	; 0xfc0 <CalculezPozitieFirMM>
+    1122:	07 c0       	rjmp	.+14     	; 0x1132 <Captura_AxaX+0xae>
+				 }
+			     else WirePosition.error_X = TSL_dont_answar;
+    1124:	84 e4       	ldi	r24, 0x44	; 68
+    1126:	80 93 29 0d 	sts	0x0D29, r24	; 0x800d29 <WirePosition+0x2>
+    112a:	03 c0       	rjmp	.+6      	; 0x1132 <Captura_AxaX+0xae>
+			}
+			else WirePosition.error_X = TSL_init_faild;//{//TSL initialization failed
+    112c:	85 e4       	ldi	r24, 0x45	; 69
+    112e:	80 93 29 0d 	sts	0x0D29, r24	; 0x800d29 <WirePosition+0x2>
+	   
+		   
+		   local_sterg = PINC;
+    1132:	86 b1       	in	r24, 0x06	; 6
+    1134:	90 e0       	ldi	r25, 0x00	; 0
+    1136:	9a 83       	std	Y+2, r25	; 0x02
+    1138:	89 83       	std	Y+1, r24	; 0x01
+		   local_sterg &= (1<<LED_X);  // am ajuns aici su nu am sters ledul ii bai
+    113a:	89 81       	ldd	r24, Y+1	; 0x01
+    113c:	9a 81       	ldd	r25, Y+2	; 0x02
+    113e:	81 70       	andi	r24, 0x01	; 1
+    1140:	99 27       	eor	r25, r25
+    1142:	9a 83       	std	Y+2, r25	; 0x02
+    1144:	89 83       	std	Y+1, r24	; 0x01
+		   if (local_sterg !=0)
+    1146:	89 81       	ldd	r24, Y+1	; 0x01
+    1148:	9a 81       	ldd	r25, Y+2	; 0x02
+    114a:	89 2b       	or	r24, r25
+    114c:	31 f0       	breq	.+12     	; 0x115a <Captura_AxaX+0xd6>
+		   {
+			   OFF_LED_x;
+    114e:	88 b1       	in	r24, 0x08	; 8
+    1150:	8e 7f       	andi	r24, 0xFE	; 254
+			   WirePosition.error_Xmm = ErrorLed;
+    1152:	88 b9       	out	0x08, r24	; 8
+    1154:	86 e4       	ldi	r24, 0x46	; 70
+    1156:	80 93 2f 0d 	sts	0x0D2F, r24	; 0x800d2f <WirePosition+0x8>
+		   }
+		//WirePosition.mm_X = 500;   
+		//Trimite_Valoare('x',WirePosition.mm_X);//WirePosition.mm_X		
+		//salvez datele pentru filtrare suplimentara
+		SalvezDate('x');
+    115a:	88 e7       	ldi	r24, 0x78	; 120
+    115c:	03 da       	rcall	.-3066   	; 0x564 <SalvezDate>
+}
+    115e:	0f 90       	pop	r0
+    1160:	0f 90       	pop	r0
+    1162:	df 91       	pop	r29
+    1164:	cf 91       	pop	r28
+    1166:	08 95       	ret
+
+00001168 <Captura_AxaY>:
+
+//initializare comp, initializare port TSL, led on Citire, calcul + tx uder0
+void Captura_AxaY(uint8_t y_cmd){	
+    1168:	cf 93       	push	r28
+    116a:	df 93       	push	r29
+    116c:	00 d0       	rcall	.+0      	; 0x116e <Captura_AxaY+0x6>
+    116e:	cd b7       	in	r28, 0x3d	; 61
+    1170:	de b7       	in	r29, 0x3e	; 62
+	volatile uint16_t local_sterg=0;
+    1172:	1a 82       	std	Y+2, r1	; 0x02
+    1174:	19 82       	std	Y+1, r1	; 0x01
+	
+	WirePosition.error_Y = 0; //clear flag error
+    1176:	e7 e2       	ldi	r30, 0x27	; 39
+    1178:	fd e0       	ldi	r31, 0x0D	; 13
+    117a:	15 82       	std	Z+5, r1	; 0x05
+	WirePosition.error_Ymm = 0;
+    117c:	13 86       	std	Z+11, r1	; 0x0b
+	WirePosition.N_Y = 0;		
+    117e:	14 82       	std	Z+4, r1	; 0x04
+    1180:	13 82       	std	Z+3, r1	; 0x03
+		
+	for(local_sterg =0;local_sterg < TSL_pixel_lenght; local_sterg++) {PixelsValue_Y[local_sterg] = 0;}
+    1182:	1a 82       	std	Y+2, r1	; 0x02
+    1184:	19 82       	std	Y+1, r1	; 0x01
+    1186:	0a c0       	rjmp	.+20     	; 0x119c <Captura_AxaY+0x34>
+    1188:	e9 81       	ldd	r30, Y+1	; 0x01
+    118a:	fa 81       	ldd	r31, Y+2	; 0x02
+    118c:	e1 5e       	subi	r30, 0xE1	; 225
+    118e:	fe 4f       	sbci	r31, 0xFE	; 254
+    1190:	10 82       	st	Z, r1
+    1192:	89 81       	ldd	r24, Y+1	; 0x01
+    1194:	9a 81       	ldd	r25, Y+2	; 0x02
+    1196:	01 96       	adiw	r24, 0x01	; 1
+    1198:	9a 83       	std	Y+2, r25	; 0x02
+    119a:	89 83       	std	Y+1, r24	; 0x01
+    119c:	89 81       	ldd	r24, Y+1	; 0x01
+    119e:	9a 81       	ldd	r25, Y+2	; 0x02
+    11a0:	81 15       	cp	r24, r1
+    11a2:	96 40       	sbci	r25, 0x06	; 6
+    11a4:	88 f3       	brcs	.-30     	; 0x1188 <Captura_AxaY+0x20>
+	
+		AnalogComparator_Initialisation(Channel_AO_y); //admux0Channel_AO_y
+    11a6:	83 e0       	ldi	r24, 0x03	; 3
+    11a8:	5e d0       	rcall	.+188    	; 0x1266 <AnalogComparator_Initialisation>
+		ON_LED_y;
+    11aa:	88 b1       	in	r24, 0x08	; 8
+    11ac:	82 60       	ori	r24, 0x02	; 2
+    11ae:	88 b9       	out	0x08, r24	; 8
+		
+				//TSL_Port_initalization(TSL_SI_HOLD_y, TSL_SO_y , TSL_AO_y, TSL_CLK_y );
+				if(TSL_Port_initalization(TSL_SI_HOLD_y, TSL_SO_y , TSL_AO_y, TSL_CLK_y ) !=NotOK) //TSL_Port_initalization(TSL_SI_HOLD_y, TSL_SO_y , TSL_AO_y );
+    11b0:	20 91 0d 01 	lds	r18, 0x010D	; 0x80010d <TSL_CLK_y>
+    11b4:	40 91 0e 01 	lds	r20, 0x010E	; 0x80010e <TSL_AO_y>
+    11b8:	60 91 0f 01 	lds	r22, 0x010F	; 0x80010f <TSL_SO_y>
+    11bc:	80 91 10 01 	lds	r24, 0x0110	; 0x800110 <TSL_SI_HOLD_y>
+    11c0:	d5 dc       	rcall	.-1622   	; 0xb6c <TSL_Port_initalization>
+    11c2:	88 23       	and	r24, r24
+    11c4:	29 f1       	breq	.+74     	; 0x1210 <Captura_AxaY+0xa8>
+				{
+					//ReadPozitionfromTSL(TSL_SI_HOLD_y, TSL_SO_y, TSL_CLK_y, 'y');
+					//ReadPozitionfromTSL(TSL_SI_HOLD_y, TSL_SO_y, TSL_CLK_y, 'y');  denisa
+					if( ReadPozitionfromTSL(TSL_SI_HOLD_y, TSL_SO_y, TSL_CLK_y, 'y') !=NotOK) //ReadPozitionfromTSL(TSL_SI_HOLD_y, TSL_SO_y);
+    11c6:	29 e7       	ldi	r18, 0x79	; 121
+    11c8:	40 91 0d 01 	lds	r20, 0x010D	; 0x80010d <TSL_CLK_y>
+    11cc:	60 91 0f 01 	lds	r22, 0x010F	; 0x80010f <TSL_SO_y>
+    11d0:	80 91 10 01 	lds	r24, 0x0110	; 0x800110 <TSL_SI_HOLD_y>
+    11d4:	31 dd       	rcall	.-1438   	; 0xc38 <ReadPozitionfromTSL>
+    11d6:	88 23       	and	r24, r24
+    11d8:	b9 f0       	breq	.+46     	; 0x1208 <Captura_AxaY+0xa0>
+					{   
+						OFF_LED_y;
+    11da:	88 b1       	in	r24, 0x08	; 8
+    11dc:	8d 7f       	andi	r24, 0xFD	; 253
+    11de:	88 b9       	out	0x08, r24	; 8
+						OFF_LED_x; //adaugat 12.23
+    11e0:	88 b1       	in	r24, 0x08	; 8
+    11e2:	8e 7f       	andi	r24, 0xFE	; 254
+    11e4:	88 b9       	out	0x08, r24	; 8
+						Comparator_Disable;
+    11e6:	80 b7       	in	r24, 0x30	; 48
+    11e8:	80 68       	ori	r24, 0x80	; 128
+    11ea:	80 bf       	out	0x30, r24	; 48
+						Comparator_MuxDisable;
+    11ec:	eb e7       	ldi	r30, 0x7B	; 123
+    11ee:	f0 e0       	ldi	r31, 0x00	; 0
+    11f0:	80 81       	ld	r24, Z
+    11f2:	80 7b       	andi	r24, 0xB0	; 176
+						DetermineWirePosition('y');
+    11f4:	80 83       	st	Z, r24
+    11f6:	89 e7       	ldi	r24, 0x79	; 121
+    11f8:	b9 dd       	rcall	.-1166   	; 0xd6c <DetermineWirePosition>
+						//if(	DetermineWirePosition(PixelsValue,x_cmd)!=NotOK)
+						//{ON_LED2;
+						CalculezPozitieFirMM(WirePosition.N_Y,'y');
+    11fa:	69 e7       	ldi	r22, 0x79	; 121
+    11fc:	80 91 2a 0d 	lds	r24, 0x0D2A	; 0x800d2a <WirePosition+0x3>
+    1200:	90 91 2b 0d 	lds	r25, 0x0D2B	; 0x800d2b <WirePosition+0x4>
+    1204:	dd de       	rcall	.-582    	; 0xfc0 <CalculezPozitieFirMM>
+    1206:	07 c0       	rjmp	.+14     	; 0x1216 <Captura_AxaY+0xae>
+					}
+					else WirePosition.error_Y = TSL_dont_answar;
+    1208:	84 e4       	ldi	r24, 0x44	; 68
+    120a:	80 93 2c 0d 	sts	0x0D2C, r24	; 0x800d2c <WirePosition+0x5>
+    120e:	03 c0       	rjmp	.+6      	; 0x1216 <Captura_AxaY+0xae>
+				}
+				else WirePosition.error_Y = TSL_init_faild;//{//TSL initialization failed
+    1210:	85 e4       	ldi	r24, 0x45	; 69
+    1212:	80 93 2c 0d 	sts	0x0D2C, r24	; 0x800d2c <WirePosition+0x5>
+					
+						local_sterg = PINC;
+    1216:	86 b1       	in	r24, 0x06	; 6
+    1218:	90 e0       	ldi	r25, 0x00	; 0
+    121a:	9a 83       	std	Y+2, r25	; 0x02
+    121c:	89 83       	std	Y+1, r24	; 0x01
+						local_sterg &= (1<<LED_Y);  // am ajuns aici su nu am sters ledul ii bai
+    121e:	89 81       	ldd	r24, Y+1	; 0x01
+    1220:	9a 81       	ldd	r25, Y+2	; 0x02
+    1222:	82 70       	andi	r24, 0x02	; 2
+    1224:	99 27       	eor	r25, r25
+    1226:	9a 83       	std	Y+2, r25	; 0x02
+    1228:	89 83       	std	Y+1, r24	; 0x01
+						if (local_sterg !=0)
+    122a:	89 81       	ldd	r24, Y+1	; 0x01
+    122c:	9a 81       	ldd	r25, Y+2	; 0x02
+    122e:	89 2b       	or	r24, r25
+    1230:	31 f0       	breq	.+12     	; 0x123e <Captura_AxaY+0xd6>
+						{
+							OFF_LED_y;
+    1232:	88 b1       	in	r24, 0x08	; 8
+    1234:	8d 7f       	andi	r24, 0xFD	; 253
+							WirePosition.error_Ymm = ErrorLed;  //defapt este eroare pe Y
+    1236:	88 b9       	out	0x08, r24	; 8
+    1238:	86 e4       	ldi	r24, 0x46	; 70
+    123a:	80 93 32 0d 	sts	0x0D32, r24	; 0x800d32 <WirePosition+0xb>
+						}	
+				//Trimite_Valoare('y',WirePosition.N_Y );//WirePosition.mm_X
+				SalvezDate('y');
+    123e:	89 e7       	ldi	r24, 0x79	; 121
+    1240:	91 d9       	rcall	.-3294   	; 0x564 <SalvezDate>
+    1242:	0f 90       	pop	r0
+    1244:	0f 90       	pop	r0
+    1246:	df 91       	pop	r29
+    1248:	cf 91       	pop	r28
+    124a:	08 95       	ret
+
+0000124c <Port_initialisation>:
+#include <avr/io.h>
+#include "uC_Periferic_Initialisation.h"
+
+void Port_initialisation(){
+  
+  DDRB |=((1<<1)|(1<<0));//led 0, 1  flag_LED
+    124c:	84 b1       	in	r24, 0x04	; 4
+    124e:	83 60       	ori	r24, 0x03	; 3
+    1250:	84 b9       	out	0x04, r24	; 4
+  PORTB |=((1<<1)|(1<<0));;//led 0, 1 flag_LED
+    1252:	85 b1       	in	r24, 0x05	; 5
+    1254:	83 60       	ori	r24, 0x03	; 3
+    1256:	85 b9       	out	0x05, r24	; 5
+  
+  DDRD |=(1<< PORTD4);    //Enable RS485
+    1258:	8a b1       	in	r24, 0x0a	; 10
+    125a:	80 61       	ori	r24, 0x10	; 16
+    125c:	8a b9       	out	0x0a, r24	; 10
+  RS485_uC_Receptie;    //Enable RS485
+    125e:	8b b1       	in	r24, 0x0b	; 11
+    1260:	80 61       	ori	r24, 0x10	; 16
+    1262:	8b b9       	out	0x0b, r24	; 11
+    1264:	08 95       	ret
+
+00001266 <AnalogComparator_Initialisation>:
+
+
+ void AnalogComparator_Initialisation( char channel){
+	 
+	 
+	 Comparator_Enable;//ACSR &= (1<<ACD);  //enable Compar; 
+    1266:	90 b7       	in	r25, 0x30	; 48
+    1268:	9f 77       	andi	r25, 0x7F	; 127
+    126a:	90 bf       	out	0x30, r25	; 48
+	 //ACSR |= (1<<ACBG); // AIN0=referinta 1.1v AIN1 for sensor  
+	 ADC_off; //ADC off
+    126c:	ea e7       	ldi	r30, 0x7A	; 122
+    126e:	f0 e0       	ldi	r31, 0x00	; 0
+    1270:	90 81       	ld	r25, Z
+    1272:	9f 73       	andi	r25, 0x3F	; 63
+    1274:	90 83       	st	Z, r25
+	 ADMUX = channel; 	 
+    1276:	80 93 7c 00 	sts	0x007C, r24	; 0x80007c <__TEXT_REGION_LENGTH__+0x7e007c>
+	 ADCSRB |=(1<< ACME);
+    127a:	eb e7       	ldi	r30, 0x7B	; 123
+    127c:	f0 e0       	ldi	r31, 0x00	; 0
+    127e:	80 81       	ld	r24, Z
+    1280:	80 64       	ori	r24, 0x40	; 64
+    1282:	80 83       	st	Z, r24
+    1284:	8f e1       	ldi	r24, 0x1F	; 31
+    1286:	9e e4       	ldi	r25, 0x4E	; 78
+    1288:	01 97       	sbiw	r24, 0x01	; 1
+    128a:	f1 f7       	brne	.-4      	; 0x1288 <AnalogComparator_Initialisation+0x22>
+    128c:	00 c0       	rjmp	.+0      	; 0x128e <AnalogComparator_Initialisation+0x28>
+    128e:	00 00       	nop
+    1290:	08 95       	ret
+
+00001292 <Timer_1_Initialisation_0_1S>:
+	 _delay_ms(5); 	 
+	 ;}
+	 
+ void Timer_1_Initialisation_0_1S(void){
+	 TCCR1A = 0;
+    1292:	10 92 80 00 	sts	0x0080, r1	; 0x800080 <__TEXT_REGION_LENGTH__+0x7e0080>
+	 TCCR1B = ((1<<WGM12)|(1<<CS12)|(0<<CS11)|(0<<CS10));  //CTC foscil/256;
+    1296:	8c e0       	ldi	r24, 0x0C	; 12
+    1298:	80 93 81 00 	sts	0x0081, r24	; 0x800081 <__TEXT_REGION_LENGTH__+0x7e0081>
+	 OCR1A = 6249;  //0.1s=(ocr+1)*N/foscil
+    129c:	89 e6       	ldi	r24, 0x69	; 105
+    129e:	98 e1       	ldi	r25, 0x18	; 24
+    12a0:	90 93 89 00 	sts	0x0089, r25	; 0x800089 <__TEXT_REGION_LENGTH__+0x7e0089>
+    12a4:	80 93 88 00 	sts	0x0088, r24	; 0x800088 <__TEXT_REGION_LENGTH__+0x7e0088>
+	 TIMSK1 |= (1<<OCIE1A);
+    12a8:	ef e6       	ldi	r30, 0x6F	; 111
+    12aa:	f0 e0       	ldi	r31, 0x00	; 0
+    12ac:	80 81       	ld	r24, Z
+    12ae:	82 60       	ori	r24, 0x02	; 2
+    12b0:	80 83       	st	Z, r24
+    12b2:	08 95       	ret
+
+000012b4 <RX_TX_0_Initialisation>:
+ }
+ 
+ 
+ void RX_TX_0_Initialisation(void){
+ 	UCSR0B  = 0b10011000;
+    12b4:	88 e9       	ldi	r24, 0x98	; 152
+    12b6:	80 93 c1 00 	sts	0x00C1, r24	; 0x8000c1 <__TEXT_REGION_LENGTH__+0x7e00c1>
+ 	UBRR0H = 0;    //
+    12ba:	10 92 c5 00 	sts	0x00C5, r1	; 0x8000c5 <__TEXT_REGION_LENGTH__+0x7e00c5>
+ 	UBRR0L = 103;  //9600biti/sec
+    12be:	87 e6       	ldi	r24, 0x67	; 103
+    12c0:	80 93 c4 00 	sts	0x00C4, r24	; 0x8000c4 <__TEXT_REGION_LENGTH__+0x7e00c4>
+    12c4:	08 95       	ret
+
+000012c6 <Timer_0_Initialisation_4mS>:
+ }
+ 
+ void Timer_0_Initialisation_4mS (void){
+
+	 TCCR0B = (1 << CS02);// 0x05;  //0.01636,//   /
+    12c6:	84 e0       	ldi	r24, 0x04	; 4
+    12c8:	85 bd       	out	0x25, r24	; 37
+	 TCNT0=0x00;
+    12ca:	16 bc       	out	0x26, r1	; 38
+	 TIMSK0 |= (1<<TOIE0);
+    12cc:	ee e6       	ldi	r30, 0x6E	; 110
+    12ce:	f0 e0       	ldi	r31, 0x00	; 0
+    12d0:	80 81       	ld	r24, Z
+    12d2:	81 60       	ori	r24, 0x01	; 1
+    12d4:	80 83       	st	Z, r24
+    12d6:	08 95       	ret
+
+000012d8 <Initializare_TX_RX_1_RS485>:
+ }
+ 
+ void Initializare_TX_RX_1_RS485 (void){
+	 //transmisie/receptie 1200biti pe secunda
+	 UCSR1A = 0x00;
+    12d8:	10 92 c8 00 	sts	0x00C8, r1	; 0x8000c8 <__TEXT_REGION_LENGTH__+0x7e00c8>
+	 //UCSRB = 0b10011000;
+	 UCSR1B=0x98;
+    12dc:	88 e9       	ldi	r24, 0x98	; 152
+    12de:	80 93 c9 00 	sts	0x00C9, r24	; 0x8000c9 <__TEXT_REGION_LENGTH__+0x7e00c9>
+	 UCSR1C=0x86;
+    12e2:	86 e8       	ldi	r24, 0x86	; 134
+    12e4:	80 93 ca 00 	sts	0x00CA, r24	; 0x8000ca <__TEXT_REGION_LENGTH__+0x7e00ca>
+	 UBRR1H=0x03;
+    12e8:	83 e0       	ldi	r24, 0x03	; 3
+    12ea:	80 93 cd 00 	sts	0x00CD, r24	; 0x8000cd <__TEXT_REGION_LENGTH__+0x7e00cd>
+	 UBRR1L=0x40;
+    12ee:	80 e4       	ldi	r24, 0x40	; 64
+    12f0:	80 93 cc 00 	sts	0x00CC, r24	; 0x8000cc <__TEXT_REGION_LENGTH__+0x7e00cc>
+    12f4:	08 95       	ret
+
+000012f6 <__fixunssfsi>:
+    12f6:	70 d0       	rcall	.+224    	; 0x13d8 <__fp_splitA>
+    12f8:	88 f0       	brcs	.+34     	; 0x131c <__fixunssfsi+0x26>
+    12fa:	9f 57       	subi	r25, 0x7F	; 127
+    12fc:	90 f0       	brcs	.+36     	; 0x1322 <__fixunssfsi+0x2c>
+    12fe:	b9 2f       	mov	r27, r25
+    1300:	99 27       	eor	r25, r25
+    1302:	b7 51       	subi	r27, 0x17	; 23
+    1304:	a0 f0       	brcs	.+40     	; 0x132e <__fixunssfsi+0x38>
+    1306:	d1 f0       	breq	.+52     	; 0x133c <__fixunssfsi+0x46>
+    1308:	66 0f       	add	r22, r22
+    130a:	77 1f       	adc	r23, r23
+    130c:	88 1f       	adc	r24, r24
+    130e:	99 1f       	adc	r25, r25
+    1310:	1a f0       	brmi	.+6      	; 0x1318 <__fixunssfsi+0x22>
+    1312:	ba 95       	dec	r27
+    1314:	c9 f7       	brne	.-14     	; 0x1308 <__fixunssfsi+0x12>
+    1316:	12 c0       	rjmp	.+36     	; 0x133c <__fixunssfsi+0x46>
+    1318:	b1 30       	cpi	r27, 0x01	; 1
+    131a:	81 f0       	breq	.+32     	; 0x133c <__fixunssfsi+0x46>
+    131c:	77 d0       	rcall	.+238    	; 0x140c <__fp_zero>
+    131e:	b1 e0       	ldi	r27, 0x01	; 1
+    1320:	08 95       	ret
+    1322:	74 c0       	rjmp	.+232    	; 0x140c <__fp_zero>
+    1324:	67 2f       	mov	r22, r23
+    1326:	78 2f       	mov	r23, r24
+    1328:	88 27       	eor	r24, r24
+    132a:	b8 5f       	subi	r27, 0xF8	; 248
+    132c:	39 f0       	breq	.+14     	; 0x133c <__fixunssfsi+0x46>
+    132e:	b9 3f       	cpi	r27, 0xF9	; 249
+    1330:	cc f3       	brlt	.-14     	; 0x1324 <__fixunssfsi+0x2e>
+    1332:	86 95       	lsr	r24
+    1334:	77 95       	ror	r23
+    1336:	67 95       	ror	r22
+    1338:	b3 95       	inc	r27
+    133a:	d9 f7       	brne	.-10     	; 0x1332 <__fixunssfsi+0x3c>
+    133c:	3e f4       	brtc	.+14     	; 0x134c <__fixunssfsi+0x56>
+    133e:	90 95       	com	r25
+    1340:	80 95       	com	r24
+    1342:	70 95       	com	r23
+    1344:	61 95       	neg	r22
+    1346:	7f 4f       	sbci	r23, 0xFF	; 255
+    1348:	8f 4f       	sbci	r24, 0xFF	; 255
+    134a:	9f 4f       	sbci	r25, 0xFF	; 255
+    134c:	08 95       	ret
+
+0000134e <__floatunsisf>:
+    134e:	e8 94       	clt
+    1350:	09 c0       	rjmp	.+18     	; 0x1364 <__floatsisf+0x12>
+
+00001352 <__floatsisf>:
+    1352:	97 fb       	bst	r25, 7
+    1354:	3e f4       	brtc	.+14     	; 0x1364 <__floatsisf+0x12>
+    1356:	90 95       	com	r25
+    1358:	80 95       	com	r24
+    135a:	70 95       	com	r23
+    135c:	61 95       	neg	r22
+    135e:	7f 4f       	sbci	r23, 0xFF	; 255
+    1360:	8f 4f       	sbci	r24, 0xFF	; 255
+    1362:	9f 4f       	sbci	r25, 0xFF	; 255
+    1364:	99 23       	and	r25, r25
+    1366:	a9 f0       	breq	.+42     	; 0x1392 <__floatsisf+0x40>
+    1368:	f9 2f       	mov	r31, r25
+    136a:	96 e9       	ldi	r25, 0x96	; 150
+    136c:	bb 27       	eor	r27, r27
+    136e:	93 95       	inc	r25
+    1370:	f6 95       	lsr	r31
+    1372:	87 95       	ror	r24
+    1374:	77 95       	ror	r23
+    1376:	67 95       	ror	r22
+    1378:	b7 95       	ror	r27
+    137a:	f1 11       	cpse	r31, r1
+    137c:	f8 cf       	rjmp	.-16     	; 0x136e <__floatsisf+0x1c>
+    137e:	fa f4       	brpl	.+62     	; 0x13be <__floatsisf+0x6c>
+    1380:	bb 0f       	add	r27, r27
+    1382:	11 f4       	brne	.+4      	; 0x1388 <__floatsisf+0x36>
+    1384:	60 ff       	sbrs	r22, 0
+    1386:	1b c0       	rjmp	.+54     	; 0x13be <__floatsisf+0x6c>
+    1388:	6f 5f       	subi	r22, 0xFF	; 255
+    138a:	7f 4f       	sbci	r23, 0xFF	; 255
+    138c:	8f 4f       	sbci	r24, 0xFF	; 255
+    138e:	9f 4f       	sbci	r25, 0xFF	; 255
+    1390:	16 c0       	rjmp	.+44     	; 0x13be <__floatsisf+0x6c>
+    1392:	88 23       	and	r24, r24
+    1394:	11 f0       	breq	.+4      	; 0x139a <__floatsisf+0x48>
+    1396:	96 e9       	ldi	r25, 0x96	; 150
+    1398:	11 c0       	rjmp	.+34     	; 0x13bc <__floatsisf+0x6a>
+    139a:	77 23       	and	r23, r23
+    139c:	21 f0       	breq	.+8      	; 0x13a6 <__floatsisf+0x54>
+    139e:	9e e8       	ldi	r25, 0x8E	; 142
+    13a0:	87 2f       	mov	r24, r23
+    13a2:	76 2f       	mov	r23, r22
+    13a4:	05 c0       	rjmp	.+10     	; 0x13b0 <__floatsisf+0x5e>
+    13a6:	66 23       	and	r22, r22
+    13a8:	71 f0       	breq	.+28     	; 0x13c6 <__floatsisf+0x74>
+    13aa:	96 e8       	ldi	r25, 0x86	; 134
+    13ac:	86 2f       	mov	r24, r22
+    13ae:	70 e0       	ldi	r23, 0x00	; 0
+    13b0:	60 e0       	ldi	r22, 0x00	; 0
+    13b2:	2a f0       	brmi	.+10     	; 0x13be <__floatsisf+0x6c>
+    13b4:	9a 95       	dec	r25
+    13b6:	66 0f       	add	r22, r22
+    13b8:	77 1f       	adc	r23, r23
+    13ba:	88 1f       	adc	r24, r24
+    13bc:	da f7       	brpl	.-10     	; 0x13b4 <__floatsisf+0x62>
+    13be:	88 0f       	add	r24, r24
+    13c0:	96 95       	lsr	r25
+    13c2:	87 95       	ror	r24
+    13c4:	97 f9       	bld	r25, 7
+    13c6:	08 95       	ret
+
+000013c8 <__fp_split3>:
+    13c8:	57 fd       	sbrc	r21, 7
+    13ca:	90 58       	subi	r25, 0x80	; 128
+    13cc:	44 0f       	add	r20, r20
+    13ce:	55 1f       	adc	r21, r21
+    13d0:	59 f0       	breq	.+22     	; 0x13e8 <__fp_splitA+0x10>
+    13d2:	5f 3f       	cpi	r21, 0xFF	; 255
+    13d4:	71 f0       	breq	.+28     	; 0x13f2 <__fp_splitA+0x1a>
+    13d6:	47 95       	ror	r20
+
+000013d8 <__fp_splitA>:
+    13d8:	88 0f       	add	r24, r24
+    13da:	97 fb       	bst	r25, 7
+    13dc:	99 1f       	adc	r25, r25
+    13de:	61 f0       	breq	.+24     	; 0x13f8 <__fp_splitA+0x20>
+    13e0:	9f 3f       	cpi	r25, 0xFF	; 255
+    13e2:	79 f0       	breq	.+30     	; 0x1402 <__fp_splitA+0x2a>
+    13e4:	87 95       	ror	r24
+    13e6:	08 95       	ret
+    13e8:	12 16       	cp	r1, r18
+    13ea:	13 06       	cpc	r1, r19
+    13ec:	14 06       	cpc	r1, r20
+    13ee:	55 1f       	adc	r21, r21
+    13f0:	f2 cf       	rjmp	.-28     	; 0x13d6 <__fp_split3+0xe>
+    13f2:	46 95       	lsr	r20
+    13f4:	f1 df       	rcall	.-30     	; 0x13d8 <__fp_splitA>
+    13f6:	08 c0       	rjmp	.+16     	; 0x1408 <__fp_splitA+0x30>
+    13f8:	16 16       	cp	r1, r22
+    13fa:	17 06       	cpc	r1, r23
+    13fc:	18 06       	cpc	r1, r24
+    13fe:	99 1f       	adc	r25, r25
+    1400:	f1 cf       	rjmp	.-30     	; 0x13e4 <__fp_splitA+0xc>
+    1402:	86 95       	lsr	r24
+    1404:	71 05       	cpc	r23, r1
+    1406:	61 05       	cpc	r22, r1
+    1408:	08 94       	sec
+    140a:	08 95       	ret
+
+0000140c <__fp_zero>:
+    140c:	e8 94       	clt
+
+0000140e <__fp_szero>:
+    140e:	bb 27       	eor	r27, r27
+    1410:	66 27       	eor	r22, r22
+    1412:	77 27       	eor	r23, r23
+    1414:	cb 01       	movw	r24, r22
+    1416:	97 f9       	bld	r25, 7
+    1418:	08 95       	ret
+
+0000141a <__mulsf3>:
+    141a:	0b d0       	rcall	.+22     	; 0x1432 <__mulsf3x>
+    141c:	78 c0       	rjmp	.+240    	; 0x150e <__fp_round>
+    141e:	69 d0       	rcall	.+210    	; 0x14f2 <__fp_pscA>
+    1420:	28 f0       	brcs	.+10     	; 0x142c <__mulsf3+0x12>
+    1422:	6e d0       	rcall	.+220    	; 0x1500 <__fp_pscB>
+    1424:	18 f0       	brcs	.+6      	; 0x142c <__mulsf3+0x12>
+    1426:	95 23       	and	r25, r21
+    1428:	09 f0       	breq	.+2      	; 0x142c <__mulsf3+0x12>
+    142a:	5a c0       	rjmp	.+180    	; 0x14e0 <__fp_inf>
+    142c:	5f c0       	rjmp	.+190    	; 0x14ec <__fp_nan>
+    142e:	11 24       	eor	r1, r1
+    1430:	ee cf       	rjmp	.-36     	; 0x140e <__fp_szero>
+
+00001432 <__mulsf3x>:
+    1432:	ca df       	rcall	.-108    	; 0x13c8 <__fp_split3>
+    1434:	a0 f3       	brcs	.-24     	; 0x141e <__mulsf3+0x4>
+
+00001436 <__mulsf3_pse>:
+    1436:	95 9f       	mul	r25, r21
+    1438:	d1 f3       	breq	.-12     	; 0x142e <__mulsf3+0x14>
+    143a:	95 0f       	add	r25, r21
+    143c:	50 e0       	ldi	r21, 0x00	; 0
+    143e:	55 1f       	adc	r21, r21
+    1440:	62 9f       	mul	r22, r18
+    1442:	f0 01       	movw	r30, r0
+    1444:	72 9f       	mul	r23, r18
+    1446:	bb 27       	eor	r27, r27
+    1448:	f0 0d       	add	r31, r0
+    144a:	b1 1d       	adc	r27, r1
+    144c:	63 9f       	mul	r22, r19
+    144e:	aa 27       	eor	r26, r26
+    1450:	f0 0d       	add	r31, r0
+    1452:	b1 1d       	adc	r27, r1
+    1454:	aa 1f       	adc	r26, r26
+    1456:	64 9f       	mul	r22, r20
+    1458:	66 27       	eor	r22, r22
+    145a:	b0 0d       	add	r27, r0
+    145c:	a1 1d       	adc	r26, r1
+    145e:	66 1f       	adc	r22, r22
+    1460:	82 9f       	mul	r24, r18
+    1462:	22 27       	eor	r18, r18
+    1464:	b0 0d       	add	r27, r0
+    1466:	a1 1d       	adc	r26, r1
+    1468:	62 1f       	adc	r22, r18
+    146a:	73 9f       	mul	r23, r19
+    146c:	b0 0d       	add	r27, r0
+    146e:	a1 1d       	adc	r26, r1
+    1470:	62 1f       	adc	r22, r18
+    1472:	83 9f       	mul	r24, r19
+    1474:	a0 0d       	add	r26, r0
+    1476:	61 1d       	adc	r22, r1
+    1478:	22 1f       	adc	r18, r18
+    147a:	74 9f       	mul	r23, r20
+    147c:	33 27       	eor	r19, r19
+    147e:	a0 0d       	add	r26, r0
+    1480:	61 1d       	adc	r22, r1
+    1482:	23 1f       	adc	r18, r19
+    1484:	84 9f       	mul	r24, r20
+    1486:	60 0d       	add	r22, r0
+    1488:	21 1d       	adc	r18, r1
+    148a:	82 2f       	mov	r24, r18
+    148c:	76 2f       	mov	r23, r22
+    148e:	6a 2f       	mov	r22, r26
+    1490:	11 24       	eor	r1, r1
+    1492:	9f 57       	subi	r25, 0x7F	; 127
+    1494:	50 40       	sbci	r21, 0x00	; 0
+    1496:	8a f0       	brmi	.+34     	; 0x14ba <__mulsf3_pse+0x84>
+    1498:	e1 f0       	breq	.+56     	; 0x14d2 <__mulsf3_pse+0x9c>
+    149a:	88 23       	and	r24, r24
+    149c:	4a f0       	brmi	.+18     	; 0x14b0 <__mulsf3_pse+0x7a>
+    149e:	ee 0f       	add	r30, r30
+    14a0:	ff 1f       	adc	r31, r31
+    14a2:	bb 1f       	adc	r27, r27
+    14a4:	66 1f       	adc	r22, r22
+    14a6:	77 1f       	adc	r23, r23
+    14a8:	88 1f       	adc	r24, r24
+    14aa:	91 50       	subi	r25, 0x01	; 1
+    14ac:	50 40       	sbci	r21, 0x00	; 0
+    14ae:	a9 f7       	brne	.-22     	; 0x149a <__mulsf3_pse+0x64>
+    14b0:	9e 3f       	cpi	r25, 0xFE	; 254
+    14b2:	51 05       	cpc	r21, r1
+    14b4:	70 f0       	brcs	.+28     	; 0x14d2 <__mulsf3_pse+0x9c>
+    14b6:	14 c0       	rjmp	.+40     	; 0x14e0 <__fp_inf>
+    14b8:	aa cf       	rjmp	.-172    	; 0x140e <__fp_szero>
+    14ba:	5f 3f       	cpi	r21, 0xFF	; 255
+    14bc:	ec f3       	brlt	.-6      	; 0x14b8 <__mulsf3_pse+0x82>
+    14be:	98 3e       	cpi	r25, 0xE8	; 232
+    14c0:	dc f3       	brlt	.-10     	; 0x14b8 <__mulsf3_pse+0x82>
+    14c2:	86 95       	lsr	r24
+    14c4:	77 95       	ror	r23
+    14c6:	67 95       	ror	r22
+    14c8:	b7 95       	ror	r27
+    14ca:	f7 95       	ror	r31
+    14cc:	e7 95       	ror	r30
+    14ce:	9f 5f       	subi	r25, 0xFF	; 255
+    14d0:	c1 f7       	brne	.-16     	; 0x14c2 <__mulsf3_pse+0x8c>
+    14d2:	fe 2b       	or	r31, r30
+    14d4:	88 0f       	add	r24, r24
+    14d6:	91 1d       	adc	r25, r1
+    14d8:	96 95       	lsr	r25
+    14da:	87 95       	ror	r24
+    14dc:	97 f9       	bld	r25, 7
+    14de:	08 95       	ret
+
+000014e0 <__fp_inf>:
+    14e0:	97 f9       	bld	r25, 7
+    14e2:	9f 67       	ori	r25, 0x7F	; 127
+    14e4:	80 e8       	ldi	r24, 0x80	; 128
+    14e6:	70 e0       	ldi	r23, 0x00	; 0
+    14e8:	60 e0       	ldi	r22, 0x00	; 0
+    14ea:	08 95       	ret
+
+000014ec <__fp_nan>:
+    14ec:	9f ef       	ldi	r25, 0xFF	; 255
+    14ee:	80 ec       	ldi	r24, 0xC0	; 192
+    14f0:	08 95       	ret
+
+000014f2 <__fp_pscA>:
+    14f2:	00 24       	eor	r0, r0
+    14f4:	0a 94       	dec	r0
+    14f6:	16 16       	cp	r1, r22
+    14f8:	17 06       	cpc	r1, r23
+    14fa:	18 06       	cpc	r1, r24
+    14fc:	09 06       	cpc	r0, r25
+    14fe:	08 95       	ret
+
+00001500 <__fp_pscB>:
+    1500:	00 24       	eor	r0, r0
+    1502:	0a 94       	dec	r0
+    1504:	12 16       	cp	r1, r18
+    1506:	13 06       	cpc	r1, r19
+    1508:	14 06       	cpc	r1, r20
+    150a:	05 06       	cpc	r0, r21
+    150c:	08 95       	ret
+
+0000150e <__fp_round>:
+    150e:	09 2e       	mov	r0, r25
+    1510:	03 94       	inc	r0
+    1512:	00 0c       	add	r0, r0
+    1514:	11 f4       	brne	.+4      	; 0x151a <__fp_round+0xc>
+    1516:	88 23       	and	r24, r24
+    1518:	52 f0       	brmi	.+20     	; 0x152e <__fp_round+0x20>
+    151a:	bb 0f       	add	r27, r27
+    151c:	40 f4       	brcc	.+16     	; 0x152e <__fp_round+0x20>
+    151e:	bf 2b       	or	r27, r31
+    1520:	11 f4       	brne	.+4      	; 0x1526 <__fp_round+0x18>
+    1522:	60 ff       	sbrs	r22, 0
+    1524:	04 c0       	rjmp	.+8      	; 0x152e <__fp_round+0x20>
+    1526:	6f 5f       	subi	r22, 0xFF	; 255
+    1528:	7f 4f       	sbci	r23, 0xFF	; 255
+    152a:	8f 4f       	sbci	r24, 0xFF	; 255
+    152c:	9f 4f       	sbci	r25, 0xFF	; 255
+    152e:	08 95       	ret
+
+00001530 <__udivmodsi4>:
+    1530:	a1 e2       	ldi	r26, 0x21	; 33
+    1532:	1a 2e       	mov	r1, r26
+    1534:	aa 1b       	sub	r26, r26
+    1536:	bb 1b       	sub	r27, r27
+    1538:	fd 01       	movw	r30, r26
+    153a:	0d c0       	rjmp	.+26     	; 0x1556 <__udivmodsi4_ep>
+
+0000153c <__udivmodsi4_loop>:
+    153c:	aa 1f       	adc	r26, r26
+    153e:	bb 1f       	adc	r27, r27
+    1540:	ee 1f       	adc	r30, r30
+    1542:	ff 1f       	adc	r31, r31
+    1544:	a2 17       	cp	r26, r18
+    1546:	b3 07       	cpc	r27, r19
+    1548:	e4 07       	cpc	r30, r20
+    154a:	f5 07       	cpc	r31, r21
+    154c:	20 f0       	brcs	.+8      	; 0x1556 <__udivmodsi4_ep>
+    154e:	a2 1b       	sub	r26, r18
+    1550:	b3 0b       	sbc	r27, r19
+    1552:	e4 0b       	sbc	r30, r20
+    1554:	f5 0b       	sbc	r31, r21
+
+00001556 <__udivmodsi4_ep>:
+    1556:	66 1f       	adc	r22, r22
+    1558:	77 1f       	adc	r23, r23
+    155a:	88 1f       	adc	r24, r24
+    155c:	99 1f       	adc	r25, r25
+    155e:	1a 94       	dec	r1
+    1560:	69 f7       	brne	.-38     	; 0x153c <__udivmodsi4_loop>
+    1562:	60 95       	com	r22
+    1564:	70 95       	com	r23
+    1566:	80 95       	com	r24
+    1568:	90 95       	com	r25
+    156a:	9b 01       	movw	r18, r22
+    156c:	ac 01       	movw	r20, r24
+    156e:	bd 01       	movw	r22, r26
+    1570:	cf 01       	movw	r24, r30
+    1572:	08 95       	ret
+
+00001574 <__itoa_ncheck>:
+    1574:	bb 27       	eor	r27, r27
+    1576:	4a 30       	cpi	r20, 0x0A	; 10
+    1578:	31 f4       	brne	.+12     	; 0x1586 <__itoa_ncheck+0x12>
+    157a:	99 23       	and	r25, r25
+    157c:	22 f4       	brpl	.+8      	; 0x1586 <__itoa_ncheck+0x12>
+    157e:	bd e2       	ldi	r27, 0x2D	; 45
+    1580:	90 95       	com	r25
+    1582:	81 95       	neg	r24
+    1584:	9f 4f       	sbci	r25, 0xFF	; 255
+    1586:	01 c0       	rjmp	.+2      	; 0x158a <__utoa_common>
+
+00001588 <__utoa_ncheck>:
+    1588:	bb 27       	eor	r27, r27
+
+0000158a <__utoa_common>:
+    158a:	fb 01       	movw	r30, r22
+    158c:	55 27       	eor	r21, r21
+    158e:	aa 27       	eor	r26, r26
+    1590:	88 0f       	add	r24, r24
+    1592:	99 1f       	adc	r25, r25
+    1594:	aa 1f       	adc	r26, r26
+    1596:	a4 17       	cp	r26, r20
+    1598:	10 f0       	brcs	.+4      	; 0x159e <__utoa_common+0x14>
+    159a:	a4 1b       	sub	r26, r20
+    159c:	83 95       	inc	r24
+    159e:	50 51       	subi	r21, 0x10	; 16
+    15a0:	b9 f7       	brne	.-18     	; 0x1590 <__utoa_common+0x6>
+    15a2:	a0 5d       	subi	r26, 0xD0	; 208
+    15a4:	aa 33       	cpi	r26, 0x3A	; 58
+    15a6:	08 f0       	brcs	.+2      	; 0x15aa <__utoa_common+0x20>
+    15a8:	a9 5d       	subi	r26, 0xD9	; 217
+    15aa:	a1 93       	st	Z+, r26
+    15ac:	00 97       	sbiw	r24, 0x00	; 0
+    15ae:	79 f7       	brne	.-34     	; 0x158e <__utoa_common+0x4>
+    15b0:	b1 11       	cpse	r27, r1
+    15b2:	b1 93       	st	Z+, r27
+    15b4:	11 92       	st	Z+, r1
+    15b6:	cb 01       	movw	r24, r22
+    15b8:	00 c0       	rjmp	.+0      	; 0x15ba <strrev>
+
+000015ba <strrev>:
+    15ba:	dc 01       	movw	r26, r24
+    15bc:	fc 01       	movw	r30, r24
+    15be:	67 2f       	mov	r22, r23
+    15c0:	71 91       	ld	r23, Z+
+    15c2:	77 23       	and	r23, r23
+    15c4:	e1 f7       	brne	.-8      	; 0x15be <strrev+0x4>
+    15c6:	32 97       	sbiw	r30, 0x02	; 2
+    15c8:	04 c0       	rjmp	.+8      	; 0x15d2 <strrev+0x18>
+    15ca:	7c 91       	ld	r23, X
+    15cc:	6d 93       	st	X+, r22
+    15ce:	70 83       	st	Z, r23
+    15d0:	62 91       	ld	r22, -Z
+    15d2:	ae 17       	cp	r26, r30
+    15d4:	bf 07       	cpc	r27, r31
+    15d6:	c8 f3       	brcs	.-14     	; 0x15ca <strrev+0x10>
+    15d8:	08 95       	ret
+
+000015da <_exit>:
+    15da:	f8 94       	cli
+
+000015dc <__stop_program>:
+    15dc:	ff cf       	rjmp	.-2      	; 0x15dc <__stop_program>
